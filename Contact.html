@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>NOBIC - Contact</title>
+    <link rel="stylesheet" href="NOBIC_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
+    
+  </head>
+  <body>
+    <div class="topnav" id="topnav">
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html">Home</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="index.hthttps://www.w3schools.com/default.aspml#Expertise">Our
+            Expertise</a></button>
+        <div class="dropdown-content"> <a href="Instrumentation.html">Optical
+            Imaging Instrumentation</a> <a href="Software.html">Software &amp;
+            Image Processing</a> <a href="Experiment.html">Microscopy
+            Applications &amp; Sample Preparation</a></div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a>Research</a></button>
+        <div class="dropdown-content"> <a href="Projects.html">Current Projects</a>
+          <a href="Publications.html">Publications</a> </div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
+            Facilities</a></button>
+        <div class="dropdown-content"> <a href="Facilities.html#Users">For New
+            Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
+
+            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope">Booking
+            System</a> </div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
+            Team</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
+            Us</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Contact.html" class="active">Contact</a></button></div>
+      <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
+    </div>
+    <div class="titlebar" style="background-image: url('Media/Banner_I.jpg')">
+      <span class="titlebar-text">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</span>
+    </div>
+    <div class="container" style="  column-count: 2;  column-width: 400px;">
+      <h1 class="heading">Email:</h1>
+      <p style="text-align: left"> general inquiries: <em>nobic[..]e.ntu.edu.sg</em> <a href="javascript:decryptEmail('bm9iaWNAZS5udHUuZWR1LnNn');">✉</a></p>
+      <p style="text-align: left"> imaging facilities: <em>nobic.facilities[..]e.ntu.edu.sg</em> <a href="javascript:decryptEmail('bm9iaWMuZmFjaWxpdGllc0BlLm50dS5lZHUuc2c=');">✉</a></p>
+      <p style="text-align: left"> director: Prof. Peter TÖRÖK <a href="javascript:decryptEmail('cGV0ZXIudG9yb2tAbnR1LmVkdS5zZw==');">✉</a>
+      </p>
+      <h1 class="heading">GitHub: </h1>
+      <p style="text-align: left"><a href="https://github.com/NOBIC-NTU">github.com/NOBIC-NTU</a> </p>
+      <h1 class="heading">Development laboratory:</h1>
+      <p style="text-align: left"> LKCM, Experimental Medicine Building, #2-0207 (see the plan) </p>
+      <p> 59 Nanyang Drive<br>
+        Singapore 636921<br>
+        <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3446298%2c103.6761875%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da0f74ece2c57d:0xf9b808dd8a0e5f18%218m2%213d1.3446298%214d103.6783762"
+
+          target="_blank">Map</a></p>
+      <br>
+      <br>
+      <img src="Media/DevLab_Plan.png" alt="" title="The way from lifts to the lab"
+
+        width="250"></div>
+    <div class="container"> <a href="#TOP">BACK TO TOP</a> </div>
+    <footer>
+      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
+
+          target="_blank">LKCM</a> | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a>
+        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p>© NOBIC, last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function TopnavFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+  
+    }
+      
+  function decryptEmail(encoded) {
+
+    var address = atob(encoded);
+    window.location.href = "mailto:" + address;
+
+  }
+      
+      var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+ 		document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+    
+  </body>
+</html>
