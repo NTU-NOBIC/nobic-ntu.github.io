@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>CZ Axio Observer Z1</title>
+    <link rel="stylesheet" href="ABIF_styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown"> <a>⁝☰</a>
+          <div class="dropdown-content">
+            <ul id="mozToc">
+              <!--mozToc h1.h1 1-->
+              <li><a href="CZ_Axio_Observer_Z1.html">⏴System Overview</a></li>
+              <li><a href="#mozTocId516776">Switching On</a></li>
+              <li><a href="#mozTocId605137">Switching Off</a></li>
+              <li><a href="#mozTocId192986">Transmitted light imaging</a></li>
+              <li><a href="#mozTocId40676">Fluorescence imaging</a></li>
+              <li><a href="#mozTocId459397">Multi-channel imaging</a></li>
+              <li><a href="#mozTocId401036">Z-stack acquisition</a></li>
+              <li><a href="#mozTocId302345">Multi-position imaging</a></li>
+              <li><a href="#mozTocId21557">Time-lapse imaging</a></li>
+              <li><a href="#mozTocId528749">Saving images</a></li>
+              <li><a href="#mozTocId115980">Saving imaging settings</a></li>
+            </ul>
+          </div>
+          | <span class="header-text">Carl Zeiss Axio Observer Z1 – inverted
+            microscope </span><br>
+        </div>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <h1 class="h1">Switching On:</h1>
+      <p> 1. Turn on the numbered switches: microscope power supply (<strong style="color: #8fc049;">1</strong>),&nbsp;
+        microscope stand (<strong style="color: #8fc049;">2</strong>),
+        epifluorescence lamp (<strong style="color: #8fc049;">3</strong>), PC (<strong
+
+          style="color: #8fc049;">4</strong>). Do not turn on the
+        epifluorescence lamp if you intend to use only <b>transmitted light</b>
+        imaging.</p>
+      <p>2. Log in as User and start <b>ZEN Blue</b> software.</p>
+      <p>3. When starting ZEN Blue, select <strong>ZEN Pro</strong>. You will
+        be prompted to start microscope <strong>stage calibration</strong>. <strong>Attention:</strong>
+        before starting the stage calibration make sure the stage is empty and
+        objective is <a href="#Load%20Pos">lowered down</a> to avoid the risk
+        of a mechanical collision.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <td> Notes on the epifluorescence lamp: </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Do not switch off the lamp if it has been on for less than
+                  30 min.</li>
+                <li>Do not switch on the lamp if it has been off for less than
+                  15 min.</li>
+                <li>Switch off the lamp if you do not need it for a long time
+                  (e.g. acquiring a long time-lapse). The lamp is only for
+                  locating the sample using the eyepiece.</li>
+              </ul>
+              <ul>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="h1"> Switching Off:</h1>
+      <p> 1. Make sure you have saved your data and turn off <b>ZEN</b>
+        software.</p>
+      <p><a class="anchor" name="Load Pos" id="Load Pos"></a>2. Move the
+        objective to <b>Load position</b> (by pressing the lower button next to
+        the focusing knob or by pressing the button at the <a href="#Touchpanel">touchscreen
+          panel</a>) and remove your sample.</p>
+      <img src="Media/Manuals/ObjEsc.jpg" alt="" title="Obj. Load position">
+      <p>3. If you have used an<b> immersion objective</b>, wipe it clean. Use
+        the lens cleaning tissue. For cleaning oil immersion, moisten the tissue
+        at the solvent dispenser. Always wipe the objective <b>only once, in
+          one direction</b>. If this is not sufficient, repeat with a new piece
+        of tissue. <b>Never reuse the tissue</b>.</p>
+      <img src="Media/Manuals/Cleaning.jpg" alt="" title="Lens Cleaning"> <img
+
+        src="Media/Manuals/ObjClean.png" alt="" title="Objective-cleaning">
+      <p>4. Shut down the computer. </p>
+      <p>5. Turn off the epifuorescence lamp (<b style="color: #c0498f;">3</b>),
+        microscope power supply (<b style="color: #c0498f;">1</b>) .</p>
+      <p>6. Cover the microscope with the dust cover.</p>
+      <p>7. Make sure you leave the <b>microscope room clean</b>. Spray with
+        70% ethanol and wipe any surfaces that could have been in contact with
+        biological material. Do not leave any samples or any other belongings
+        behind. <br>
+      </p>
+      <h1 class="h1">Transmitted light imaging:</h1>
+      <p>A simple transmitted light imaging experiment can be set up in the <b>
+          Locate tab</b>. In general, the Locate tab allows you to set any
+        simple imaging experiment; however, for more complex automated
+        acquisition modes such as <a href="#mozTocId459397">multi-channel</a>
+        or <a href="#mozTocId302345">multi-position</a> imaging, we need to go
+        to the <strong>Acquisition tab</strong> as we will discuss later.</p>
+      <p>There are two panels in the Locate tab: <strong>Light Path</strong>
+        and <a href="#Camera">Camera</a>. Let us look at the <strong>Light
+          Path</strong> first. The panel displays a diagram of microscope parts
+        in a topology corresponding to their physical locations (what is on top
+        in the diagram is on top in reality).</p>
+      <p><img src="Media/Manuals/AxioObsZ1/TL_Locate.PNG" alt="" title="LightPath-TL"></p>
+      The transmitted light arm is almost fully controlled by the software and
+      consists of a halogen <a href="#lamp">lamp</a> (<b>1</b>), shutter (<strong>2</strong>),
+      <a href="#field"> field-stop</a> (<b style="color: #c0498f;">3</b>, not
+      included in the diagram, since that is the only manual component in the
+      path, see the <a href="#condenser_im">image</a> below) and <a href="#condenser">condenser</a>
+      (<b>4</b>). Clicking at the arrow in the lower right-hand side corner of
+      the respective box opens a dialogue with settings. The <b>shutter</b> (<b>2</b>)
+      is an exception as it is only toggled between two states (open/closed) by
+      clicking the box.
+      <p><a class="anchor" name="lamp" id="lamp"></a>The voltage of the <b>lamp</b>
+        (<strong>1</strong>) can be set - it changes the intensity of the light
+        as well as its hue (lower voltage gives "warmer" hue, with higher
+        representation of the red side of the spectrum).</p>
+      <p><a class="anchor" name="field" id="field"></a>The <a href="#condenser_im"><b>field
+            stop</b></a> (<strong style="color: #c0498f;">3</strong>) defines
+        the illuminated area, this is used when setting <a href="#Koehler">Koehler
+          illumination</a>.</p>
+      <p><a class="anchor" name="condenser" id="condenser"></a>The <strong>condenser</strong>
+        (<strong>4</strong>) settings dialogue contains selection of the <strong>mode
+          of contrast</strong> (brightfield, phase contrast or DIC). <strong>Phase
+          contrast</strong> requires specialised objectives, check the <a href="CZ_Axio_Observer_Z1.html"
+
+          title="AxioObserver_overview">system overview</a> to find which
+        objectives support phase contrast. Alternatively this information can be
+        found from objective details displayed at the <strong>touchscreen panel</strong>.
+        For phase contrast, the objective needs to be matched with the correct
+        phase ring (Ph1, Ph2 or Ph3).</p>
+      <p><a class="anchor" id="Touchpanel"></a><img src="Media/Manuals/Zeiss_Touchpanel.jpg"
+
+          alt="" title="Touchscreen panel-Obj. details"></p>
+      <p> <a class="anchor" id="CondSettings_Im"></a> <img src="Media/Manuals/AxioObsZ1/Condenser.png"
+
+          alt="" title="Condenser_settings"> </p>
+      <p>For <strong>DIC</strong>, the objective has to be matched with the
+        correct prism in the condenser (see the details at the <strong>touchscreen
+          panel</strong>) and a second prism needs to inserted in the slot under
+        the objective (by default the prisms are there, do not remove them
+        without consulting ABIF staff).</p>
+      <img src="Media/Manuals/AxioObsZ1/DIC_prism.jpg" alt="" title="DIC_prism">
+      <p>The <strong>numerical aperture</strong> of the condenser can be also
+        set here. This influences the intensity of the light at sample as well
+        as the contrast and resolution of the images. For <strong>brightfield</strong>
+        the rule of thumb is: <em>Condenser NA = 1/2 Objective NA</em>. For <strong>phase
+          contrast</strong><strong></strong>, the highest available condenser <em>NA</em>
+        is usually selected.</p>
+      <p>The current condenser <strong>contrast mode/<em>NA</em></strong> is
+        also displayed at the <a href="#Touchpanel">touchscreen panel</a>
+        (status bar at the bottom, brightfield (BF)/<em>NA</em> = 0.9 in the
+        example).</p>
+      <p><a class="anchor" name="downstream" id="downstream"></a>Other
+        components are common for the transmitted light and fluorescence paths;
+        they are the <strong>objective revolver</strong> (<strong>5</strong>),
+        the motorised <strong>filter cube turret</strong> (<strong>6</strong>),
+        the <a href="#tubelens">tube lens</a> (<strong>7</strong>) and the <a
+
+          href="#phototube">intermediate phototube</a><strong> </strong>(<strong>8</strong>).</p>
+      <p>For transmitted light we don't need a filter, so we select the empty
+        position with <strong>analyser</strong> (needed for DIC and not
+        disturbing the other contrast methods).</p>
+      <p><a class="anchor" name="tubelens" id="tubelens"></a>The <strong>tube
+          lens</strong> turret (<strong>7</strong>) has three positions: 1x
+        magnification, 1.6x magnification (in this case the overall image
+        magnification is <em>1.6 x Objective magnification</em>) and an empty
+        position (do not select that one).</p>
+      <p><a class="anchor" name="phototube" id="phototube"></a>The <strong>intermediate
+          phototube </strong>(<strong>8</strong>) selects whether all light
+        will go to the eyepiece or whether it will divided between the eyepiece
+        and the camera port in 20/80 ratio.</p>
+      <p><a class="anchor" name="Camera" id="Camera"></a>Next we'll have a look
+        at the <strong>Camera</strong> panel. The only parameter here to set is
+        the <b>exposure time</b>. For brightfiled it can be usually quite short
+        (order of ms usually); for phase contrast and darkfield, longer exposure
+        and/or higher <a href="#lamp">lamp voltage</a> are typically needed.
+        The exposure time can be optimised automatically by pressing <strong>Set
+          Exposure</strong>. See notes on <a href="#Histogram">optimising image
+          intensity</a>.</p>
+      <p><strong>Note:</strong> If <strong>Auto Exposure</strong> option is
+        checked, the exposure time will be automatically optimised for each
+        image frame captured which may result in varying exposure times within a
+        series of images.</p>
+      <p>Note that the camera is <strong>grey scale</strong> only. If you need
+        to take transmitted light images in <strong>colour</strong>, you can
+        use the following <a href="#RGBrightfield">trick</a> using
+        multi-channel acquisition.</p>
+      <p><img src="Media/Manuals/AxioImager/Camera_settingTL.PNG" alt="" title="Camera_TL"><br>
+      </p>
+      <p>This is all for the settings. If we have loaded a sample, we can view
+        it in the eyepieces or on the screen using live camera image -&nbsp; <strong>Live</strong>
+        (<strong>9</strong>) or <strong>Continuous</strong> (<strong>10</strong>),
+        and focus the sample by turning the <strong>focusing knob</strong>
+        (located on the sides of the microscope body as well as on the side of
+        the touchscreen panel). Once the sample is in focus, we can take static
+        images by pressing <strong>Snap </strong>(<strong>11</strong>). See
+        notes on <a href="#Histogram">adjusting the display</a> of images in
+        ZEN.</p>
+      <img src="Media/Manuals/AxioObsZ1/Locate_PathTL2.png" alt="" title="Left-container-top">
+      <p>We can toggle the objective position between the<strong> Load position</strong>
+        and the last <strong>Working position</strong> (position at which
+        images were taken) by pressing the buttons next to the focusing knob or
+        on the touchscreen panel.</p>
+      <img src="Media/Manuals/AxioObsZ1/Load_Work_touchpanel.jpg" alt="" title="Load-Work Position">
+      <p> </p>
+      <a class="anchor" name="Koehler" id="Koehler"></a>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>Koehler illumination: </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>The optimal condenser setting for transmitted light
+                  illumination, critical for good quality of DIC or phase
+                  contrast.</li>
+                <li>Focus the sample in brightfield.</li>
+                <li>Close the <a href="#field">field stop</a> (<b style="color: #c0498f;">3</b>)
+                  to the smallest size.</li>
+                <li>Move the condenser up and down (<strong>i</strong>) to find
+                  the position where the edges of the field stop appear sharp in
+                  the image:<br>
+                  <br>
+                  <a class="anchor" id="condenser_im"></a><img src="Media/Manuals/AxioObsZ1/AxioObsZ1_condenser.jpg"
+
+                    alt="" title="AxioObs_Z1-condenser"> <img src="Media/Manuals/AxioImager/Koehler.PNG"
+
+                    alt="" title="Koehler"></li>
+                <br>
+                <li> Centre the field stop by the centering screws (<strong>ii</strong>).</li>
+                <li>Open the field stop until it does not limit the field of
+                  view.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h1 class="h1"><a id="mozTocId40676" class="mozTocH1"></a>Fluorescence
+        imaging:</h1>
+      <p><b>Locate tab</b> can be used for simple fluorescence imaging; however,
+        for more complex automated acquisition modes such as <a href="#mozTocId459397">multi-channel</a>
+        or <a href="#mozTocId302345">multi-position</a> imaging, we need to go
+        to the <strong>Acquisition tab</strong> as we will discuss later.</p>
+      <p>Let's start again with the <strong>Light Path</strong> panel. The
+        fluorescence illumination arm is fully motorised. It consists of the <strong>epifluorescence
+          lamp</strong> (<strong>1</strong>, not controlled by the software), <b>shutter</b>
+        (<strong>2</strong>, note that there appear two shutters in the diagram,
+        however only the left-hand side box, highlighted, corresponds to an
+        actual shutter, closing the other one does not stop the light from
+        reaching the objective), the <a href="#attenuator">attenuator</a> (<b>3</b>)
+        and the <a href="#FLfield">field stop</a> (<b>4</b>). The<b> filter
+          cube</b> (<b>5</b>) has to be selected to match the fluorophore of
+        interest. Other motorised components are the same as for the <a href="#downstream">
+          transmitted light path</a>.</p>
+      <a class="anchor" id="locate"></a><img src="Media/Manuals/AxioObsZ1/FL_Locate.PNG"
+
+        alt="" title="Locate-fluor">
+      <p><a class="anchor" name="attenuator" id="attenuator"></a>The <b>attenuator
+          wheel</b> (<b>3</b>) reduces the excitation intensity reaching the
+        sample - the setting is in percentage of the full intensity (for the
+        actual intensities refer to the <a href="PDFs/Zeiss_WFinv_intensity.pdf">table</a>).</p>
+      <p><a class="anchor" name="FLfield" id="FLfield"></a>The <strong>field
+          stop</strong> (<strong>4</strong>) determines the field of view
+        analogously to the <a href="#field">field stop</a> in transmitted light
+        imaging.</p>
+      <p>Next we'll need to set the camera <b>exposure time</b> in the <a href="#Camera">Camera
+          panel</a>. For fluorescence it is usually on the order of 100 ms. This
+        is all for the settings and we can view the live image by pressing <strong>Live</strong>
+        or <strong>Continuous</strong> or take static images by pressing <strong>Snap</strong>.
+        The exposure time can be optimised automatically by pressing <strong>Set
+          Exposure</strong>. See notes on <a href="#Histogram">adjusting the
+          display</a> of images in ZEN.</p>
+      <p><strong>Note:</strong> Never check <strong>Auto Exposure</strong> if
+        you want to compare fluorescence intensity between images. For <strong>comparing
+          intensities </strong>it is critical to<strong> acquire the images
+          with identical settings</strong>, including identical exposure times.
+        Auto Exposure can also result in <strong>impractically long exposure
+          times</strong> when the imaged part of the sample exhibits no or
+        extremely low fluorescence (e.g. when acquiring a <a href="#mozTocId302345">Tile-scan</a>
+        including regions lacking fluorescent structures).</p>
+      <p><strong>Note: I</strong>f you've set a long exposure time, it will not
+        be reflected in <strong>Live</strong> mode since it's intended for
+        purposes such as focusing or stage movement where a fast refresh rate of
+        the live image is desirable.</p>
+      <h1 class="h1"><a id="mozTocId459397" class="mozTocH1"></a>Multi-channel
+        imaging:</h1>
+      <p>For more complex imaging scenarios, we need to move to the <strong>Acquisition
+          tab</strong>, where we can set up acquisition of <a href="#mozTocId459397">multi-channel
+          images</a>, <a href="#mozTocId401036">Z-stacks</a>, <a href="#mozTocId302345">multi-position
+          images</a>, or <a href="#mozTocId21557">time-lapse acquisition</a>
+        (and, of course, arbitrary combinations of those).</p>
+      <p><strong>Note:</strong> the lastly used multi-channel setting may be
+        loaded automatically. To setup your own setting from the beginning,
+        create a <strong>new setting</strong> in <a href="#mozTocId115980">Experiment
+          Manager</a>.</p>
+      <p>To set up a multi-channel acquisition, press the <img src="Media/Manuals/AxioImager/Acquire_AddChannel+.png"
+
+          alt="" title="Add Channel+"> button in the <strong>Channels panel</strong>.
+        A window with a selection of fluorescent dyes will pop up, where you can
+        select and add dyes identical or close to those in your sample.
+        Different transmitted light contrast modes can be added as well.</p>
+      <p><img src="Media/Manuals/AxioImager/Acquire_AddChannel1a.png" alt="" title="Add Channel">
+        <img src="Media/Manuals/AxioImager/Acquire_AddChannel1b.png" alt="" title="Add Channel-pop up"></p>
+      <p>Note that the selection is vastly redundant, since the number of actual
+        settings for fluorescence is limited by the number of filter cubes. The
+        program thus matches each fluorophore with the best match from the
+        available cubes.</p>
+      <p>Let us for example select a blue fluorophore such as DAPI, a red
+        fluorophore such as DsRed and Brightfield. The C<strong>hannels panel</strong>
+        can than look something like this: </p>
+      <p><a class="anchor" name="channels" id="channels"></a><img src="Media/Manuals/AxioImager/Acquire_AddChannel2.PNG"
+
+          alt="" title="Channels panel"></p>
+      <p>By a right click on the name of the fluorophore, we can <strong>rename
+          the channel</strong> (e.g. if our exact fuorophore is not in the list
+        and we've selected a spectrally similar one instead). In this example
+        I've renamed DAPI to BlueDye and DsRed to RedDye. You can also change
+        the <strong>colour </strong>in which the images for individual channel
+        will be displayed (small square to the right of the channel name).</p>
+      <p>Left click on a channel selects the channel. In the example shown,
+        RedDye is selected. The selected channel will be displayed in live mode
+        by pressing <strong>Live</strong>. I can also set the <strong>exposure
+          time</strong> for the selected channel (each channel can have
+        different exposure, see notes on <a href="#Histogram">setting the exposure</a>) and modify the <strong>Light Path</strong>.
+        The only difference from setting the <strong>Light Path</strong> in <a
+
+          href="#locate">Locate tab</a> is the presence of check boxes at each
+        component. Those indicate whether the settings for the given component
+        will be a part of the channel settings. In the example shown, the field
+        stop is unchecked. That means that the current opening of the field stop
+        (74%) will be used for the acquisition of the channel. If this box is
+        unchecked for all channels, they will be imaged with the same filed stop
+        opening. On the other hand, if I check the box, I can set a different
+        value for each channel.</p>
+      <img src="Media/Manuals/AxioObsZ1/FL_Acq.PNG" alt="" title="Acquisition_FLsettings"><br>
+      <p>You may have also noticed "Ref." in the BlueDye channel line, it stands
+        for Focus Reference and is related to an option to correct for objective
+        chromatic aberration (unlocked by selecting&nbsp;<img src="Media/Manuals/AxioObsZ1/SelectAll.png"
+
+          alt="" title="ShowAll"> for <strong>Channels panel</strong>) as
+        explained in the following box:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <td><a class="anchor" name="FocusRef" id="FocusRef"></a> Chromatic
+              aberration compensation: </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Chromatic aberration causes the focal planes for different
+                  colours to be shifted in the axial (Z) direction.</li>
+                <li>This effect can be compensated in multi-channel acquisition
+                  by introducing offsets between the focus position for each
+                  channel.</li>
+                <li>To find the offsets you need a sample with thin objects that
+                  are visible in all channels of interest. Otherwise your
+                  offsets may compensate for different axial distribution of
+                  different fluorophores rather than for the chromatic
+                  aberration.</li>
+                <li>One channel is selected as reference (DAPI channel in this
+                  example); focus manually using the live image for this
+                  channel. Note the focus <strong>Z-position</strong>
+                  (displayed for example on the <a href="#Touchpanel">touchscreen
+                    panel</a>).</li>
+                <li>Then switch to another channel (e.g. DsRed) and refocus to
+                  bring the sample to focus. Note the new focus position and
+                  calculate its difference from the reference channel focus
+                  position. Input this value to the <strong>Focus Offset Z</strong>
+                  field.<br>
+                  <br>
+                  <img src="Media/Manuals/AxioImager/Channels_All.PNG" alt="" title="Channels-offsets">
+                </li>
+                <br>
+                <li>Analogously, lateral shifts between channels can be
+                  compensated by X and Y Pixel Shifts. Small objects visible in
+                  all channels (e.g multispectral beads are needed). Ask ABIF
+                  staff for assistance.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>By pressing <strong>Snap</strong>, we take an image with all selected
+        channels (those that are checked in the <a href="#channels">Channels
+          panel</a> - checkbox is to the left of the channel name). The image
+        can be displayed as an overlay of all channels (2D) or as a split view.</p>
+      <p>There are two panels below the image display. Let's look at the
+        left-hand side one:</p>
+      <p><a class="anchor" name="Dimensions" id="Dimensions"></a><img src="Media/Manuals/AxioImager/Fluor_2D_dim.png"
+
+          alt="" title="2D-dimensions"><br>
+      </p>
+      <p>The control in the panel allow us to <strong>zoom in and out</strong>
+        and select which channels are displayed (only the two fluorescence
+        channels are displayed in the example, brightfield display is switched
+        off). The <strong>Graphics</strong> tab (currently hidden) allows to
+        add objects such as a <strong>scale bar</strong> to the image.</p>
+      <p>The right-hand side panel shows the image histogram discussed in the
+        following box:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <td><a class="anchor" name="Histogram" id="Histogram"></a> Image
+              histogram: </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Image histogram shows the distribution of pixel intensities
+                  in the image. The horizontal axis shows the intensities; its
+                  range corresponds to the dynamic range of the camera image.
+                  The vertical axis shows the number of pixels with a given
+                  intensity.</li>
+                <li>The histogram is useful in optimising imaging settings, such
+                  as camera exposure. Histogram reaching the highest intensity
+                  values indicates that the exposure is too long or excitation
+                  intensity too high. Pixels having the highest intensity value
+                  are potentially <strong>saturated pixels</strong> - they
+                  correspond to pixels with fluorescence intensities exceeding
+                  the dynamic range. On the other, histogram crouching at the
+                  low intensities end shows that the dynamic range is not
+                  optimally utilised, which likely compromises the image
+                  quality. A longer exposure would likely help.</li>
+                <li>For a multi-channel image, histograms for all channels are
+                  shown together with lines indicating the <strong>scaling of
+                    the image</strong> display for each channel (below what
+                  intensity value pixels are displayed in black and above what
+                  intensity value the pixels are displayed in maximum
+                  brightness). Adjusting the display scaling helps to visualise
+                  channels with different intensities.</li>
+                <li><strong>Best Fit</strong> is meant to optimise the image
+                  scaling for the best possible display. The result is not
+                  necessarily always the best possible. <strong>Min/Max</strong>&nbsp;
+                  stretches the scaling between the lowest and the highest pixel
+                  intensity for a given channel.<br>
+                  <br>
+                  <img src="Media/Manuals/AxioImager/Fluor_2D_hist.png" alt="" title="Multichannel-histogram"><br>
+                  &nbsp; </li>
+                <li>Note that the changes in the <strong>scaling do not modify
+                    the image itself</strong>, only the way it is currently
+                  displayed. It will therefore not alter the way the image is
+                  displayed the next time it is opened.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h1 class="h1"><a id="mozTocId401036" class="mozTocH1"></a>Z-stack
+        acquisition:</h1>
+      <p>To acquire a stack of images at different Z-planes check Z-stack
+        option:</p>
+      <p><img src="Media/Manuals/AxioImager/Z-stack.PNG" alt="" title="Z-stack"></p>
+      <p>Z-stack panel will be added to the settings panels in the left-hand
+        side container. To define a stack, focus to the lowest plane you want to
+        acquire and press:<strong> Set First</strong>. Then focus to the
+        uppermost plane and press <strong>Set Last</strong>. The number of
+        slices in the stack is determined by the range and the interval between
+        slices. Interval that satisfies Nyquist sampling for the axial
+        resolution of the selected objective is suggested as <strong>Optimal </strong>(1.45
+        μm in the example shown). </p>
+      <p>Once the stack is set, start the acquisition by pressing <strong>Start
+          Experiment</strong>. The stack will be recorded for all channels
+        checked in the <a href="#channels">Channels panel</a>.</p>
+      <p>Z-stack can be then viewed by individual planes, as orthogonal sections
+        or as 3D rendering (see the tabs to the left of the displayed image).</p>
+      <img src="Media/Manuals/AxioImager/Z-stack2.PNG" alt="" title="Z-stack view">
+      <p>Alternatively, Z-stack can be set up by selecting the <strong>central
+          plane</strong> and the range (centre +/- half of the range). This
+        option is unlocked by selecting&nbsp;<img src="Media/Manuals/AxioObsZ1/SelectAll.png"
+
+          alt="" title="Show All"> for <strong>Z-stack panel</strong>. Focus to
+        the central plane, confirm it as the centre of the stack by pressing <strong>Center</strong>
+        and define the range and interval between slices.</p>
+      <img src="Media/Manuals/AxioObsZ1/Z_stack2.PNG" alt="" title="Z-stack centre">
+      <h1 class="h1"><a id="mozTocId302345" class="mozTocH1"></a>Multi-position
+        imaging:</h1>
+      <p>The motorised stage can be used to set a few types of multi-position
+        imaging experiments:</p>
+      <ul>
+        <li><strong>Tiles</strong> scan - acquire an image larger than the field
+          of view of the camera by stitching together multiple images acquired
+          at neighbouring positions.</li>
+        <li><strong>Positions</strong> - remembers a list of selected stage
+          positions, which can be then imaged repeatedly. This makes sense
+          mainly in combination with time-lapse imaging, when it allows to
+          monitor in time multiple locations within the sample.</li>
+        <li><strong>Sample-carrier</strong>-specific position grids - for
+          standard sample carriers such as a 96-well plates allows setting up
+          easily acquisition at a regular positions grid (e.g. each well of the
+          plate).</li>
+      </ul>
+      <p> Check the <strong>Tiles</strong> option and a Tiles panel will be
+        added:</p>
+      <img src="Media/Manuals/AxioImager/Tiles_1.PNG" alt="" title="Multi-positions">
+      <p>The upper part of the panel allows defining the <strong>Tile scan</strong>
+        - in the example shown the scan will cover a field of 2x2 fields of
+        view, by pressing the&nbsp;<img src="Media/Manuals/AxioImager/TilesArrow_1.png"
+
+          alt="" title="tiles-arrow2"> button it is added to the list of Tile
+        scan regions (multiple regions can be defined and then all of them
+        imaged).</p>
+      <p>If you are imaging a single large object (e.g. a tissue section) and
+        want to make sure that you capture the whole object, select <strong>Stake</strong>
+        option. You will then move the stage to several positions at the
+        boundaries of the object and store those positions (called <strong>Markers</strong>
+        in this context). The program will then set the tiles regions in such a
+        way that it contains all the stored positions.</p>
+      <p>Acquisition at a set of discreet positions can be set in the lower part
+        of the Tiles panel. Move the stage to the desired position and press <img
+
+          src="Media/Manuals/AxioImager/TilesArrow_2.png" alt="" title="tiles-arow2">.
+        The position will be stored in the list of positions. Repeat this step
+        for all other positions to populate a list of arbitrary positions.
+        Another option is to select a <strong>Sample carrier</strong> from the
+        list (e.g. 96-well plate). Then press <strong>Calibrate...</strong> and
+        you will be prompted to move the stage to selected reference wells.
+        Based on those reference positions, the program will calculate the grid
+        of positions of all wells in the plate allowing setting up an automated
+        acquisition in all (or selected) wells of the plate.</p>
+      <img src="Media/Manuals/AxioImager/Tiles_Points_Carrier.PNG" alt="" title="Positions"><br>
+      <h1 class="h1"><a id="mozTocId21557" class="mozTocH1"></a>Time-lapse
+        imaging:</h1>
+      <p>Setting up a time-lapse acquisition is very straightforward. Check the
+        Time series option and a Time Series panel will be added. You can set
+        the number of time points to be acquired (100 in the example) and the
+        interval between them (5 min. in the example). If you want to acquire
+        images with the maximum temporal resolution possible, set the interval
+        to zero and check the option "Use Camera Streaming if Possible". Start
+        acquisition for all selected channels by pressing Start Experiment.</p>
+      <p><img src="Media/Manuals/AxioImager/TimeSeries.PNG" alt="" title="timelapse"></p>
+      <h1 class="h1"><a id="mozTocId528749" class="mozTocH1"></a>Saving images:</h1>
+      <p>Acquired images are listed in the image explorer panel at the
+        right-hand side of ZEN window. For each image the name, size, thumbnail
+        and icons indicating image type are shown. In this example we see a
+        multi-channel image (C), a multi-channel Z-stack and a multi-channel
+        Tile-scan. Image (selected by clicking on it) can be saved by clicking
+        the <strong>floppy-disk button</strong> (highlighted for the benefit of
+        younger users not familiar with the early history of data storage). </p>
+      <img src="Media/Manuals/AxioImager/Save.PNG" alt="" title="saving">
+      <p>This is not very convenient for saving large numbers of images. If you
+        want to acquire many images, it is useful to set up <strong>Autosave</strong>
+        option in a dedicated panel in the settings area on the left-hand side.</p>
+      <img src="Media/Manuals/AxioImager/Autosave.PNG" alt="" title="autosave">
+      <p>Select a folder for your images at one of the data drives (D: to G:).
+        ZEN will automatically create a subfolder there named according to the
+        current date. Set a base name for your images - all images will then
+        have the name with a number differentiating individual images.</p>
+      <p><strong>Note:</strong> The images you see open in ZEN (in the image
+        explorer panel) are not the ones that is saved to disk by autosave. Any
+        changes to the images after acquisition (e.g. adding scale bars) do not
+        modify the autosaved images and the modified images need to be saved
+        separately.</p>
+      <p><strong>Note:</strong> <strong>Autosave</strong> applies only to
+        images acquired under the <strong>Acquisition tab</strong>. Images
+        Acquired in the Locate tab by pressing Snap, are not saved
+        automatically.</p>
+      <p>When <strong>closing ZEN</strong>, a window will appear with the list
+        of modified files asking whether they should be saved. Do not be
+        disturbed if all images appear there as unsaved when you are using
+        autosave - that does not mean that the autosave is not working (see the
+        note above). Besides images, the list also contains all <a href="#mozTocId115980">Experiment
+          Manager</a> files that have been opened during the session. You can
+        uncheck all and not save any changes if you have saved all your images
+        (e.g. by Autosave). Note that saving any images in this way saves them
+        to a default image location rather than letting you choose the
+        destination.</p>
+      <h1 class="h1"><a id="mozTocId115980" class="mozTocH1"></a>Saving imaging
+        settings:</h1>
+      <p>Acquisition settings can be saved for future use in <strong>Experiment
+          Manager</strong> (select Save As and give the settings a name by which
+        you can later recognise the file; ideally include your name to make it
+        clear whose settings those are). In the example settings file called
+        Experiment is open; other settings files can be chosen from a drop-down
+        list.</p>
+      <img src="Media/Manuals/AxioImager/ExperimentManager.png" alt="" title="Experiment manager">
+      <p>The settings are also stored in the image <strong>metadata</strong>
+        and settings used to acquire an image can be recalled by the <a href="#Dimensions">Reuse
+          button</a> when the image is open.</p>
+      <p><strong>Note:</strong> neither experiment manager nor the image
+        metadata collect information about <strong>manually controlled
+          components</strong>. Make sure you note those down to be able to
+        reproduce your experiments.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <td><a class="anchor" name="RGBrightfield" id="RGBrightfield"></a>
+              Transmitted light in colour: </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Transmitted light images in colour can be acquired using <a
+
+                    href="#mozTocId459397">Multi-channel imaging</a> by
+                  recording transmitted light images with blue, green and red
+                  filters and then overlaying then to create RGB images.</li>
+                <li>An <strong>Experiment Manager</strong> file called <strong>RGB_Brightfield</strong>
+                  is available for this purpose.</li>
+                <li>For the best result, optimise the exposures of individual
+                  channels to get similar intensities in the parts of the image
+                  that are expected to be white (e.g. in an empty part of the
+                  slide). This is analogous to setting white balance of a colour
+                  camera.<br>
+                  <br>
+                  <img src="Media/Manuals/AxioImager/rgb_TL.PNG" alt="" title="RGB-TL"><br>
+                  &nbsp; </li>
+                <li>Try <strong>not to modify</strong> the <a href="#mozTocId115980">Experiment
+                    Manager</a> file. If you need to modify it, <strong>make a
+                    copy</strong> under a different name, which you can then
+                  freely edit to suit your needs.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="http://www.scelse.sg/Page/imaging-facility">ABIF</a>
+        | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
+
+          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>
