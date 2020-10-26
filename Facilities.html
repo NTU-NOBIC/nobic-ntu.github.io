@@ -144,7 +144,7 @@
         microscopes</button>
       <div class="collcontent">
         <ul>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/Aurox.html" target="_blank">Carl
+          <li><a href="ABIF/Aurox.html" target="_blank">Carl
               Zeiss Axio Observer 7 with Aurox Clarity</a> - inverted widefield
             microscope with a laser-free spinning disk module<br>
             <br>
@@ -159,25 +159,25 @@
       <button type="button" class="collapsible">Inverted confocal microscopes</button>
       <div class="collcontent">
         <ul>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/Leica_SP8.html"
+          <li><a href="ABIF/Leica_SP8.html"
 
               target="_blank">Leica TCS SP8 X WLL</a> – laser scanning confocal
             with a white light laser and spectral detection <br>
           </li>
           <br>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/CZ_LSM_780.html"
+          <li><a href="ABIF/CZ_LSM_780.html"
 
               target="_blank">Carl Zeiss LSM 780</a> – laser scanning confocal
             with fast spectral detection (32-GaAsP array) <br>
           </li>
           <br>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/CZ_ELYRA.html" target="_blank">Carl
+          <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl
               Zeiss ELYRA PS.1 with LSM 780 confocal</a> – super-resolution
             (SIM, PALM, STORM, …) and TIRF microscope combined with a laser
             scanning confocal<br>
           </li>
           <br>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/Aurox.html" target="_blank">Carl
+          <li><a href="ABIF/Aurox.html" target="_blank">Carl
               Zeiss Axio Observer 7 with Aurox Clarity</a> - inverted widefield
             microscope with a laser-free spinning disk module<br>
           </li>
@@ -213,7 +213,7 @@
         microscopes</button>
       <div class="collcontent">
         <ul>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/CZ_ELYRA.html" target="_blank">Carl
+          <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl
               Zeiss ELYRA PS.1 with LSM 780 confocal</a> – super-resolution
             (SIM, PALM, STORM, …) and TIRF microscope combined with a laser
             scanning confocal<br>
@@ -264,7 +264,7 @@
       <button type="button" class="collapsible">Stereo microscopes</button>
       <div class="collcontent">
         <ul>
-          <li><a href="https://www.ntu.edu.sg/home/radek.machan/Basic.html"
+          <li><a href="ABIF/Basic.html"
 
                  target="_blank">Carl Zeiss Discovery.V8</a> – stereomicroscope with an RGB camera </li>
         </ul>
@@ -292,37 +292,29 @@
       } else {
         x.className = "topnav";
       }
-  
     }
       
- 
-      
-        function decryptEmail(encoded) {
-
+    function decryptEmail(encoded) {
     var address = atob(encoded);
     window.location.href = "mailto:" + address;
-
-  }
-      
-      var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
     }
-  });
-}
+      
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
 
  		document.getElementById("datemod").innerHTML = document.lastModified;
 	</script>
-	  
-	  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f7aa1c732089809"></script>    
-	  
   </body>
 </html>
