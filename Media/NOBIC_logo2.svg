@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="147.5mm"
-   height="148mm"
-   viewBox="0 0 147.5 148"
+   width="170mm"
+   height="200mm"
+   viewBox="0 0 170 200"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="Icon.svg">
+   sodipodi:docname="NOBIC_logo2.svg">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -76,9 +76,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="173.43578"
-     inkscape:cy="311.94489"
+     inkscape:zoom="0.7"
+     inkscape:cx="369.15007"
+     inkscape:cy="226.2306"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -95,7 +95,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -103,29 +103,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-149)">
+     transform="translate(0,-97)">
     <path
        style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:3.45522714;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       d="M -0.34017871,223.21758 V 148.75774 H 73.648656 147.6375 v 74.45984 74.45984 H 73.648656 -0.34017871 Z"
+       d="m 10.999107,178.69198 v -74.45984 h 73.988835 73.988848 v 74.45984 74.45984 H 84.987942 10.999107 Z"
        id="path912"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.4664588;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       d="M -0.34017871,223.21759 V 148.75774 L 73.554166,223.02367 c 40.641894,40.84628 73.894344,74.35321 73.894344,74.45985 0,0.10665 -33.25245,0.1939 -73.894344,0.1939 H -0.34017871 Z"
+       d="m 10.999107,178.69199 v -74.45985 l 73.894345,74.26593 c 40.641898,40.84628 73.894348,74.35321 73.894348,74.45985 0,0.10665 -33.25245,0.1939 -73.894348,0.1939 H 10.999107 Z"
        id="path918"
        inkscape:connector-curvature="0" />
     <ellipse
        style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:1.51546538;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="path920"
-       cx="73.78096"
-       cy="223.16231"
+       cx="85.120247"
+       cy="178.63673"
        rx="73.780945"
        ry="74.40461" />
     <ellipse
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.31380546;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="path924-5"
-       cx="72.193459"
-       cy="260.41193"
+       cx="83.532745"
+       cy="215.88631"
        inkscape:transform-center-x="-8.6267543"
        inkscape:transform-center-y="-69.52723"
        rx="36.663689"
@@ -133,16 +133,27 @@
     <ellipse
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.31047511;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="path924-5-2"
-       cx="72.571419"
-       cy="185.89388"
+       cx="83.910706"
+       cy="141.3683"
        inkscape:transform-center-x="-8.6267543"
        inkscape:transform-center-y="-69.175202"
        rx="36.663689"
        ry="37.136158" />
     <path
        style="fill:#46647d;fill-opacity:1;stroke:#46647d;stroke-width:0.59975672;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       d="M 71.361955,149.04557 A 73.580251,74.26342 0 0 0 0.03761229,223.22885 73.580251,74.26342 0 0 0 71.361955,297.37785 Z"
+       d="m 82.701241,104.51997 a 73.580251,74.26342 0 0 0 -71.324343,74.18328 73.580251,74.26342 0 0 0 71.324343,74.149 z"
        id="path920-8"
        inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#46647d;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.4288702"
+       y="290.38544"
+       id="text828"><tspan
+         sodipodi:role="line"
+         id="tspan826"
+         x="8.4288702"
+         y="290.38544"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;font-family:'Yu Gothic UI';-inkscape-font-specification:'Yu Gothic UI';fill:#46647d;fill-opacity:1;stroke-width:0.26458332">NOBIC</tspan></text>
   </g>
 </svg>
