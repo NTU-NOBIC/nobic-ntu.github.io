@@ -343,20 +343,19 @@
       <p>You can also modify the <strong>Light Path</strong> for each channel.
         Most settings are determined by the selections of the imaging modality
         (transmitted light or fluorescence) and for fluorescence channels by the
-        selection of the fluorophore, thus there is little need to set anything
-        at this step. The only component which it potentially makes change to
+        selection of the fluorophore and should be loaded according to the modality and fluorophore selected. A component which it potentially makes sense to 
         set here is the <a href="#condenser">condenser</a> for transmitted
-        light channels. The only difference from setting it<strong></strong> in
+        light channels. The difference from lightpath setting in
         <a href="#TL">Locate tab</a> is the presence of check boxes for each
-        setting. Those indicate whether the settings will be a part of the
+        setting which allow you to select whether the settings will be a part of the
         channel settings. In the example shown, both NA and Contrast mode are
         checked. That means for example that the current NA (0.3) will be a part
-        of the channel settings. If I want to acquire twodifferent transmitted
+        of the channel settings. If I want to acquire two different transmitted
         light channels, I can set different condenser NA for each channel (e.g.
         for phase contrast I would use the maximum NA of the condenser). If this
         box is unchecked for all channels, they will be imaged with the same
         condenser NA whatever its value is at the start of the image
-        acquisition.</p>
+        acquisition.</p><p>Components the settings of which are a <strong>part of the channel settings are displayed in blue</strong>, components which are not a part of the channel settings are diplayed in gray. <strong>Important:</strong> make sure that all the <strong>important settings</strong> that differ between individual channels (such as transmitted light vs. epifluorescence lamp shutters and optical filters) <strong>are blue</strong>. Otherwise you may have e.g. transmitted ligt contributing to the fluorescence channels or all fluorescence channels excited by the same wavelength.</p>
       <img src="Media/Manuals/AxioObs7/Im_setup_Acq.png" alt="" title="Imaging Setup">
       <p>You may have also noticed "Ref." in the EGFP channel line, it stands
         for Focus Reference and is related to an option to correct for objective
