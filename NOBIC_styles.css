@@ -479,6 +479,7 @@ body {
 .dropdownExp:hover .dropdownExp-content {
   display: block;
 }
+.dropdownExp:onclick = "void(0)"
 
 @media screen and (max-width: 500px) {
   .tableTeam img {
