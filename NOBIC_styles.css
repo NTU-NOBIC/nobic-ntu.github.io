@@ -78,6 +78,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.dropdown:onclick = "void(0)"
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
