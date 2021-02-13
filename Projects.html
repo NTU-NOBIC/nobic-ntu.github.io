@@ -4,10 +4,12 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>NOBIC - Current Projects</title>
+    <title>NOBIC | Current Projects</title>
     <link rel="stylesheet" href="NOBIC_styles.css">
     <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
-  </head>
+    </head> <script>
+document.addEventListener("click", x=>0)
+</script>
   <body>
     <div class="topnav" id="topnav">
       <div class="dropdown"> <button class="dropbtn"><a href="index.html">Home</a></button></div>
@@ -20,7 +22,7 @@
       </div>
       <div class="dropdown"> <button class="dropbtn"><a class="active">Research</a></button>
         <div class="dropdown-content"> <a href="Projects.html" class="active">Current
-            Projects</a> <a href="Publications.html">Publications</a> </div>
+            Projects</a> <a href="ProjectsPast.html">Past Projects</a> <a href="Publications.html">Publications</a> </div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
             Facilities</a></button>
@@ -37,9 +39,9 @@
       <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
       <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
     </div>
-    <div class="titlebar" style="background-image: url('Media/Banner_I.jpg')">
-      <span class="titlebar-text">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</span>
-    </div>
+    <div class="titlebar" style="background-image: url('Media/Banner_I.jpg')"> <span
+
+        class="titlebar-text">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</span> </div>
     <div class="container">
       <h1 class="heading">Research and Development in Optical Microscopy</h1>
       <h2 class="heading2"><a class="anchor" name="2-phot" id="2-phot"></a>2-photon
@@ -115,7 +117,7 @@
       <button class="Morebtn">Show </button> <br>
       <h2 class="heading2"><a class="anchor" name="BrillRaman" id="BrillRaman"></a>Brillouin
         and Raman Scattering Microscope</h2>
-      <p class="project"> <img src="Media/Projects/Brillouin.jpg" alt="" title="Brillouin-Raman microscope"><span
+      <p class="project"> <img src="Media/Projects/BRaman.jpg" alt="" title="Brillouin-Raman microscope"><span
 
           class="clear"> <br>
         </span>We are developing a custom microscope for confocal Brillouin and
@@ -194,29 +196,7 @@
 
           target="_blank">Leopold SCHMETTERER (SERI)</a></p>
       <button class="Morebtn">Show </button> <br>
-      <h2 class="heading2"><a class="anchor" name="COVID" id="COVID"></a>COVID-19
-        Detector</h2>
-      <p class="project"> Large-scale testing is one of the top strategies to
-        prevent the spread of COVID-19; however, its application is limited by
-        the cost and processing time of the standard Polymerase Chain Reaction
-        (PCR) tests. New rapid saliva-based tests promise to overcome those
-        limitations. We collaborate with the group of Prof. Peter Preiser (SBS,
-        NTU), who work on such a rapid test, which can give results on-site in 5
-        minutes or less. Our contribution lies in the development of a reader
-        that evaluates the test strips and provides the answers whether the
-        tested subject is COVID-19 positive or not. The reader, which uses
-        artificial intelligence to interpret changes in the colour of the test
-        strips, can be mass produced and easily used by non-expert operators.
-        Once brought to practice, we expect the test and the reader to help
-        re-open Singapore economy safely by making on-site COVID-19 massively
-        available.</p>
-      <em>Team:</em> <a href="Team.html#PeterTOROK">Peter TÖRÖK</a>, <a href="Team.html#JosepRELAT">Josep
-        RELAT GOBERNA</a>, <a href="Team.html#SeanKRUPP">Sean KRUPP</a><br>
-      <em>Collaborators:</em> <a href="http://sbs.ntu.edu.sg/Faculty/Peter_Preiser/Pages/Peter-Preiser.aspx"
-
-        target="_blank">Peter PREISER (NTU)</a>, <a href="http://personal.ie.cuhk.edu.hk/%7Eccloy/"
-
-        target="_blank">Chen Change LOY (NTU)</a>
+      
       <h1 class="heading">AI in Image Analysis</h1>
       <h2 class="heading2"><a class="anchor" name="AItracking" id="AItracking"></a>Deep-learning
         analysis of bacteria behaviour in multi-species communities</h2>
@@ -308,8 +288,11 @@
     <footer>
       <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
 
-          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a>
-        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
+
+          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+
+          target="_blank">NTU</a>
         <p>© NOBIC, last modified: <span id="datemod"></span></p>
       </div>
     </footer>
@@ -344,6 +327,5 @@
 
  		document.getElementById("datemod").innerHTML = document.lastModified;
 	</script>
-
   </body>
 </html>
