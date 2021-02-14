@@ -4,7 +4,7 @@
   column-width: auto;
   margin: auto;
   max-width: 900px;
-  text-align: justify;
+  text-align: left;
   object-fit: contain;
 }
 .container a {color:#498ec0}
@@ -12,9 +12,10 @@
 .container img {
 	max-width:100%;
 }
+.container p {text-align: justify}
 
 .header {
-font-size: 1.5rem;
+  font-size: 1.5rem;
   line-height: 3rem;
   font-family: "Arial", "Helvetica", "sans-serif";
   font-weight: normal;
@@ -212,9 +213,9 @@ font-size: 1.5rem;
  }
 .table td{
   padding-right: 0.7rem;
-padding-left: 0.7rem;
-padding-top: 0.4rem;
-padding-bottom: 0.4rem;
+  padding-left: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
    text-align: left;
 }
 .table thead td{
