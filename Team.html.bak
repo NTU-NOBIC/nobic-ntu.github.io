@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>NOBIC | Team</title>
+    <link rel="stylesheet" href="NOBIC_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <div class="topnav" id="topnav">
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html">Home</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html#Expertise">Our
+            Expertise</a></button>
+        <div class="dropdown-content"> <a href="Instrumentation.html">Optical
+            Imaging Instrumentation</a> <a href="Software.html">Software &amp;
+            Image Processing</a> <a href="Experiment.html">Microscopy
+            Applications &amp; Sample Preparation</a></div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a>Research</a></button>
+        <div class="dropdown-content"> <a href="Projects.html">Current Projects</a>
+          <a href="ProjectsPast.html">Past Projects</a> <a href="Publications.html">Publications</a>
+        </div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
+            Facilities</a></button>
+        <div class="dropdown-content"> <a href="Facilities.html#Users">For New
+            Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
+
+            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope">Booking
+            System</a> </div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Team.html" class="active">Our
+            Team</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
+            Us</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
+      <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
+    </div>
+    <div class="titlebar" style="background-image: url('Media/Banner_I.png')"> <span
+
+        class="titlebar-text">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</span> </div>
+    <div class="container" id="A">
+      <h1 class="heading">Director:</h1>
+      <a class="anchor" name="PeterTOROK" id="PeterTOROK"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/PeterTorok.png" alt="" title="Peter TÖRÖK"
+
+                class="portrait"> <span class="clear"> <br>
+              </span><strong>Peter TÖRÖK (Professor of Optical Physics)</strong>
+              <a href="javascript:decryptEmail('cGV0ZXIudG9yb2tAbnR1LmVkdS5zZw==');">✉</a>
+              <br>
+              <br>
+              Optical and optomechanical design (Zemax, SolidWorks).<br>
+              Research and development of novel techniques in optical imaging
+              and microscopy.<br>
+              Brillouin scattering imaging of biological systems.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="heading">Deputy Director:</h1>
+      <a class="anchor" name="SureshJESUTHASAN" id="SureshJESUTHASAN"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/SureshJesuthasan.png" alt="" title="Suresh JESUTHASAN"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>Suresh Jeyaraj JESUTHASAN (Associate Professor of
+                Behavioural Neurosciences)</strong> <a href="javascript:decryptEmail('c3VyZXNoakBudHUuZWR1LnNn');">✉</a>
+              <br>
+              <br>
+              2-photon neuronal activity imaging and optogenetics.<br>
+              Fluorescence imaging in cell and developmental biology.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="heading">Team members (in alphabetical order):</h1>
+      <a class="anchor" name="JosiahCHONG" id="JosiahCHONG"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/JosiahChong.png" alt="" title="Josiah CHONG"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>Josiah CHONG Shau Poh (Research Fellow)</strong>
+              <a href="javascript:decryptEmail('am9zaWFoLmNob25nQG50dS5lZHUuc2c=');">✉</a>
+              <br>
+              <br>
+              Research and development of systems for deep brain
+              imaging.<br>
+              Multi-photon microscopy. <br>
+              Optical coherence tomography. <br>
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="Louwrens" id="Louwrens"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/Louwrens.jpg" alt="" title="Louwrens van DELLEN"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>Louwrens Tjeerd Hendrik van DELLEN (Research
+                Associate)</strong> <a href="javascript:decryptEmail('bG91d3JlbnNAbnVzLmVkdS5zZw==');">✉</a>
+              <br>
+              <br>
+              Instrumentation Control and Automation.<br>
+              Interfacing Embedded Systems. <br>
+              GUI Software Development. <br>
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="FOOYongHwee" id="FooYongHwee"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/FooYongHwee.png" alt="" title="FOO Yong Hwee"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>FOO Yong Hwee (Senior Research Fellow)</strong> <a
+
+                s="" href="javascript:decryptEmail('eWhmb29AbnR1LmVkdS5zZw==');">✉</a>
+              <br>
+              <br>
+              Advanced Biofilm Imaging Facility at SCELSE operation.<br>
+              Fluorescent labels and probes, fluorescent proteins, fluorescent
+              tagging. <br>
+              Super-resolution microscopy (PALM/STORM/PAINT).<br>
+              Fluorescence correlation spectroscopy, fluorescence recovery after
+              photobleaching and single particle tracking.<br>
+              Image processing and analysis (Image J/FIJI).<br>
+              <button class="CVlink"><a href="CVs/CV_FOO%20Yong%20Hwee-2020b.pdf">CV
+                  (PDF)</a></button> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="BalaKANNAN" id="BalaKANNAN"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/BalaKannan.png" alt="" title="Balakrishnan KANNAN"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>Balakrishnan KANNAN (Assistant Director, Imaging
+                Facility)</strong> <a href="javascript:decryptEmail('a2JhbGFAbnR1LmVkdS5zZw==');">✉</a>
+              <br>
+              <br>
+              Advanced Optical Bio-Imaging Platform at LKCMedicine operation.<br>
+              Fluorescence correlation spectroscopy. <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="AalimKHAN" id="AalimKHAN"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/AalimKhan.png" alt="" title="Aalim KHAN" class="portrait"><span
+
+                class="clear"> <br>
+              </span> <strong>Mohammad Aalim KHAN (Research Associate)</strong>
+              <a href="javascript:decryptEmail('YWFsaW0ua2hhbkBudHUuZWR1LnNn');">✉</a>
+              <br>
+              <br>
+              Design and modelling of optical systems (Zemax).<br>
+              <br>
+              <button class="CVlink"><a href="CVs/CV_Aalim.pdf">CV (PDF)</a></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="SeanKRUPP" id="SeanKRUPP"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/SeanKrupp.png" alt="" title="Sean KRUPP" class="portrait"><span
+
+                class="clear"> <br>
+              </span><strong>Sean Ryan KRUPP (PhD Candidate)</strong> <a href="javascript:decryptEmail('S1JVUDAwMDFAZS5udHUuZWR1LnNn');">✉</a>
+              <br>
+              <br>
+              Novel manufacturing techniques, 3D printing, photolitography.<br>
+              Electronics and mechanical design. <br>
+              Rapid prototyping.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="RadekMACHAN" id="RadekMACHAN"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/RadekMachan.png" alt="" title="Radek MACHAN"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>Radek MACHÁŇ (Senior Research Fellow)</strong> <a
+
+                href="javascript:decryptEmail('cmFkZWsubWFjaGFuQG50dS5lZHUuc2c=');">✉</a>
+              <br>
+              <br>
+              Imaging facilities operation.<br>
+              Fluorescence correlation spectroscopy and fluorescence recovery
+              after photobleaching.<br>
+              Spectroscopic imaging, fluorescence lifetime imaging.<br>
+              Image processing and analysis (Image J/FIJI).<br>
+              <button class="CVlink"><a href="CVs/CV_Machan_A2.pdf">CV (PDF)</a></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="SHANGWanqi" id="ShangWanqi"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><img src="Media/Team/ShangWanqi.png" alt="" title="SHANG Wanqi"
+
+                class="portrait"><span class="clear"> <br>
+              </span> <strong>SHANG Wanqi (Research Associate)</strong> <a href="javascript:decryptEmail('d2FucWkuc2hhbmdAbnR1LmVkdS5zZw==');">✉</a>
+              <br>
+              <br>
+              Research and development of adaptive optics imaging systems.<br>
+              Lightsheet microscopy.<br>
+              Lightfield coherence control.<br>
+              Interferometry.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="YOWAiPing" id="YOWAiPing"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td> <img src="Media/Team/YowAiPing.png" alt="" title="Team Member"
+
+                class="portrait"><span class="clear"> <br>
+              </span><strong>YOW Ai Ping (Research Fellow)</strong> <a href="javascript:decryptEmail('YWlwaW5nLnlvd0BudHUuZWR1LnNn');">✉</a>
+              <br>
+              <br>
+              Image processing and analysis.<br>
+              Mechatronics and automation.<br>
+              Machine learning.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="heading">Former members (in alphabetical order):</h1>
+      <a class="anchor" name="JosepRELAT" id="JosepRELAT"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td> <strong>Josep RELAT GOBERNA (Research Fellow)</strong> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a class="anchor" name="LAIGheeHwee" id="LAIGheeHwee"></a>
+      <table class="tableTeam">
+        <tbody>
+          <tr>
+            <td><strong>LAI Ghee Hwee (Research Fellow)</strong> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
+
+          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
+
+          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+
+          target="_blank">NTU</a>
+        <p>© NOBIC, last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function TopnavFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+  
+    }
+
+    function decryptEmail(encoded) {
+      var address = atob(encoded);
+      window.location.href = "mailto:" + address;
+    }
+
+    document.getElementById("datemod").innerHTML = document.lastModified;
+    </script>
+  </body>
+</html>
