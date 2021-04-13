@@ -22,8 +22,8 @@ document.addEventListener("click", x=>0)
               <li><a href="#ConfDet">Detector Configuration</a></li>
               <li><a href="#ConfScan">Scanning Configuration</a></li>
               <li><a href="#ConfZ">Z-Stacks</a></li>
-              <li><a href="#ConfPos">Multi-Position Acquisition</a></li>
-              <li><a href="#ConfOtherM">Other Acquisition Modes</a></li>
+              <li><a href="#ConfPos">Multi-position</a></li>
+              <li><a href="#ConfOtherM">Time-lapse & Other Acquisition Modes</a></li>
               <li><a href="#ConfAFC">Using Hardware Autofocus</a></li>
               <li><a href="#ConfSave">Image Saving</a></li>
             </ul>
@@ -350,7 +350,7 @@ document.addEventListener("click", x=>0)
         here for a <a href="#FastScan">discussion</a> on whether to scan once
         at a slower speed or repeatedly at higher speed.</p>
       <p>5. <strong>Pinhole</strong> size is crucial in confocal imaging and
-        it's rather weird it's setting is hidden from the first view <strong>[<span
+        it's rather weird its setting is hidden from the first view <strong>[<span
 
             style="color: #cc9933;">C7</span>]</strong>. The usual trade-off
         between resolution and signal is <strong>1Airy unit (AU)</strong>. Note
@@ -437,8 +437,7 @@ document.addEventListener("click", x=>0)
       <p>3. Acquire the stack by pressing <strong>Start</strong> in the bottom
         bar of the software window.</p>
       <p></p>
-      <h1 class="h1"><a id="ConfPos" class="mozTocH1"></a> Multi-Position
-        Acquisition:</h1>
+      <h1 class="h1"><a id="ConfPos" class="mozTocH1"></a> Multi-position:</h1>
       <p>1. There are two basic types of multi-position acquisitions:
         large-field scans (moving the stage is used to capture an image of a
         continuous area larger than the maximum area accessible to the scanner)
@@ -457,7 +456,7 @@ document.addEventListener("click", x=>0)
         stage coordinates to the list.</p>
       <img src="Media/Manuals/Leica/Stage2.PNG" alt="" title="Positions"><br>
       <br>
-      <h1 class="h1"><a id="ConfOtherM" class="mozTocH1"></a> Other Acquisition
+      <h1 class="h1"><a id="ConfOtherM" class="mozTocH1"></a> Time-lapse & Other Acquisition
         Modes:</h1>
       <p> 1. So far we have used only the default mode which is <strong>XYZ</strong>.
         However, other modes are available in the drop-down menu in Acquisition
@@ -489,8 +488,8 @@ document.addEventListener("click", x=>0)
         image; by selecting ROIs, spectra of different parts of the image can be
         extracted.</p>
       <img src="Media/Manuals/Leica/spectrum.PNG" alt="" title="Spectrum">
-      <p>4. A straightforward extension of any of the other modes is including
-        the temporal dimension (e.g. XYZt). Below is shown an example of setting
+      <p>4. A straightforward extension of any of the acquisition modes is including
+        the <b>temporal dimension</b> (e.g. XYZt). Below is shown an example of setting
         up a time-lapse of 100 time points with approximately half a minute
         interval.</p>
       <img src="Media/Manuals/Leica/TimeLapse.PNG" alt="" title="Time-lapse"><br>
