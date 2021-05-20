@@ -53,11 +53,9 @@ document.addEventListener("click", x=>0)
         and check that all the sockets on this extension cord are on.</p>
       <p>2a. If you plan to use the widefield microscope (regular Axio Observer
         7) switch on X-Cite lamp (<b><span style="color: #8fc049;">2</span></b>),
-        Zeiss camera (<b><span style="color: #8fc049;">3</span></b>), filter
-        wheel (<b><span style="color: #8fc049;">4</span></b>).</p>
+        Zeiss camera (<b><span style="color: #8fc049;">3</span></b>).</p>
       <p>2b. Alternatively, if you plan to use Aurox spinning disk, switch on
-        the socket for Aurox extension cord (<strong><span style="color: #c0498f;">5</span></strong>)
-        and filter wheel (<b><span style="color: #8fc049;">4</span></b>).</p>
+        the socket for Aurox extension cord (<strong><span style="color: #c0498f;">5</span></strong>).</p>
       <img src="Media/Manuals/Aurox2.jpg" alt="" title="Aurox-On 1">&nbsp; <img
         src="Media/Manuals/Aurox1.jpg" alt="" title="Aurox-On 2">
       <p> 3. Optionally (if you plan to use it) switch on the sockets for
@@ -346,7 +344,8 @@ document.addEventListener("click", x=>0)
         selection of fluorescent dyes will pop up, where you can select and add
         dyes identical or close to those in your sample. Different transmitted
         light contrast modes can be added as well.</p>
-      <img src="Media/Manuals/AxioObs7/AddChan.JPG" alt="" title="Add channel">
+      <a class="anchor" name="Addchannnel" id="Addchannel"></a><img src="Media/Manuals/AxioObs7/AddChan.JPG"
+        alt="" title="Add channel">
       <p><img src="Media/Manuals/AxioImager/Acquire_AddChannel1b.png" alt="" title="Add Channel-pop up"></p>
       <p>Note that the selection is vastly redundant, since the number of actual
         settings for fluorescence is limited by the number of excitation
@@ -371,10 +370,10 @@ document.addEventListener("click", x=>0)
         Most settings are determined by the selections of the imaging modality
         (transmitted light or fluorescence) and for fluorescence channels by the
         selection of the fluorophore and should be loaded according to the
-        modality and fluorophore selected. A component which it potentially
-        makes sense to set here is the <a href="#condenser">condenser</a> for
-        transmitted light channels. The difference from lightpath setting in <a
-          href="#TL">Locate tab</a> is the presence of check boxes for each
+        modality and fluorophore selected.</p>
+      <p>A component which it potentially makes sense to set here is the <a href="#condenser">condenser</a>
+        for transmitted light channels. The difference from lightpath setting in
+        <a href="#TL">Locate tab</a> is the presence of check boxes for each
         setting which allow you to select whether the settings will be a part of
         the channel settings. In the example shown, both NA and Contrast mode
         are checked. That means for example that the current NA (0.3) will be a
@@ -386,13 +385,23 @@ document.addEventListener("click", x=>0)
         the image acquisition.</p>
       <p>Components the settings of which are a <strong>part of the channel
           settings are displayed in blue</strong>, components which are not a
-        part of the channel settings are diplayed in gray. <strong>Important:</strong>
-        make sure that all the <strong>important settings</strong> that differ
-        between individual channels (such as transmitted light vs.
-        epifluorescence lamp shutters and optical filters) <strong>are blue</strong>.
-        Otherwise you may have e.g. transmitted ligt contributing to the
+        part of the channel settings are diplayed in gray. <strong></strong>When
+        you add channels using <a href="#Addchannnel">Add-channel dialogue</a>,
+        the software should take care that all relevant components settings
+        change correctly when switching between channels (such as transmitted
+        light vs. epifluorescence lamp shutters and optical filters). In case
+        you observe issues (e.g. transmitted ligt contributing to the
         fluorescence channels or all fluorescence channels excited by the same
-        wavelength.</p>
+        wavelength), which may happen under some circumstances, revisited the
+        channels' settings to make sure all relevant components (shutters,
+        filter wheels) <strong>are blue</strong>.</p>
+      <p><strong>Important: </strong>To achieve the <strong>highest possible
+          imaging speed</strong>, you may, on the other hand, want to make sure
+        all <strong>components that don't need to change</strong> between
+        channels <strong>are gray</strong> (e.g. for multiple fluorescence
+        channels only the excitation filter wheel needs to switch, the
+        multi-band dichroic and emission filter are the same for all).<strong><br>
+        </strong></p>
       <img src="Media/Manuals/AxioObs7/Im_setup_Acq.png" alt="" title="Imaging Setup">
       <p>You may have also noticed "Ref." in the EGFP channel line, it stands
         for Focus Reference and is related to an option to correct for objective
