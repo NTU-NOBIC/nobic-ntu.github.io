@@ -283,6 +283,22 @@ body {
   float: right;
 }
 
+.LinkBut {
+  background: #bdbdbd;
+  font-size: 1rem;  
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.LinkBut:hover {
+  background: #46647d ;
+}
+
+.LinkBut:hover a{
+  color: #bdbdbd;
+}
+
 @media screen and (max-width: 860px) {
   .container img {
   max-width:100%;
