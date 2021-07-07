@@ -15,11 +15,11 @@ document.addEventListener("click", x=>0)
   <body>
     <div class="topnav" id="topnav">
       <div class="dropdown"> <button class="dropbtn"><a href="index.html" class="active">Home</a></button></div>
-      <div class="dropdown"> <button class="dropbtn"><a href="index.html#Expertise">Our
+      <div class="dropdown"> <button class="dropbtn"><a href="Expertise.html">Our
             Expertise</a></button>
-        <div class="dropdown-content"> <a href="Instrumentation.html">Optical
-            Imaging Instrumentation</a> <a href="Software.html">Software &amp;
-            Image Processing</a> <a href="Experiment.html">Microscopy
+        <div class="dropdown-content"> <a href="Expertise.html#Instrument">Optical
+            Imaging Instrumentation</a> <a href="Expertise.html#Software">Software
+            &amp; Image Processing</a> <a href="Expertise.html#Experiment">Microscopy
             Applications &amp; Sample Preparation</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a>Research</a></button>
@@ -33,12 +33,15 @@ document.addEventListener("click", x=>0)
             Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
 
             href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope">Booking
-            System</a> </div>
+            System</a> <a href="Facilities.html#MicroFluor">Microscope Selector</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
             Team</a></button></div>
       <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
-            Us</a></button></div>
+            Us</a></button>
+        <div class="dropdown-content"> <a href="index.html#ResLab">NOBIC
+            Laboratory</a> <a href="index.html#workshop">Prototyping Workshop</a></div>
+      </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
       <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
     </div>
@@ -50,9 +53,11 @@ document.addEventListener("click", x=>0)
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade"> <a href="ImContest21.html"><img src="ImContest/ContestBanner.PNG" style="width:100%"></a>
-        <div style="position: absolute; bottom: 8px; right: 16px; color: white; font-size:calc(0.5rem + 0.5vw)">“Thorny Defense”
-        by Tay Wei Hong, SCELSE Imaging Contest 2018 1st prize</div>
+      <div class="mySlides fade"> <a href="ImContest21.html"><img src="ImContest/ContestBanner.PNG"
+
+            style="width:100%"></a>
+        <div style="position: absolute; bottom: 8px; right: 16px; color: white; font-size:calc(0.5rem + 0.5vw)">“Thorny
+          Defense” by Tay Wei Hong, SCELSE Imaging Contest 2018 1st prize</div>
       </div>
       <div class="mySlides fade"> <img src="Media/index/Expertise.jpg" style="width:100%">
         <div class="text-gallery"><a href="index.html#Expertise">Our Expertise</a></div>
@@ -107,6 +112,10 @@ document.addEventListener("click", x=>0)
         <li>We collaborate with researchers and develop custom solutions to meet
           their specific imaging needs.</li>
       </ul>
+      <p>The research and development activities are centered around <a href="#ResLab">NOBIC
+          Imaging Research Laboratory</a> and the adjacent <a href="#workshop">prototyping
+          workshop</a>, where a variety of custom optomechanical parts can be
+        manufactured.&nbsp; </p>
       <p>We welcome collaboration with researchers and industrial partners. Do
         not hesitate to contact us if you think our expertise in optical imaging
         can help you to solve your scientific questions. Visit our <a href="https://github.com/NOBIC-NTU"
@@ -115,7 +124,7 @@ document.addEventListener("click", x=>0)
         solutions.</p>
       <h1 class="heading"><a class="anchor" name="Expertise" id="Expertise"></a>Our
         Expertise</h1>
-      <a href="Instrumentation.html">
+      <a href="Expertise.html#Instrument">
         <table class="tableExpert" style="background: #181818">
           <tbody>
             <tr>
@@ -128,7 +137,7 @@ document.addEventListener("click", x=>0)
             </tr>
           </tbody>
         </table>
-      </a> <a href="Software.html">
+      </a> <a href="Expertise.html#Software">
         <table class="tableExpert">
           <tbody>
             <tr>
@@ -141,7 +150,7 @@ document.addEventListener("click", x=>0)
             </tr>
           </tbody>
         </table>
-      </a> <a href="Experiment.html">
+      </a> <a href="Expertise.html#Experiment">
         <table class="tableExpert">
           <tbody>
             <tr>
@@ -158,6 +167,58 @@ document.addEventListener("click", x=>0)
       <div style="clear: both;"></div>
       <br>
       <br>
+    </div>
+    <a class="anchor" name="ResLab" id="ResLab" style="top:-0.5rem"> </a><img style="width:100%"
+
+      src="Media/Banner_Lab.JPG" alt="" title="NOBIC Imaging Research Laboratory">
+    <div class="container"> <br>
+      <p class="project"> <img src="Media/Index/Lab03.jpg" alt="" title="NOBIC Laboratory"><span
+
+          class="clear"> <br>
+        </span> The research laboratory and the adjacent prototyping workshop
+        form the focal point (pun intended) of NOBIC. This is where research
+        into novel optical imaging modalities as well as building and testing of
+        custom imaging instrumentation takes place. Check out our current <a href="Projects.html">research
+          projects</a> to see what we are working on here.<br>
+        <br>
+        The laboratory also houses a prototype of <a href="Projects.html#2-phot">NOBIC
+          2-photon microscope</a> and an <a href="Projects.html#OCT">OCT</a>
+        system in a room ready for live-animal imaging.</p>
+      <br>
+      <div class="labtextR"> <img src="Media/Index/Lab01.jpg" alt="" title="NOBIC Laboratory"><span
+
+          class="clear"> </span><br>
+        The laboratory is equipped with:
+        <ul>
+          <li>3 large and 2 smaller optical tables</li>
+          <li>a glove box for clean assembly</li>
+          <li>3D printer</li>
+          <li>inverted epifluorescence microscope and a stereo-microscope</li>
+          <li>space, tools and components to build optical systems.</li>
+        </ul>
+      </div>
+      <a class="anchor" name="workshop" id="workshop"></a>
+      <h1>Prototyping Workshop</h1>
+      <p class="labtext"> <img src="Media/Index/Workshop_CNC.jpg" alt="" title="Workshop - CNC"><span
+
+          class="clear"> <br>
+        </span> This is where precision manufacturing of custom (not only)
+        optomechanical parts takes place. The in-house manufacturing
+        capabilities allow us to build custom imaging instruments that are as
+        compact, robust and easy to use, as you would expect from a commercial
+        product.</p>
+      <div class="labtextR"><img src="Media/Index/Workshop_el.jpg" alt="" title="Workshop - electronics"><span
+
+          class="clear"> </span><br>
+        We can do:
+        <ul>
+          <li>precision CNC machining (Haas Super Mini Mill 2, Tormach 15L
+            Slant-PRO Lathe)</li>
+          <li>3D printing</li>
+          <li>electronics assembly </li>
+          <li>...</li>
+        </ul>
+      </div>
       <br>
       <br>
       <br>
