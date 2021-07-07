@@ -3,10 +3,17 @@
   font-size: 1rem;
   column-width: auto;
   margin: auto;
-  max-width: 900px;
+  max-width: 70%;
   text-align: left;
   object-fit: contain;
 }
+
+@media screen and (max-width: 1400px) {
+  .container {
+  max-width:900px;
+  }
+}
+
 .container a {color:#c0498e}
 .container a:hover {color:#888b8d}
 .container img {
