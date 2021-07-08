@@ -191,7 +191,6 @@
   font-weight: normal;
   color: #56004d;
   margin: auto;
-  max-width: 900px;
 }
 .h2 {
   font-size: 1rem;
@@ -200,7 +199,6 @@
   font-weight: bold;
   color: black;
   margin: auto;
-  max-width: 900px;
 }
       
       a.mozTocH1 {
