@@ -1,3 +1,4 @@
+ 
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -270,12 +271,6 @@ body {
   object-fit: contain;
 }
 
-@media screen and (max-width: 1400px) {
-  .container {
-  max-width:1000px;
-  }
-}
-
 .container a:link {
   color:#46647d;
   text-decoration: none;
@@ -306,7 +301,7 @@ body {
   color: #bdbdbd;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1105px) {
   .container img {
   max-width:100%;
   float: none;
@@ -636,16 +631,34 @@ Morebtn.content {
   .clear {display: block;}
 }
 
-.labtextR {
-   overflow: hidden;
-   text-align: left;
+.labcontainer {
+  column-count: 2;
+  column-width: 400px;
+  text-align: left;
 }
 
-.labtextR img{
-  max-width: 350px;
-  height: auto;
-  padding: 2rem 2rem;
+.labcontainer img {
+  max-width: 400px;
+  overflow: hidden;
   float: right;
+}
+
+.labtext {overflow: hidden;}
+
+.labtext img{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  float: none;
+}
+
+@media screen and (max-width: 1105px) {
+  .labcontainer img {
+  max-width: 400px;
+  float: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -680,5 +693,3 @@ Morebtn.content {
 }
 .footer a:hover  {color: #46647d}
             
-     
-
