@@ -19,10 +19,20 @@
 .container img {
 	max-width:100%;
         float: right;
-	padding: 0rem 2rem;
+	padding: 2rem 2rem;
 }
 .container p {
 	text-align: justify
+}
+
+@media screen and (max-width: 800px) {
+  .container img {
+	max-width:99%;
+	display: block;
+        float: none;
+	margin-left: auto;
+	margin-right: auto;
+	}
 }
 
 .header {
