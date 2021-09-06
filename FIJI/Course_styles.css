@@ -18,7 +18,7 @@
 .container a:hover {color:#888b8d}
 .container img {
 	max-width:100%;
-        float: right;
+        float: none;
 	padding: 2rem 2rem;
 }
 .container p {

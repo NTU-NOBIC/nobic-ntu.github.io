@@ -105,20 +105,35 @@ document.addEventListener("click", x=>0)
           <li>histogram scaling, LUT</li>
           <li>background subtraction</li>
           <li>sharpening</li>
-          <li>denoising</li>
+          <li>denoising, smoothing</li>
           <li>deconvolution</li>
           <li>...</li>
         </ul>
+        <li>Image filters (Median, Gaussian blur, ...)</li>
         <li>Arithmetic operations on images</li>
-        <li>Image filters</li>
         <li>Image stack registration</li>
         <li>Segmentation</li>
         <ul>
-          <li>preprocessing (blur, median filter ...)</li>
-          <li>thresholding (global, local)</li>
-          <li>binary mask operations (watershed, opening, closure, ...)</li>
+          <li>preprocessing (filters, edge detection)</li>
+          <li>(automatic) thresholding (global, local)</li>
+          <li>binary mask operations (Erode, Dilate, Open = Erode + Dilate,
+            Close = Dilate + Erode, Watershed)</li>
           <li>object counting</li>
           <li>ROIs and masks</li>
+        </ul>
+        <li>Fast Fourier Transform (FFT)</li>
+        <ul>
+          <li>spatial and frequency domain (spatial frequency)</li>
+          <li>frequency domain filtering</li>
+        </ul>
+        <li>Colocalisation</li>
+        <ul>
+          <li>Coloc 2, JACoP</li>
+          <li>Pearson correlation coefficient<br>
+            <img src="Pearson.PNG" alt="" title="Pearson"></li>
+          <li>Manders Split coefficients<br>
+            <img src="Manders.PNG" alt="" title="Manders"></li>
+          <li>Thresholds&nbsp; and significance in colocalisation (Costes)</li>
         </ul>
       </ul>
       <br>
