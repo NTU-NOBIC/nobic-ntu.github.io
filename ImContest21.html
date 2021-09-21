@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>NOBIC | Image Contest '21</title>
-    <link rel="stylesheet" href="NOBIC_styles.css">
+    <link rel="stylesheet" href="Imcontest/Contest_styles.css">
     <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
     <script>
 document.addEventListener("click", x=>0)
@@ -30,8 +30,11 @@ document.addEventListener("click", x=>0)
         <div class="dropdown-content"> <a href="Facilities.html#Users">For New
             Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
 
-            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope">Booking
-            System</a> </div><a href="Facilities.html#MicroFluor">Microscope Selector</a>
+            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope"
+
+            target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
+            Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
+            to FIJI</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
             Team</a></button></div>
@@ -43,20 +46,92 @@ document.addEventListener("click", x=>0)
       <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
       <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
     </div>
-    <div style="position: relative;  color: white; font-size:calc(0.5rem + 0.5vw)">
-      <img style="width:100%" src="ImContest/ContestBanner.PNG" alt="" title="Image Contest '21">
-      <div style="position: absolute; bottom: 8px; right: 16px">“Thorny Defense”
-        by Tay Wei Hong, SCELSE Imaging Contest 2018 1st prize</div>
-    </div>
+    <br>
+    <br>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade"> <img src="ImContest/Finalists/Pushing%20boundaries_anonymous.jpg">
+        <p class="heading1-gallery" style="color:#ffff00"> 1st Place</p>
+        <p class="heading1-gallery">Pushing boundaries</p>
+        <p class="heading2-gallery"><u>Harsha Mahabaleshwar</u> (LKCMedicine)</p>
+        <p class="text-gallery"> Two-day-old zebrafish embryos mounted end to
+          end, and their developing fins imaged on Zeiss LSM800 – Axio
+          Imager.Z2, using 40x W Plan-Apochromat objective, 488 nm and 561 nm
+          lasers, and tile function. Images were stitched on Fiji/ImageJ and
+          further processed using its maximum intensity projection, background
+          subtraction and brightness-contrast functions to highlight the
+          details. </p>
+        <span class="clear"> <br>
+        </span> </div>
+      <div class="mySlides fade"> <img src="ImContest/Finalists/Hungry%20Scientist%27s%20Ferrero%20Rocher_anonymous.jpg">
+        <p class="heading1-gallery" style="color:#99ffff"> 2nd Place</p>
+        <p class="heading1-gallery">Hungry Scientist's Ferrero Rocher </p>
+        <p class="heading2-gallery"><u>Natalie Yeo</u>, Ng Chun Yi and Christine
+          Cheung (LKCMedicine)</p>
+        <p class="text-gallery"> Human patient-derived endothelial cells coating
+          a microcarrier bead within a fibrin gel, stained for F-actin (red) and
+          nuclei (cyan). Fibrin gels were ~2mm-thick and seeded in an 8-well
+          chambered coverslip well. Image was acquired with an inverted laser
+          scanning confocal microscope (LSM800, Carl Zeiss) using a
+          Plan-Apochromat 20x/0.80 objective lens. Two-channel Z-stack images
+          (AF568 and DAPI) of beads were captured using ZEN software (blue
+          edition, Carl Zeiss) with 100 – 200 Z-slices were acquired for the
+          bead. To correct for differences in signal intensity across the large
+          Z-axis range of each bead, the setting ‘auto-Z brightness correction’
+          was checked with laser power adjusted at 3 - 4 positions along the
+          Z-axis. Final image is maximum intensity Z-projection with channels
+          combined to form a composite image. Scale bar, 100 µm. </p>
+        <span class="clear"> <br>
+        </span> </div>
+      <div class="mySlides fade"> <img src="ImContest/Finalists/The%20Coccoid%20Entanglement_anonymous.jpg">
+        <p class="heading1-gallery" style="color:#ff6600"> 3rd Place</p>
+        <p class="heading1-gallery">The Coccoid Entanglement</p>
+        <p class="heading2-gallery"><u>Choo Pei Yi</u> (SCELSE)</p>
+        <p class="text-gallery"> Imaged here are strings of Enterococcus
+          faecalis cells, incapable of separation due to a mutation in a cell
+          wall hydrolase gene. Cells were pulsed sequentially in two different
+          colored cell wall labelling fluorescent probes to distinguish between
+          the old (red) and new (cyan) cell wall. Images were acquired using the
+          Carl Zeiss ELYRA PS.1 and processed via Structured illumination
+          microscopy (SIM) at 100x magnification. Scale bar: 2 μm </p>
+        <span class="clear"> <br>
+        </span> </div>
+      <!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a></div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center"> <span class="dottext" onclick="currentSlide(1)">1st
+        place | </span> <span class="dottext" onclick="currentSlide(2)">2nd
+        place | </span><span class="dottext" onclick="currentSlide(3)">3rd
+        place</span> </div>
     <div class="container">
-      <h2 class="heading2">Let your microscopy images win attractive prizes!</h2>
-      <p>NOBIC would like to invite all users of NOBIC imaging facilities (AOBIP
-        at LKCMedicine and ABIF at SCELSE) to participate at NOBIC Image Contest
-        2021. The contest is open for image submission from until <strong>August
-          1st 2021</strong>. An international panel of judges comprising
-        representatives from academia and industry will select three winners who
-        will receive prizes contributed by LKCMedicine, SCELSE and sponsors of
-        the contest:</p>
+      <h2 class="heading2">NOBIC Image Contest 2021</h2>
+      <p>NOBIC has organised an image contest for users of NOBIC imaging
+        facilities (AOBIP at LKCMedicine and ABIF at SCELSE). The contest was
+        open for image submission during July 2021. We have received 29 images
+        which were then anonymously evaluated by an international panel of
+        judges comprising representatives from academia and industry:</p>
+      <ul>
+        <li>Prof. Peter Török, NOBIC, NTU, Singapore, panel chair</li>
+        <li>Dr. Anne Beghin, SiMBA, MBI, NUS, Singapore, panel vice chair</li>
+        <li>Dr. Karthik Damodaran, Sciencewerke Pte Ltd, Singapore</li>
+        <li>Dr. Samuel Ko, Carl Zeiss Pte Ltd, Singapore</li>
+        <li>Dr. Marie Olšinová, IMCF, Charles University in Prague, Czech
+          Republic</li>
+        <li>Dr. Šárka Pokorná, Weizmann Institute of Science, Israel</li>
+        <li>Dr. Thankiah Sudhaharan, A*STAR Microscopy Platform, Singapore</li>
+      </ul>
+      <p> In the first round, the judges selected 10 finalists and in the second
+        round they selected 3 winners from among the finalists. We's like to
+        congratulate here to the winners and finalists and to express our thanks
+        to the panel of judges. Last but not least, we'd like to thank all
+        participants of the contest. There were more great images than there
+        could be finalists. We hope many more equally fascinating images will be
+        acquired at NOBIC Facilities and we are looking forward to helping you
+        along the journey.</p>
+      <p>Prizes for the winners were contributed by LKCMedicine, SCELSE and
+        sponsors of the contest: </p>
       <p style="max-width: 900px; text-align:center"><a href="http://www.zeiss.com.sg/microscopy"
 
           target="_blank"><img style="float: none; padding:50px 100px; width: 150px"
@@ -68,151 +143,120 @@ document.addEventListener("click", x=>0)
             src="ImContest/SWLogo.png" alt="" title="Science Werke Pte Ltd"></a>
         <span class="clear"> <br>
         </span></p>
-      <h2 class="heading2">What can I win?</h2>
-      <ul>
-        <li>2x high-end binoculars (Conquest HD <a href="https://www.zeiss.com/consumer-products/int/nature-observation/binoculars/conquest-hd/conquest-hd-10x42.html"
+      <p> For more details refer to the contest <a href="ImContest/NOBIC%20Image%20Contest.pdf"
 
-            target="_blank">10x42</a> and <a href="https://www.zeiss.com/consumer-products/int/nature-observation/binoculars/conquest-hd/conquest-hd-8x42.html"
-
-            target="_blank">8x42</a>), contributed by Carl Zeiss Pte Ltd.</li>
-        <li>Noise-cancelling headphones.</li>
-      </ul>
-      <p> + 3 sets of assorted chambered slides and dishes contributed by
-        Sciencewerke Pte Ltd for each of the three winners. </p>
-      <h2 class="heading2">Who can participate?</h2>
-      <p> Any user of NOBIC imaging facilities (AOBIP at LKCMedicine and ABIF at
-        SCELSE). </p>
-      <h2 class="heading2">What images can I submit?</h2>
-      <p> Any images acquired using the equipment at NOBIC imaging facilities.
-        For more information refer to the contest <a href="ImContest/Terms&amp;Cond.pdf"
-
-          target="_blank">terms and conditions</a>. </p>
-      <h2 class="heading2">When can I submit my images?</h2>
-      <p> Between <b>28/06/2021</b> and <b>01/08/2021</b>. </p>
-      <h2 class="heading2">How can I participate?</h2>
-      <ul>
-        <li style="text-align: left"> If you have an <b>NTU account</b> or an <b>NTU
-            associate account</b>, fill in the integrated Registration and Image
-          Submission Form:<br>
-          <br>
-          <button class="LinkBut"><a href="https://forms.office.com/r/jCqTMFS5bx"
-
-              target="_blank">Participant Registration and Image Submission Form</a></button><br>
-          <br>
-          For instructions on filling the form<br>
-          <br>
-          <ol class="more">
-            <li style="text-align: left"><i>Form Questions 1 – 4:</i> Provide
-              your name, email address and affiliation.</li>
-            <li style="text-align: left"><i>Form Questions 5 – 11:</i> If others
-              have contributed to the submitted image, you can list them as
-              co-authors here (maximum 3 co-authors besides the submitting
-              author). See section B of <a href="ImContest/Terms&amp;Cond.pdf"
-
-                target="_blank">terms and conditions</a> for more details.</li>
-            <li style="text-align: left"><i>Form Questions 12 – 14:</i> Provide
-              a title of the image (as catchy or as descriptive as you choose)
-              and a concise description of your image. The description is
-              divided into a public part, which can be published together with
-              your image (e.g. in the online gallery of finalists or elsewhere;
-              refer to section E of <a href="ImContest/Terms&amp;Cond.pdf" target="_blank">terms
-                and conditions</a>), and a private part accessible only for the
-              panel of judges (who are bound by confidentiality agreement, see
-              section D of <a href="ImContest/Terms&amp;Cond.pdf" target="_blank">terms
-                and conditions</a>), which may contain information you do not
-              wish to make public for the time being. The description should
-              contain all essential information about the image, especially: the
-              microscope and objective lens used, imaging modality, imaged area
-              dimensions (unless indicated by a scalebar in the image), type of
-              sample and main image processing steps leading to the submitted
-              image.</li>
-            <li style="text-align: left"><i>Form Questions 15 – 17:</i> Upload
-              the image file and indicate your acceptance of the terms and
-              conditions of the contest (see the contest <a href="ImContest/Terms&amp;Cond.pdf"
-
-                target="_blank">terms and conditions</a>). Make sure that:</li>
-            <ul>
-              <li style="text-align: left">The submitted image follows the
-                guidelines of section C of <a href="ImContest/Terms&amp;Cond.pdf"
-
-                  target="_blank">terms and conditions</a>.</li>
-              <li style="text-align: left">The file name is identical to the
-                image title (<i>Question 12</i>). Files with names not matching
-                the corresponding image title may be excluded from the contest.</li>
-              <li style="text-align: left">The submitted image is in a
-                ready-to-view form (e.g. RGB image with the correct lookup
-                tables applied), same as an image you would attach to a journal
-                manuscript.</li>
-            </ul>
-          </ol>
-          <button class="Morebtn">Read </button> <br>
-          <br>
-        </li>
-        <li style="text-align: left">If you have neither an NTU nor NTU
-          associate account, fill in the Registration Form:<br>
-          <br>
-          <button class="LinkBut"><a href="https://forms.office.com/r/LhZd1eFA5V"
-
-              target="_blank">Participant Registration Form</a></button><br>
-          <br>
-          For instructions on filling the form<br>
-          <br>
-          <ol class="more">
-            <li style="text-align: left"><i>Form Questions 1 – 4:</i> Provide
-              your name, email address and affiliation.</li>
-            <li style="text-align: left"><i>Form Questions 5 – 11:</i> If others
-              have contributed to the submitted image, you can list them as
-              co-authors here (maximum 3 co-authors besides the submitting
-              author). See section B of <a href="ImContest/Terms&amp;Cond.pdf"
-
-                target="_blank">terms and conditions</a> for more details.</li>
-            <li style="text-align: left"><i>Form Questions 12 – 14:</i> Provide
-              a title of the image (as catchy or as descriptive as you choose)
-              and a concise description of your image. The description is
-              divided into a public part, which can be published together with
-              your image (e.g. in the online gallery of finalists or elsewhere;
-              refer to section E of <a href="ImContest/Terms&amp;Cond.pdf" target="_blank">terms
-                and conditions</a>), and a private part accessible only for the
-              panel of judges (who are bound by confidentiality agreement, see
-              section D of <a href="ImContest/Terms&amp;Cond.pdf" target="_blank">terms
-                and conditions</a>), which may contain information you do not
-              wish to make public for the time being. The description should
-              contain all essential information about the image, especially: the
-              microscope and objective lens used, imaging modality, imaged area
-              dimensions (unless indicated by a scalebar in the image), type of
-              sample and main image processing steps leading to the submitted
-              image.</li>
-            <li style="text-align: left">Send your image file to <a href="javascript:decryptEmail('bm9iaWMuZmFjaWxpdGllc0BlLm50dS5lZHUuc2c=');"><em>nobic.facilities[..]e.ntu.edu.sg</em>)</a>.
-              Use a file transfer service of your choice for files larger than
-              accepted email attachment (e.g. <a href="https://filesender.cesnet.cz/"
-
-                target="_blank">FileSender</a>).</li>
-            <li style="text-align: left"> Make sure that:</li>
-            <ul>
-              <li style="text-align: left">The submitted image follows the
-                guidelines of section C of <a href="ImContest/Terms&amp;Cond.pdf"
-
-                  target="_blank">terms and conditions</a>.</li>
-              <li style="text-align: left">The file name is identical to the
-                image title (<i>Question 12</i>). Files with names not matching
-                the corresponding image title may be excluded from the contest.</li>
-              <li style="text-align: left">The submitted image is in a
-                ready-to-view form (e.g. RGB image with the correct lookup
-                tables applied), same as an image you would attach to a journal
-                manuscript.</li>
-            </ul>
-            <li style="text-align: left"><i>Form Questions 15 – 17:</i> Upload
-              the image file and indicate your acceptance of the terms and
-              conditions of the contest (see the contest <a href="ImContest/Terms&amp;Cond.pdf"
-
-                target="_blank">terms and conditions</a>).</li>
-          </ol>
-          <button class="Morebtn">Read </button> <br>
-        </li>
-      </ul>
-      <p> If you have any further questions, contact the organisers at <a href="javascript:decryptEmail('bm9iaWMuZmFjaWxpdGllc0BlLm50dS5lZHUuc2c=');"><em>nobic.facilities[..]e.ntu.edu.sg</em></a>.
+          title="NOBIC Image Contest 2021" target="_blank">announcement (PDF)</a>.
       </p>
-      <br>
+      <h1 class="heading">Other Finalists (in alphabetical order of image
+        titles):</h1>
+    </div>
+    <div class="finalist-container" style="margin-top: -100px;"> <img src="ImContest/Finalists/Enraged%20Sprouts_anonymous.jpg"
+
+        title="Enraged Sprouts">
+      <p class="heading1-gallery">Enraged Sprouts</p>
+      <p class="heading2-gallery"><u>Natalie Yeo</u>, Ng Chun Yi and Christine
+        Cheung (LKCMedicine)</p>
+      <p class="text-gallery"> Human endothelial cells sprouting from a
+        cell-coated microcarrier bead within a fibrin matrix, stained for
+        F-actin (red) and nuclei (cyan). These endothelial cell-coated beads
+        were embedded within a ~2mm-thick fibrin gel in 8-well chambered slides.
+        Image was acquired with an inverted laser scanning confocal microscope
+        (LSM800, Carl Zeiss) using a Plan-Apochromat 20x/0.80 objective lens.
+        Two-channel Z-stack images (AF568 and DAPI) of beads were captured using
+        ZEN software (blue edition, Carl Zeiss) with 100 – 200 Z-slices were
+        acquired for each bead. To correct for differences in signal intensity
+        across the large Z-axis range of each bead, the setting ‘auto-Z
+        brightness correction’ was checked with laser power adjusted at 3 - 4
+        positions along the Z-axis. Final image is a maximum intensity
+        Z-projection with channels combined to form a composite image. Scale
+        bar, 100 µm. </p>
+      <span class="clear"><br>
+        <hr> </span> <img src="ImContest/Finalists/Hippocampus_anonymous.JPG"
+
+        title="Hippocampus">
+      <p class="heading1-gallery">Hippocampus</p>
+      <p class="heading2-gallery"><u>Vibhavari Bansal</u> (LKCMedicine)</p>
+      <p class="text-gallery"> Hippocampus from an Alzheimer's mouse model
+        stained by immunohistochemistry for 3 cellular stains. Taken on Axio
+        Scan.Z1 20x lens, single plane, 40 micron mounted section Scale bars:
+        650μm and 65μm for zoomed inset<br>
+        Hoechst (Turquoise)<br>
+        IBA1 (Green<br>
+        GFAP (Orange)<br>
+        MAP2 (Violet)</p>
+      <span class="clear"> <br>
+        <hr> </span> <img src="ImContest/Finalists/Intracranial%20vascular%20system%20in%20zebrafish%20emb_anonymous.jpg"
+
+        title="Intracranial vascular system in zebrafish embryo">
+      <p class="heading1-gallery">Intracranial vascular system in zebrafish
+        embryo </p>
+      <p class="heading2-gallery"><u>Kaliya Perumal Arun Kumar</u> and Philip
+        Ingham (LKCMedicine)</p>
+      <p class="text-gallery"> Intracranial vascular system in a double
+        transgenic reporter zebrafish embryo with GFP labelled endothelial cells
+        and DsRed labelled blood cells </p>
+      <span class="clear"> <br>
+        <hr> </span> <img src="ImContest/Finalists/Living%20on%20the%20Edge_anonymous.jpg"
+
+        title="Living on the Edge">
+      <p class="heading1-gallery">Living on the Edge</p>
+      <p class="heading2-gallery"><u>Choo Pei Yi</u> (SCELSE)</p>
+      <p class="text-gallery"> Imaged here is the edge of a mixed species
+        macrocolony biofilm (Escherichia coli and Staphylococcus aureus)
+        labelled with SYTO 9 (green) and propidium iodide (red). Dead S. aureus
+        cells can be seen speckled across a sea of E. coli cells. Image was
+        acquired on the Carl Zeiss Axio Observer Z1 at 100x magnification. Scale
+        bar: 5 μm </p>
+      <span class="clear"> <br>
+        <hr> </span> <img src="ImContest/Finalists/The%20colorful%20Jurong%20Sludge_anonymous.jpg"
+
+        title="The Colorful Jurong Sludge">
+      <p class="heading1-gallery">The Colorful Jurong Sludge</p>
+      <p class="heading2-gallery"><u>Wong Lan Li</u> (SCELSE)</p>
+      <p class="text-gallery"> The special filamentous microbial species taking
+        up fluorescently active nanoplastic (50um) that is neither the general
+        filamentous chloroflexi (magenta) nor the eubacteria (blue) </p>
+      <span class="clear"> <br>
+        <hr> </span> <img src="ImContest/Finalists/United,%20we%20will%20divide_anonymous.jpg"
+
+        title="United, we will divide">
+      <p class="heading1-gallery">United, we will divide</p>
+      <p class="heading2-gallery"><u>Chengxun Su</u> (LKCMedicine)</p>
+      <p class="text-gallery"> When a cell undergoes mitosis, the chromatin
+        condensates to chromosomes while most of the Ki-67 protein relocate to
+        the surface of the chromosomes. Here we observe this phenomenon in a
+        human aortic endothelial cell (center) through visualization of F-actin
+        (red), nuclei (blue), and Ki-67 (green). This well-orchestrated process
+        is the genesis of dividing cells.<br>
+        Imaging details:<br>
+        1. The microscope and objective lens used: inverted Confocal Airyscan
+        Microscope with live imaging capabilities (LSM800), 40x objective lens
+        with oil immersion<br>
+        2. Imaging modality: snapshot<br>
+        3. Imaged area dimensions: 203 micron x 203 micron<br>
+        4. Type of sample: fixed cells<br>
+        5. Main image processing steps: converted czi to tiff using Zen </p>
+      <span class="clear"> <br>
+        <hr> </span> <img src="ImContest/Finalists/Yin%20and%20Yang%20of%20the%20length%20axis_anonymous.jpg"
+
+        title="Yin and Yang of the length axis">
+      <p class="heading1-gallery">Yin and Yang of the length axis</p>
+      <p class="heading2-gallery"><u>Harsha Mahabaleshwar</u> (LKCMedicine)</p>
+      <p class="text-gallery"> Two-day-old zebrafish embryos mounted side by
+        side and imaged on Zeiss LSM800 – Axio Imager.Z2, using 10x
+        Plan-Neofluar objective, 488 nm and 561 nm lasers, and multiple tile
+        function. Images were stitched together using ZEN 2.3 and further
+        processed using the maximum intensity projection, background subtraction
+        and brightness-contrast functions on Fiji/ImageJ to highlight the
+        details. The right Tg(ET37:Egfp, 7xTCFXla.Siam:nlsmCherry) embryo shows
+        the enrichment of red WNT signaling in the posterior regions of the
+        trunk. In contrast, the left Tg(ET37:Egfp, BMPRE-AAV.Mlp:mKOFP2) embryo
+        shows the enrichment of red BMP signaling in the anterior regions of the
+        trunk. The two morphogen signaling pathways both depicted in red, are
+        active at the two opposite ends of the trunk axis. </p>
+      <span class="clear"> <br>
+      </span> </div>
+    <div class="container"> <br>
       <br>
       <a href="#TOP">BACK TO TOP</a></div>
     <footer>
@@ -237,24 +281,58 @@ document.addEventListener("click", x=>0)
       }
   
     }
-      
-      var Btn = document.getElementsByClassName("Morebtn");
-      var i;
-      
-      for (i = 0; i < Btn.length; i++) {
-        Btn[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.previousElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-         
-          } else {
-            content.style.display = "block";
             
-          }
-        });
+      var slideIndex = 0;
+      showSlides();
+      var slides,dots;
+
+      function plusSlides(position) {
+        slideIndex += position;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        else if(slideIndex < 1){slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
       }
 
+      function currentSlide(index) {
+          if (index > slides.length) {index = 1}
+          else if(index < 1){index = slides.length}
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+              slides[index-1].style.display = "block";  
+              dots[index-1].className += " active";
+          }
+      
+      function showSlides() {
+          var i;
+          slides = document.getElementsByClassName("mySlides");
+          dots = document.getElementsByClassName("dottext");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 20000); // Change image every 20 seconds
+      }
+
+
+      
  		document.getElementById("datemod").innerHTML = document.lastModified;
 	</script>
   </body>
