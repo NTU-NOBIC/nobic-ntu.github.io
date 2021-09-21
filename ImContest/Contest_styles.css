@@ -1,0 +1,434 @@
+ 
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.topnav {
+  background-color: #f0f0f0;
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  z-index: 92;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.topnav a {
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  margin: 0;
+}
+
+.dropdown .dropbtn{
+  font-size: 1.0rem;  
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  padding: 0.70rem 0rem;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #46647d;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  font-size: 1rem;
+  padding: auto;
+  background-color: #46647d;
+  min-width: 180px;
+  box-shadow: 6px 12px 5px rgba(0,0,0,0.5);
+  z-index: 92;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+  color: #46647d;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #181818;
+  color: white;
+}
+
+@media screen and (max-width: 770px) {
+  .topnav .dropdown {display: none;}
+  .topnav .dropdown:first-child {display: block;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 0.71rem 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .topnav.responsive {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.71rem 1rem;
+  }
+  
+  .topnav.responsive .dropdown {
+    float: none;
+    display: block;
+    text-align: left;
+    height: auto;
+    z-index: 92;
+  }
+  
+  .topnav.responsive .dropdown .dropbtn {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+  
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 0.71rem 1rem;
+  }
+ }
+
+/* Title bar in the header */
+.titlebar {
+  background-color: black; /* Used if the image is unavailable */
+  height: 8vw; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width: 100%;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: calc(50px + 4vw);
+
+}
+.titlebar-text {
+  color: #f0f0f0;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: normal;
+  font-size: calc(0.7rem + 1.2vw);
+  text-shadow: 2px 2px #181818;
+}
+
+{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  background: black;
+  margin-top: -30px;
+}
+
+.slideshow-container img {
+	height: 80vh;
+	margin-left:50px;
+	padding-top: 10px;
+	padding-right: 30px;
+	float: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .slideshow-container img {
+	width: 100%;
+  	max-width: 600px;
+	height: auto;
+	margin: auto;
+	padding-right: 0px;
+	float: none;
+	display: block;
+	}
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(150,150,150,0.8);
+}
+
+/* Caption text */
+.text-gallery {
+  color: white;
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.heading1-gallery {
+  padding-top: 25px;
+  color: white;
+  font-size: calc(0.7rem + 0.9vw);
+  text-align: left;
+  text-decoration: bold;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.heading2-gallery {
+  color: white;
+  font-size: calc(0.8rem + 0.3vw);
+  text-align: left;
+  text-decoration: bold;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.text-gallery a:link, .text-gallery a:visited {
+
+  font-family: "Arial", "Helvetica", "sans-serif";
+  color: white;
+  font-size: calc(0.8rem + 0.9vw);
+  padding: 10px 0px;
+  position: absolute;
+  text-decoration: none;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.text-gallery a:hover {
+  background-color: rgba(0,0,0,0.75);
+}
+
+/* The dots/bullets/indicators */
+.dottext {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  
+  cursor: pointer;
+  color: #bdbdbd;
+  font-weight: bold;
+  transition: color 0.6s ease;
+}
+
+.active, .dottext:hover {
+  color: #46647d;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.clear {clear: left; display: block; font-size: 0.1rem;}
+
+.container {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-size: 1rem;
+  column-width: auto;
+  margin: auto;
+  padding: 1rem 1rem;
+  padding-bottom: 6rem;
+  max-width: 75%;
+  text-align: justify;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+  max-width:900px;
+  }
+}
+
+/* Finalist container */
+.finalist-container {
+  max-width: 100%;
+  position: relative;
+  background: black;
+  margin-top: 0px;
+  magin-bottom: 0px;
+}
+
+.finalist-container img {
+	max-height: 80vh;
+	max-width: 90%;
+	margin-left:50px;
+	padding-top: 0px;
+	padding-right: 30px;
+	float: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .finalist-container img {
+  	width: 100%;
+	max-width: 600px;
+	height: auto;
+	margin: auto;
+	padding-right: 0px;
+	float: none;
+	display: block;
+	}
+}
+
+.container a:link {
+  color:#46647d;
+  text-decoration: none;
+}
+.container a:hover {
+  color:#bdbdbd
+}
+
+.container img {
+  max-width:100%;
+  overflow: hidden;
+  float: right;
+}
+
+@media screen and (max-width: 865px) {
+  .container img {
+  max-width:100%;
+  float: none;
+  }
+}
+
+.LinkBut {
+  background: #bdbdbd;
+  font-size: 1rem;  
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.LinkBut:hover {
+  background: #46647d ;
+}
+
+.LinkBut:hover a{
+  color: #bdbdbd;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: black;
+  text-align: left;
+  padding-top: 1rem;
+  text-weight: bold;
+}
+
+.heading2 {
+  font-size: 1.2rem;
+  color: black;
+  text-align: left;
+  padding-top: 0.7rem;
+  text-weight: bold;
+} 
+
+ a.anchor {
+    display: block;
+    position: relative;
+    top: -3.5rem;
+    visibility: hidden;
+}
+     
+.footer {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: normal;
+  color:white;
+  background: #181818;
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+      
+.footer a  {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover  {color: #46647d}
+            
