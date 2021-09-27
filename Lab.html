@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>NOBIC</title>
+    <link rel="stylesheet" href="NOBIC_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
+    <meta name="keywords" content="NOBIC, Bio-Imaging, Optical Microscopy, Light microscopy, Spectroscopy, Fluorescence, imaging facility, Optical design,
+                                   Optomechanical design, Adaptive optics, Image processing, Super-resolution, Deep Learning, Brillouin scattering,                                    Raman scattering, Fluorescence correlation spectroscopy, Fluorescence cross-correlation spectroscopy,                                   FCS, FCCS, Image correlation spectroscopy, Optical coherence tomography">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <div class="topnav" id="topnav">
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html" >Home</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Expertise.html">Our
+            Expertise</a></button>
+        <div class="dropdown-content"> <a href="Expertise.html#Instrument">Optical
+            Imaging Instrumentation</a> <a href="Expertise.html#Software">Software
+            &amp; Image Processing</a> <a href="Expertise.html#Experiment">Microscopy
+            Applications &amp; Sample Preparation</a></div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a>Research</a></button>
+        <div class="dropdown-content"> <a href="Projects.html">Current Projects</a>
+          <a href="ProjectsPast.html">Past Projects</a> <a href="Publications.html">Publications</a>
+        </div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
+            Facilities</a></button>
+        <div class="dropdown-content"> <a href="Facilities.html#Users">For New
+            Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
+
+            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope"
+
+            target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
+            Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
+            to FIJI</a></div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
+            Team</a></button></div>
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
+            Us</a></button>
+        <div class="dropdown-content"> <a href="Lab.html" class="active">NOBIC Laboratory</a>
+          <a href="Lab.html#workshop">Prototyping Workshop</a></div>
+      </div>
+      <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
+      <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
+    </div>
+    <br>
+    <br>
+    <img style="width:100%" src="Media/Banner_Lab.jpg" alt="" title="NOBIC Imaging Research Laboratory">
+    <div class="container"> <br>
+      <div class="labcontainer">
+        <p style="text-align: justify"> The research laboratory and the adjacent
+          prototyping workshop form the focal point (pun intended) of NOBIC.
+          This is where research into novel optical imaging modalities as well
+          as building and testing of custom imaging instrumentation takes place.
+          Check out our current <a href="Projects.html">research projects</a>
+          to see what we are working on here.</p>
+        <br>
+        The laboratory also houses a prototype of <a href="Projects.html#2-phot">NOBIC
+          2-photon microscope</a> and an <a href="Projects.html#OCT">OCT</a>
+        system in a room ready for live-animal imaging. <br>
+        &nbsp;&nbsp; <br>
+        <div> The laboratory is equipped with:<br>
+          <br>
+          <strong>-</strong>&nbsp; 3 large and 2 smaller optical tables<br>
+          <strong>-</strong>&nbsp; a glove box for clean assembly<br>
+          <strong>-</strong>&nbsp; 3D printer<br>
+          <strong>-</strong>&nbsp; <a href="ABIF/NOBIClab.html" target="_blank">inverted
+            epifluorescence microscope and a stereo-microscope</a><br>
+          <strong>-</strong>&nbsp; space, tools and components to build optical
+          systems.<br>
+        </div>
+        <br>
+        <br>
+        <img src="Media/index/Lab03.jpg" alt="" title="NOBIC Laboratory" width="300px">
+      </div>
+      <a class="anchor" name="workshop" id="workshop"></a>
+      <h1>Prototyping Workshop</h1>
+      <p class="labtext"> This is where precision manufacturing of custom (not
+        only) optomechanical parts takes place. The in-house manufacturing
+        capabilities allow us to build custom imaging instruments that are as
+        compact, robust and easy to use, as you would expect from a commercial
+        product.<br>
+        <br>
+        <img src="Media/index/Workshop_CNC2.png" alt="" title="Workshop - CNC" style="float: none"></p>
+      <div class="labcontainer"> <em>We can do:</em> <br>
+        <br>
+        <strong>-</strong>&nbsp; precision CNC machining (Haas Super Mini Mill
+        2, Tormach 15L Slant-PRO Lathe) <strong>-&nbsp;</strong> 3D printing<br>
+        <strong>-</strong>&nbsp; electronics assembly <br>
+        <strong>-</strong>&nbsp; ...<br>
+        <br>
+        <img src="Media/index/Workshop_el.jpg" alt="" title="Workshop - electronics"
+
+          clas="labimg"> </div>
+      <br>
+      <br>
+      <br>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
+
+          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
+
+          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+
+          target="_blank">NTU</a>
+        <p> © NOBIC, last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function TopnavFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+  
+    }
+      
+      var slideIndex = 0;
+      showSlides();
+      var slides,dots;
+
+      function plusSlides(position) {
+        slideIndex += position;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        else if(slideIndex < 1){slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+      function currentSlide(index) {
+          if (index > slides.length) {index = 1}
+          else if(index < 1){index = slides.length}
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+              slides[index-1].style.display = "block";  
+              dots[index-1].className += " active";
+          }
+
+      function showSlides() {
+          var i;
+          slides = document.getElementsByClassName("mySlides");
+          dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 8000); // Change image every 8 seconds
+      }
+
+ 		document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+    
+  </body>
+</html>
