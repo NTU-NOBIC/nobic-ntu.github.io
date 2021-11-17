@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -8,7 +9,27 @@
     <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
     <script>
 document.addEventListener("click", x=>0)
-</script></head>
+</script><style>
+    lE {color: #888b8d; font-weight: bold;}
+    lC {color: #56004d; font-weight: bold;}
+    lS {color: #8ec049; font-weight: bold;}
+    c1 {color: #6633ff; font-weight: bold;}
+    c2 {color: #33ccff; font-weight: bold;}
+    c3 {color: #33cc00; font-weight: bold;}
+    c4 {color: #b3b300; font-weight: bold;}
+    c5 {color: #ffcc00; font-weight: bold;}
+    c6 {color: #ff6600; font-weight: bold;}
+    c7 {color: red; font-weight: bold;}
+    c8 {color: #cc33cc; font-weight: bold;}
+    o0 {color: black; font-weight: bold;}
+    o4 {color: red; font-weight: bold;}
+    o10 {color: #b3b300; font-weight: bold;}
+    o20 {color: #33cc00; font-weight: bold;}
+    o40 {color: #33ccff; font-weight: bold;}
+    o60 {color: #3333ff; font-weight: bold;}
+    o100 {color: #999999; font-weight: bold;}
+  </style>
+  </head>
   <body>
     <div class="topnav" id="topnav">
       <div class="dropdown"> <button class="dropbtn"><a href="index.html">Home</a></button></div>
@@ -24,23 +45,23 @@ document.addEventListener("click", x=>0)
           <a href="ProjectsPast.html">Past Projects</a> <a href="Publications.html">Publications</a>
         </div>
       </div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
-            Facilities</a></button>
+      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html"
+
+            class="active">Imaging Facilities</a></button>
         <div class="dropdown-content"> <a href="Facilities.html#Users">For New
             Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
 
             href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope"
 
             target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
-            Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
-            to FIJI</a></div>
+            Selector</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
             Team</a></button></div>
-            <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
+      <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
             Us</a></button>
-        <div class="dropdown-content"> <a href="Lab.html">NOBIC Laboratory</a>
-          <a href="Lab.html#workshop">Prototyping Workshop</a></div>
+        <div class="dropdown-content"> <a href="index.html#ResLab">NOBIC
+            Laboratory</a> <a href="index.html#workshop">Prototyping Workshop</a><a href="https://www.youtube.com/channel/UCwka5W-n2mfAqLUz8L5eorA"  target = "blank">YouTube Channel</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
       <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
@@ -128,274 +149,338 @@ document.addEventListener("click", x=>0)
           plan the training.</li>
       </ul>
       <h1 class="heading"><a class="anchor" name="Microscopes" id="Microscopes"></a>Microscopes</h1>
-      <p> Key to microscope locations: <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3446298%2c103.6761875%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da0f74ece2c57d:0xf9b808dd8a0e5f18%218m2%213d1.3446298%214d103.6783762"
+      <p> <strong>Key to microscope quick details</strong> (location /
+        fluorophores &amp; filters / objectives):</p>
+      <p><em>Location:</em> <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3446298%2c103.6761875%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da0f74ece2c57d:0xf9b808dd8a0e5f18%218m2%213d1.3446298%214d103.6783762"
 
-          target="_blank">Experimental Medicine Building</a> (<b style="color: #888b8d;">E</b>),
-        <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3218379%2c103.8466864%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da19dc19a9cf9f:0x422b93592a19b61a%218m2%213d1.3218379%214d103.8488751"
+          target="_blank">Experimental Medicine Building</a> (<le>E</le>), <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3218379%2c103.8466864%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da19dc19a9cf9f:0x422b93592a19b61a%218m2%213d1.3218379%214d103.8488751"
 
-          target="_blank">Clinical Sciences Building</a> (<b style="color: #56004d;">C</b>)
-        and <a href="http://www.scelse.sg/Contact" target="_blank">SCELSE </a>(<b
+          target="_blank">Clinical Sciences Building</a> (<lc>C</lc>) and <a href="http://www.scelse.sg/Contact"
 
-          style="color: #8ec049;">S</b>). </p>
-      <button type="button" class="collapsible">Epifluorescence microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/CZ_Axio_Observer_Z1.html" target="_blank">Carl Zeiss
-              Axio Observer Z1</a> – inverted epifluorescence microscope (<b style="color: #8ec049;">S</b>)
-          </li>
-          <br>
-          <li><a href="ABIF/CZ_Axio_Imager_M2.html" target="_blank">Carl Zeiss
-              Axio Imager M2</a> – upright epifluorescence microscope (<b style="color: #8ec049;">S</b>)
-          </li>
-          <br>
-          <li><a href="ABIF/Nikon_Eclipse_Ts2.html" target="_blank">Nikon
-              Eclipse Ts2 FL</a> – routine inverted epifluorescence microscope (<b
+          target="_blank">SCELSE </a>(<ls>S</ls>). </p>
+      <p><em>Fluorophores &amp; filters</em> (for fluorophore spectra refer e.g.
+        to <a href="https://www.fpbase.org/spectra/" title="FPBase spectra viewer"
 
-              style="color: #8ec049;">S</b>) </li>
-          <br>
-          <li><a href="AOBIP/InvertedWF_Nikon.html" target="_blank">Nikon
-              Eclipse Ti-E</a> - inverted epifluorescence microscope (<b style="color: #888b8d;">E</b>)</li>
-          <br>
-          <li><a href="AOBIP/UprightWF_Leica.html" target="_blank">Leica DM5500</a>
-            - upright epifluorescence microscope (<b style="color: #888b8d;">E</b>)</li>
-          <br>
-          <li><a href="AOBIP/UprightAxioImager.html" target="_blank">Carl Zeiss
-              Axio Imager M2</a> - upright epifluorescence microscope (<b style="color: #888b8d;">E</b>)</li>
-          <br>
-          <li><a href="ABIF/NOBIClab.html" target="_blank">EVOS FL Auto</a> -
-            inverted epifluorescence microscope (<b style="color: #888b8d;">E</b>)</li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Live-cell epifluorescence
-        (inverted) microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/Aurox.html" target="_blank">Carl Zeiss Axio Observer
-              7 with Aurox Clarity</a> - inverted widefield microscope with a
-            laser-free spinning disk module (<b style="color: #8ec049;">S</b>)<br>
-            <br>
-          </li>
-          <li><a href="AOBIP/CD7.html" target="_blank">Carl Zeiss Cell
-              Discoverer 7</a> - inverted widefield fluorescence microscope in a
-            closed box (<b style="color: #888b8d;">E</b>) </li>
-          <br>
-          <li><a href="AOBIP/InCell2200.html" target="_blank">GE IN Cell
-              Analyzer 2200</a> - high-content screening widefield fluorescence
-            microscope (<b style="color: #888b8d;">E</b>) </li>
-          <br>
-          <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
-              Operetta CLS</a> - high-content screening widefield and confocal
-            (spinning disk) microscope (<b style="color: #56004d;">C</b>) </li>
-          <br>
-          <li><a href="AOBIP/InvertedLiveCellAO7.html" target="_blank">Carl
-              Zeiss Axio Observer 7</a> - inverted live-cell widefield
-            fluorescence microscope (<b style="color: #56004d;">C</b>) </li>
-          <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/inverted-fluorescence-live-cell-microscope---ao7"
+          target="_blank">FPbase</a>):</p>
+      <ul>
+        <li> by exc. wavelength: (<c1>1</c1>) DAPI-like ( ≤ 405 nm), (<c2>2</c2>)
+          CFP-like (420-460 nm), (<c3>3</c3>) FITC/GFP-like (470-490 nm), (<strong
 
-              target="_blank">Leica DMI6000</a> - inverted live-cell widefield
-            fluorescence microscope (<b style="color: #56004d;">C</b>) </li>
+            style="color: #b3b300;">4</strong>) YFP-like (500-520 nm), (<c5>5</c5>)
+          Cy3/DsRed-like (530-560 nm), (<c6>6</c6>) mCherry/A568-like (560-590
+          nm), (<c7>7</c7>) Cy5-like (620-650 nm), (<c8>8</c8>) cy7-like
+          (&gt;650 nm) </li>
+        <li>(<strong>F</strong>) fixed exc and em. filter pairs, (<em><strong>F</strong></em>)
+          (at least partially) flexible combination of exc. and em., (<u><em><strong>F</strong></em></u>)
+          freely selectable emission range/spectral detection</li>
+      </ul>
+      <p><em>Objectives:</em></p>
+      <ul>
+        <li> by magnification: (<o0>A</o0>) &lt; 4x, (<o4>A</o4>) 4-5x, (<o10>A</o10>)
+          10x, (<o20>A</o20>) 16-32x, (<o40>A</o40>) 40-50x, (<o60>A</o60>)
+          60-75x, (<o100>A</o100>) 100-150x</li>
+        <li>by immersion &amp; working distance: (<strong>A</strong>) air, (<strong>W</strong>),
+          (<strong>O</strong>) oil, (<em><strong>A</strong></em>) long working
+          distance (≥ 2 mm or compatible with regular plastic-bottom dishes)<br>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/leica-dm6000"
+          <button type="button" class="collapsible">Epifluorescence microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/CZ_Axio_Observer_Z1.html" target="_blank">Carl
+                  Zeiss Axio Observer Z1</a> – inverted epifluorescence
+                microscope (<ls>S</ls> / <c1>1</c1><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7>
+                / <em><o4>4A</o4><o20>20A</o20><o40>40A</o40><o60>63A</o60></em><o60>63O</o60><o100>100O</o100>)
+              </li>
+              <br>
+              <li><a href="ABIF/CZ_Axio_Imager_M2.html" target="_blank">Carl
+                  Zeiss Axio Imager M2</a> – upright epifluorescence microscope
+                (<ls>S</ls> / <c1>1</c1><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6>
+                / <em><o10>10A</o10><o20>20A</o20></em><o40>40O</o40><o60>63O</o60><o100>100O</o100>)</li>
+              <br>
+              <li><a href="ABIF/Nikon_Eclipse_Ts2.html" target="_blank">Nikon
+                  Eclipse Ts2 FL</a> – routine inverted epifluorescence
+                microscope (<ls>S</ls> / <c1>1</c1><c3>3</c3><c5>5</c5> / <em><o10>10A</o10><o20>20A</o20><o40>40A</o40></em>)</li>
+              <br>
+              <li><a href="AOBIP/InvertedWF_Nikon.html" target="_blank">Nikon
+                  Eclipse Ti-E</a> - inverted epifluorescence microscope (<le>E
+                </le>/ <c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7> / <em><o4>4A</o4><o10>10A</o10><o20>20A</o20><o40>40A</o40><o60>60A</o60></em>)</li>
+              <br>
+              <li><a href="AOBIP/UprightWF_Leica.html" target="_blank">Leica
+                  DM5500</a> - upright epifluorescence microscope (<le>E</le> /
+                <c1>1</c1><c3>3</c3><c5>5</c5> / <em><o0>1.25A</o0><o4>5A</o4><o10>10A</o10></em><o20>20A</o20><o40>40A</o40><o60>63O</o60>)</li>
+              <br>
+              <li><a href="AOBIP/UprightAxioImager.html" target="_blank">Carl
+                  Zeiss Axio Imager M2</a> - upright epifluorescence microscope
+                (<le>E</le> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o4>4A</o4><o10>10A</o10><o20>20A</o20><o40>40W</o40><o60>63W</o60></em><o60>63O</o60>)</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="collapsible">Live-cell epifluorescence
+            (inverted) microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/Aurox.html" target="_blank">Carl Zeiss Axio
+                  Observer 7 with Aurox Clarity</a> - inverted widefield
+                microscope with a laser-free spinning disk module (<ls>S</ls> /
+                Widefield: <em><c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o10>10A</o10></em><o40>40A</o40><em><o60>63A</o60></em><o100>100O</o100>)
+              </li>
+              <br>
+              <li><a href="AOBIP/CD7.html" target="_blank">Carl Zeiss Cell
+                  Discoverer 7</a> - inverted widefield fluorescence microscope
+                in a closed box (<le>E</le> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c6>6</c6><c7>7</c7></em>
+                / <em><o4>5A</o4><o20>20A</o20></em><o20>20A</o20><o40>50W</o40>)
+              </li>
+              <br>
+              <li><a href="AOBIP/InCell2200.html" target="_blank">GE IN Cell
+                  Analyzer 2200</a> - high-content screening widefield
+                fluorescence microscope (<le>E</le> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o4>4A</o4><o10>10A</o10><o20>20A</o20></em><o40>40A</o40>)
+              </li>
+              <br>
+              <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
+                  Operetta CLS</a> - high-content screening widefield and
+                confocal (spinning disk) microscope (<lc>C</lc> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c7>7</c7><c8>8</c8></em>
+                / <em><o4>5A</o4><o10>10A</o10><o20>20A</o20></em><o20>20W</o20><o40>40W</o40><o60>63W</o60>)
+              </li>
+              <br>
+              <li><a href="AOBIP/InvertedLiveCellAO7.html" target="_blank">Carl
+                  Zeiss Axio Observer 7</a> - inverted live-cell widefield
+                fluorescence microscope (<lc>C</lc> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o10>10A</o10><o10>10A</o10><o20>20A</o20><o40>40A</o40></em><o40>40O</o40><o60>63O</o60>)
+              </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/inverted-fluorescence-live-cell-microscope---ao7"
 
-              target="_blank">Leica DMI6000</a> - inverted widefield microscope
-            for Calcium imaging (<b style="color: #56004d;">C</b>) </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Inverted confocal microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/CZ_LSM_780.html" target="_blank">Carl Zeiss LSM 780</a>
-            – laser scanning confocal with fast spectral detection (32-GaAsP
-            array) (<b style="color: #8ec049;">S</b>) </li>
-          <br>
-          <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl Zeiss ELYRA PS.1
-              with LSM 780 confocal</a> – super-resolution (SIM, PALM, STORM, …)
-            and TIRF microscope combined with a laser scanning confocal (<b style="color: #8ec049;">S</b>)
-          </li>
-          <br>
-          <li><a href="ABIF/Aurox.html" target="_blank">Carl Zeiss Axio Observer
-              7 with Aurox Clarity</a> - inverted widefield microscope with a
-            laser-free spinning disk module (<b style="color: #8ec049;">S</b>) </li>
-          <br>
-          <li><a href="AOBIP/LSM800Airy.html" target="_blank">Carl Zeiss LSM 800</a>
-            - inverted confocal with Airy scan super-resolution capability (<b style="color: #888b8d;">E</b>)
-          </li>
-          <br>
-          <li><a href="AOBIP/LSM800AiryLiveCell.html" target="_blank">Carl Zeiss
-              LSM 800</a> - inverted confocal with Airy scan super-resolution
-            capability and live-cell accessories (<b style="color: #56004d;">C</b>)
-          </li>
-          <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/inverted-spinning-disk-confocal-microscope-with-live-sr"
+                  target="_blank">Leica DMI6000</a> - inverted live-cell
+                widefield fluorescence microscope (<lc>C</lc>) </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/leica-dm6000"
 
-              target="_blank">Nikon Ti-E with Yokogawa CSU-W1 spinning disk</a>
-            - motorised inverted spinning disk confocal with 50 μm pinholes and
-            instant super-resolutiion capability (<b style="color: #56004d;">C</b>)
-          </li>
+                  target="_blank">Leica DMI6000</a> - inverted widefield
+                microscope for Calcium imaging (<lc>C</lc>) </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
-              Operetta CLS</a> - high-content screening widefield and confocal
-            (spinning disk) microscope (<b style="color: #56004d;">C</b>) </li>
           <br>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Upright confocal microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="AOBIP/LSM800Upright.html" target="_blank">Carl Zeiss LSM
-              800</a> - upright confocal (<b style="color: #888b8d;">E</b>) </li>
-          <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/upright-confocal-microscope---spe"
+          <button type="button" class="collapsible">Inverted confocal
+            microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/CZ_LSM_780.html" target="_blank">Carl Zeiss LSM
+                  780</a> – laser scanning confocal with fast spectral detection
+                (32-GaAsP array) (<ls>S</ls> / <u><em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em></u>
+                / <o20>20A</o20><em><o20>20A</o20><o40>40A</o40></em><o40>40O</o40><o60>63O</o60>)
+              </li>
+              <br>
+              <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl Zeiss ELYRA
+                  PS.1 with LSM 780 confocal</a> – super-resolution (SIM, PALM,
+                STORM, …) and TIRF microscope combined with a laser scanning
+                confocal (<ls>S</ls> / confocal: <u><em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em></u>
+                / <em><o10>10A</o10></em><o20>20A</o20><o40>40O</o40><o60>63W</o60><o60>63O</o60><o100>100O</o100>)
+              </li>
+              <br>
+              <li><a href="ABIF/Aurox.html" target="_blank">Carl Zeiss Axio
+                  Observer 7 with Aurox Clarity</a> - inverted widefield
+                microscope with a laser-free spinning disk module (<ls>S</ls> /
+                Spinning disk: <c1>1</c1><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7>
+                / <em><o10>10A</o10></em><o40>40A</o40><em><o60>63A</o60></em><o100>100O</o100>)
+              </li>
+              <br>
+              <li><a href="AOBIP/LSM800Airy.html" target="_blank">Carl Zeiss LSM
+                  800</a> - inverted confocal with Airy scan super-resolution
+                capability (<le>E</le> / <u><em><c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7></em></u>
+                / <em><o10>10A</o10><o20>20A</o20></em><o20>20A</o20><o40>40O</o40><o60>63O</o60>)
+              </li>
+              <br>
+              <li><a href="AOBIP/LSM800AiryLiveCell.html" target="_blank">Carl
+                  Zeiss LSM 800</a> - inverted confocal with Airy scan
+                super-resolution capability and live-cell accessories (<lc>C</lc>
+                / <u><em><c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7></em></u>
+                / <em><o10>10A</o10></em><o20>20A</o20><em><o40>40A</o40></em><o40>40O</o40><o60>63W</o60><o60>63O</o60>)
+              </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/inverted-spinning-disk-confocal-microscope-with-live-sr"
 
-              target="_blank">Leica SPE</a> - upright confocal (<b style="color: #56004d;">C</b>)
-          </li>
+                  target="_blank">Nikon Ti-E with Yokogawa CSU-W1 spinning disk</a>
+                - motorised inverted spinning disk confocal with 50 μm pinholes
+                and instant super-resolutiion capability (<lc>C</lc>) </li>
+              <br>
+              <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
+                  Operetta CLS</a> - high-content screening widefield and
+                confocal (spinning disk) microscope (<lc>C</lc> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c7>7</c7><c8>8</c8></em>
+                / <em><o4>5A</o4><o10>10A</o10><o20>20A</o20></em><o20>20W</o20><o40>40W</o40><o60>63W</o60>)
+              </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/upright-confocal-microscope---sp8"
-
-              target="_blank">Leica SP8</a> - upright confocal microscope with
-            micromanipulator and micro-injection rig (<b style="color: #56004d;">C</b>)
-          </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Lightsheet microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="AOBIP/LightsheetEMB.html" target="_blank">Carl Zeiss
-              Lightsheet Z.1</a> - multi-view lightsheet microscope (<b style="color: #888b8d;">E</b>)
-          </li>
           <br>
-          <li><a href="AOBIP/LightsheetCSB.html" target="_blank"> Carl Zeiss
-              Lightsheet Z.1</a> - lightsheet microscope with a cleared tissue
-            add-on (<b style="color: #56004d;">C</b>) </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">TIRF and Super-resolution
-        microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl Zeiss ELYRA PS.1
-              with LSM 780 confocal</a> – super-resolution (SIM, PALM, STORM, …)
-            and TIRF microscope combined with a laser scanning confocal (<b style="color: #8ec049;">S</b>)
-          </li>
+          <button type="button" class="collapsible">Upright confocal microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="AOBIP/LSM800Upright.html" target="_blank">Carl Zeiss
+                  LSM 800</a> - upright confocal (<le>E</le> / <u><em><c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7></em></u>
+                / <em><o4>5A</o4><o10>10A</o10><o20>20W</o20><o40>40W</o40><o60>63W</o60></em>)
+              </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/upright-confocal-microscope---spe"
+
+                  target="_blank">Leica SPE</a> - upright confocal (<lc>C</lc>)
+              </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/upright-confocal-microscope---sp8"
+
+                  target="_blank">Leica SP8</a> - upright confocal microscope
+                with micromanipulator and micro-injection rig (<lc>C</lc>) </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/high-modality-tirf-microscope---nstorm"
-
-              target="_blank">Nikon N-STORM</a> - super-resolution (PALM, STORM,
-            …) and TIRF microscope with FRAP capability (<b style="color: #56004d;">C</b>)
-          </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Multi-photon microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-for-in-vivo-imaging"
-
-              target="_blank">Bruker Prairie Ultima</a> - upright multiphoton
-            microscope with 405 nm and 561 nm lasers for uncaging (<b style="color: #56004d;">C</b>)
-          </li>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-with-flim-fret"
-
-              target="_blank">Upright multi-photon microscope with FLIM
-              capability</a> - upright microscope with tunable IR laser
-            (multi-photon) and visible lasers (confocal) and time-resolved
-            detection (FLIM) (<b style="color: #56004d;">C</b>) </li>
+          <button type="button" class="collapsible">Lightsheet microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="AOBIP/LightsheetEMB.html" target="_blank">Carl Zeiss
+                  Lightsheet Z.1</a> - multi-view lightsheet microscope (<le>E</le>
+                / <em><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6></em> /
+                <em><o4>5A</o4><o20>20W</o20></em>) </li>
+              <br>
+              <li><a href="AOBIP/LightsheetCSB.html" target="_blank"> Carl Zeiss
+                  Lightsheet Z.1</a> - lightsheet microscope with a cleared
+                tissue add-on (<lc>C</lc>) </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-for-optogenetics"
-
-              target="_blank">Upright multi-photon microscope for optogenetics</a>
-            - upright microscope with 2 IR lasers (multi-photon imaging and
-            optogenetics) and visible lasers (confocal) (<b style="color: #56004d;">C</b>)
-          </li>
           <br>
-          <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/mesoscope"
+          <button type="button" class="collapsible">TIRF and Super-resolution
+            microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/CZ_ELYRA.html" target="_blank">Carl Zeiss ELYRA
+                  PS.1 with LSM 780 confocal</a> – super-resolution (SIM, PALM,
+                STORM, …) and TIRF microscope combined with a laser scanning
+                confocal (<ls>S</ls> / TIRF and SR: <em><c1>1</c1><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o10>10A</o10></em><o20>20A</o20><o40>40O</o40><o60>63W</o60><o60>63O</o60><o100>100O</o100>)
+              </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/high-modality-tirf-microscope---nstorm"
 
-              target="_blank">Multi-photon mesoscope</a> - upright system for
-            multi-photon imaging of large (5 mm diameter) fields of view (<b style="color: #56004d;">C</b>)
-          </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">High-throughput
-        microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="AOBIP/InCell2200.html" target="_blank">GE IN Cell
-              Analyzer 2200</a> - high-content screening widefield fluorescence
-            microscope (<b style="color: #888b8d;">E</b>) </li>
+                  target="_blank">Nikon N-STORM</a> - super-resolution (PALM,
+                STORM, …) and TIRF microscope with FRAP capability (<lc>C</lc>)
+              </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
-              Operetta CLS</a> - high-content screening widefield and confocal
-            (spinning disk) microscope (<b style="color: #56004d;">C</b>) </li>
           <br>
-          <li><a href="AOBIP/SlideScanner.html" target="_blank">Carl Zeiss Axio
-              Scan.Z1</a> - slide scanner for transmitted light and fluorescence
-            imaging (<b style="color: #56004d;">C</b>) </li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Specialised microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/BRaman.html" target="_blank">Custom Raman and
-              Brillouin </a> microspectroscopy setup (<b style="color: #8ec049;">S</b>)</li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Stereo microscopes</button>
-      <div class="collcontent">
-        <ul>
-          <li><a href="ABIF/Basic.html" target="_blank">Carl Zeiss Discovery.V8</a>
-            – parallel (CMO) stereo microscope with an RGB camera (<b style="color: #8ec049;">S</b>)</li>
+          <button type="button" class="collapsible">Multi-photon microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-for-in-vivo-imaging"
+
+                  target="_blank">Bruker Prairie Ultima</a> - upright
+                multiphoton microscope with 405 nm and 561 nm lasers for
+                uncaging (<lc>C</lc>) </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-with-flim-fret"
+
+                  target="_blank">Upright multi-photon microscope with FLIM
+                  capability</a> - upright microscope with tunable IR laser
+                (multi-photon) and visible lasers (confocal) and time-resolved
+                detection (FLIM) (<lc>C</lc>) </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/multi-photon-microscope-for-optogenetics"
+
+                  target="_blank">Upright multi-photon microscope for
+                  optogenetics</a> - upright microscope with 2 IR lasers
+                (multi-photon imaging and optogenetics) and visible lasers
+                (confocal) (<lc>C</lc>) </li>
+              <br>
+              <li><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/mesoscope"
+
+                  target="_blank">Multi-photon mesoscope</a> - upright system
+                for multi-photon imaging of large (5 mm diameter) fields of view
+                (<lc>C</lc>) </li>
+            </ul>
+          </div>
           <br>
-          <li><a href="AOBIP/AxioZoomV16.html" target="_blank">Carl Zeiss Axio
-              Zoom V.16</a> – parallel (CMO) stereo microscope with
-            epifluorescence capability and an RGB camera (<b style="color: #888b8d;">E</b>)</li>
           <br>
-          <li><a href="ABIF/NOBIClab.html" target="_blank">Leica S6 D </a> -
-            Greenough stereo microscope with an RGB camera (<b style="color: #888b8d;">E</b>)</li>
-        </ul>
-      </div>
-      <br>
-      <br>
-      <a class="anchor" name="MicroFluor" id="MicroFluor"></a>
-      <h1> Microscope-Fluorophore Selector</h1>
-      <br>
-      <div> <iframe scrolling="no" src="https://entuedu-my.sharepoint.com/:x:/g/personal/yhfoo_staff_main_ntu_edu_sg/ETZNvDvTSPxEmHISkP_0HyABjGkH0IsKxnZkgqgRbXFYfQ?e=S9XtaF&amp;action=embedview&amp;wdAllowInteractivity=False&amp;ActiveCell=%27List%27%21B1&amp;Item=%27List%27%21A1%3AW47&amp;wdInConfigurator=True"
+          <button type="button" class="collapsible">High-throughput microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="AOBIP/InCell2200.html" target="_blank">GE IN Cell
+                  Analyzer 2200</a> - high-content screening widefield
+                fluorescence microscope (<le>E</le> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c6>6</c6><c7>7</c7></em>
+                / <em><o4>4A</o4><o10>10A</o10><o20>20A</o20></em><o40>40A</o40>)
+              </li>
+              <br>
+              <li><a href="AOBIP/Operetta.html" target="_blank">Perkin-Elmer
+                  Operetta CLS</a> - high-content screening widefield and
+                confocal (spinning disk) microscope (<lc>C</lc> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c4>4</c4><c5>5</c5><c7>7</c7><c8>8</c8></em>
+                / <em><o4>5A</o4><o10>10A</o10><o20>20A</o20></em><o20>20W</o20><o40>40W</o40><o60>63W</o60>)
+              </li>
+              <br>
+              <li><a href="AOBIP/SlideScanner.html" target="_blank">Carl Zeiss
+                  Axio Scan.Z1</a> - slide scanner for transmitted light and
+                fluorescence imaging (<lc>C</lc> / <em><c1>1</c1><c2>2</c2><c3>3</c3><c5>5</c5><c6>6</c6><c7>7</c7><c8>8</c8></em>
+                / <em><o4>5A</o4><o4>5A</o4><o10>10A</o10></em><o20>20A</o20><o40>40A</o40>)
+              </li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="collapsible">Specialised microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/BRaman.html" target="_blank">Custom Raman and
+                  Brillouin </a> microspectroscopy setup (<ls>S</ls>)</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="collapsible">Stereo microscopes</button>
+          <div class="collcontent">
+            <ul>
+              <li><a href="ABIF/Basic.html" target="_blank">Carl Zeiss
+                  Discovery.V8</a> – parallel (CMO) stereo microscope with an
+                RGB camera (<ls>S</ls>)</li>
+              <br>
+              <li><a href="AOBIP/AxioZoomV16.html" target="_blank">Carl Zeiss
+                  Axio Zoom V.16</a> – parallel (CMO) stereo microscope with
+                epifluorescence capability and an RGB camera (<le>E</le> / <c1>1</c1><c3>3</c3><c5>5</c5>)</li>
+              <br>
+              <li><a href="ABIF/NOBIClab.html" target="_blank">Leica S6 D </a>
+                - Greenough stereo microscope with an RGB camera (<le>E</le>)</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <a class="anchor" name="MicroFluor" id="MicroFluor"></a>
+          <h1> Microscope-Fluorophore Selector</h1>
+          <br>
+          <div> <iframe scrolling="no" src="https://entuedu-my.sharepoint.com/:x:/g/personal/yhfoo_staff_main_ntu_edu_sg/ETZNvDvTSPxEmHISkP_0HyABjGkH0IsKxnZkgqgRbXFYfQ?e=S9XtaF&amp;action=embedview&amp;wdAllowInteractivity=False&amp;ActiveCell=%27List%27%21B1&amp;Item=%27List%27%21A1%3AW47&amp;wdInConfigurator=True"
 
-          height="650" frameborder="0" width="1800"></iframe> </div>
-      <br>
-      <br>
-      <br>
-      <a href="#TOP">BACK TO TOP</a></div>
-    <footer>
-      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
+              height="650" frameborder="0" width="1800"></iframe> </div>
+          <br>
+          <br>
+          <br>
+          <a href="#TOP">BACK TO TOP</a></li>
+        <b style="color: #8ec049;"> </b>
+      </ul>
+      <b style="color: #8ec049;"> </b></div>
+    <b style="color: #8ec049;">
+      <footer>
+        <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
 
-          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
+            target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
 
-          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+            target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
 
-          target="_blank">NTU</a>
-        <p>© NOBIC, last modified: <span id="datemod"></span></p>
-      </div>
-    </footer>
-    <script>
+            target="_blank">NTU</a>
+          <p>© NOBIC, last modified: <span id="datemod"></span></p>
+        </div>
+      </footer>
+      <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function TopnavFunction() {
       var x = document.getElementById("topnav");
@@ -427,6 +512,6 @@ document.addEventListener("click", x=>0)
     }
 
  		document.getElementById("datemod").innerHTML = document.lastModified;
-	</script>
+	</script> </b>
   </body>
 </html>
