@@ -729,6 +729,31 @@ labcontainer :: after {
   }
 }    
 
+.FluoMtable {
+   
+   border-color:black;
+   border-width: 1px;
+   border-style: solid;
+   border-collapse: collapse;
+   table-layout: fixed;
+   width: 1800px;
+ }
+
+.FluoMtable td{
+
+  text-align: center;
+  border-color:black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.label1 {
+  color: black;
+  background-color: #ddd;
+  font-weight: bold;
+  height: 1.5rem;	
+}
+
 .footer {
   font-size: 0.8rem;
   line-height: 1.6rem;
