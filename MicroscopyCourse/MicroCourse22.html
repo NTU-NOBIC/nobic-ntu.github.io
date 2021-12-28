@@ -59,10 +59,13 @@ document.addEventListener("click", x=>0)
         its basic principles.</p>
       <h2 style="text-align: center;">The course will be a hybrid event held at:</h2>
       <ul>
-        <li> <b>LKCMedicine, <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3446298%2c103.6761875%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da0f74ece2c57d:0xf9b808dd8a0e5f18%218m2%213d1.3446298%214d103.6783762"
+        <li> <b>LKCMedicine, <a href="https://www.google.com.sg/maps/place/Lee+Kong+Chian+School+of+Medicine/%401.3446298%2c103.6761875%2c17z/data=%213m1%214b1%214m5%213m4%211s0x31da0f74ece2c57d:0xf9b808dd8a0e5f18%218m2%213d1.3446298%214d103.6783762"
+
               title="EMB map" target="_blank">EMB</a>, Level 1 Seminar room</b>
-          (next to Admin Office) - for on-site participation kindly <strong><a
-              href="https://forms.office.com/r/Fpq5RF830S" title="NOBIC Microscopy Course 2022 registration"
+          (next to Admin Office) - for on-site participation kindly <strong><a
+
+              href="https://forms.office.com/r/Fpq5RF830S" title="NOBIC Microscopy Course 2022 registration"
+
               target="_blank">register</a></strong>. Please note that the number
           of on-site participants is limited. </li>
       </ul>
@@ -143,75 +146,20 @@ document.addEventListener("click", x=>0)
       <p><a href="#TOP">BACK TO TOP</a></p>
     </div>
     <footer>
-      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
-          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
-          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+      <div class="footer"> <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx"
+
+          target="_blank">LKCMedicine</a> | <a href="http://www.scelse.sg/Home"
+
+          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+
           target="_blank">NTU</a>
         <p> © NOBIC, last modified: <span id="datemod"></span></p>
       </div>
     </footer>
     <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function TopnavFunction() {
-      var x = document.getElementById("topnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-  
-    }
-      
-      var slideIndex = 0;
-      showSlides();
-      var slides,dots;
-
-      function plusSlides(position) {
-        slideIndex += position;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        else if(slideIndex < 1){slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-
-      function currentSlide(index) {
-          if (index > slides.length) {index = 1}
-          else if(index < 1){index = slides.length}
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-              slides[index-1].style.display = "block";  
-              dots[index-1].className += " active";
-          }
-
-      function showSlides() {
-          var i;
-          slides = document.getElementsByClassName("mySlides");
-          dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex> slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 8000); // Change image every 8 seconds
-      }
-
+    
  		document.getElementById("datemod").innerHTML = document.lastModified;
 	</script>
+    
   </body>
 </html>
