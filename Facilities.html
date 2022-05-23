@@ -155,10 +155,9 @@ document.addEventListener("click", x=>0)
         <li>Safety training required to work at LKCMedicine laboratories and/or
           <a href="http://www.scelse.sg/Page/labsafety" target="_blank">SCELSE
             laboratories</a>. If you plan to use a microscope containing lasers,
-          you will also need NTU online laser safety modules (Non-ionizing
-          Radiation: Introduction to NIR &amp; local regulations - OHS2NRR01;
-          Non-ionizing Radiation: Laser Safety Training - OHS2NRL01) and in some
-          cases NEA N3 laser license (check with us if in doubt).<br>
+          you will also need NTU online laser safety module (Working with
+          Non-Ionising Radiation - OHS2NIR01) and in some cases NEA N3 laser
+          license (check with us if in doubt).<br>
           <br>
         </li>
         <li><a href="https://myscope.training/" target="_blank">MyScope</a>
@@ -1405,10 +1404,7 @@ document.addEventListener("click", x=>0)
       }
     }
       
-    function decryptEmail(encoded) {
-    var address = atob(encoded);
-    window.location.href = "mailto:" + address;
-    }
+   
       
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -1424,8 +1420,12 @@ document.addEventListener("click", x=>0)
         }
       });
     }
-
+ function decryptEmail(encoded) {
+    var address = atob(encoded);
+    window.location.href = "mailto:" + address;
+    }
  		document.getElementById("datemod").innerHTML = document.lastModified;
 	</script>
+    
   </body>
 </html>
