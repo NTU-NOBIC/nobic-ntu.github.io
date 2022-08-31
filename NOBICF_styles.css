@@ -97,8 +97,8 @@ body {
   color: white;
 }
 
-.header-text a:hover  {color: #bdbdbd}
 .header-text a:visited  {color: white}
+.header-text a:hover  {color: #bdbdbd}
       
 .footer {
   font-size: 0.8rem;
