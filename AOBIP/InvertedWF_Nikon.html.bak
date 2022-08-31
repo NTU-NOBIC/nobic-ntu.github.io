@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Inverted Fluorescence Microscope</title>
+    <link rel="stylesheet" href="AOBIP_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown"> <a> ⁝☰</a>
+          <div class="dropdown-content"> <a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/inverted-fluorescence-microscope---tie"
+              target="_blank">Page @ NTU website</a><a href="https://www.nobic.sg/Facilities.html"
+              target="_blank">NOBIC</a><a href="https://ppms.asia/singascope/planning/?item=198"
+              target="_blank">Booking System</a></div>
+          | <span class="header-text">Inverted Fluorescence Microscope - Nikon
+            Eclipse Ti-E </span></div>
+        <br>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <img src="Media/NikonInvWF.PNG" alt="" title="Inverted WF Nikon Eclipse Ti-E">
+      <p><a class="anchor" name="TOP" id="TOP"></a>This motorised inverted
+        widefield fluorescence microscope features a <b>fast and sensitive
+          sCMOS camera</b> for fluorescence detection and a colour camera for
+        transmitted light. <b>Hardware autofocus</b> ensures continuously
+        stable focusing throughout long imaging experiments. The system is
+        suitable for a wide variety of widefield imaging experiments
+        (brightfield, phase contrast, multi-channel fluorescence) on live or
+        fixed samples. </p>
+      <h1 class="h1">Available techniques:</h1>
+      <ul>
+        <li>Transmitted light imaging (brightfield, phase contrast)</li>
+        <li>Widefield multi-channel fluorescence imaging with a fast and
+          sensitive camera </li>
+        <li>Long-term time-lapse imaging (with hardware autofocus)</li>
+      </ul>
+      <h1 class="h1"> Objectives:</h1>
+      <ul>
+        <li>CFI Plan Fluor 4x/0.13 dry, FWD 17.2 mm, CG - (Phase contrast)</li>
+        <li>CFI Plan Fluor 10x/0.3 dry, FWD 16 mm, CG 0.17 mm (Phase contrast)</li>
+        <li>CFI S Plan Fluor ELWD 20x/0.45 dry, FWD 8.2 - 6.9 mm, CG 0 - 2 mm
+          (Phase contrast)</li>
+        <li>CFI S Plan Fluor ELWD 40x/0.6 dry, FWD 2.8 - 3.6 mm, CG 0 - 2 mm
+          (Phase contrast) </li>
+        <li>CFI S Plan Fluor ELWD 60x/0.7 dry, FWD 1.8 - 2.6 mm, CG 0.1 - 1.3 mm
+          (Phase contrast)<br>
+          [FWD = free working distance, CG = cover glass]</li>
+      </ul>
+      <b>Tube lenses:</b> 1x, 1.5x <br>
+      <br>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Fluorescence
+        excitation sources:</h1>
+      <ul>
+        <li>X-Cite 120 LED </li>
+      </ul>
+      <h1 class="h1">Filter sets:</h1>
+      <ul>
+        <li>DAPI (377/50; 409 ; 447/60)</li>
+        <li>GFP (466/40; 495; 525/50)</li>
+        <li>mCherry (562/40; 593; 641/75)</li>
+        <li>Cy5 (628/40; 660; 692/40)</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Detectors and
+        cameras:</h1>
+      <ul>
+        <li>Hamamatsu Orca Flash 4.0 V2 sCMOS (2048x2048 pixels, 6.5 µm/pixel)</li>
+        <li>Nikon DS-Ri 1 colour CCD camera (1280x1024 pixels, 6.45 µm/pixel)</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Software:</h1>
+      <ul>
+        <li>MetaMorph, NIS Elements D</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Other features:</h1>
+      <ul>
+        <li>Long-working distance condenser N.A. 0.52 W.D. 30 mm</li>
+        <li>Manual stage</li>
+        <li>Motorised filter turret</li>
+        <li>Motorised focus drive</li>
+        <li>PFS hardware autofocus</li>
+      </ul>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="overview1" rowspan="2" colspan="1">Usage fees [SGD/hour]</td>
+            <td class="overview2">NTU</td>
+            <td class="overview2">Others</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td class="overview1">Location</td>
+            <td rowspan="1" colspan="2">EMB 03-02Y</td>
+          </tr>
+          <tr>
+            <td class="overview1">Contact</td>
+            <td rowspan="1" colspan="2">nobic.facilities@e.ntu.edu.sg</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="https://www.nobic.sg/Facilities.html" target="_blank">NOBIC</a>
+        | <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx" target="_blank">LKCMedicine</a>
+        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>

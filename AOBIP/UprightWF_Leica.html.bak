@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Upright Fluorescence Microscope</title>
+    <link rel="stylesheet" href="AOBIP_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown"> <a> ⁝☰</a>
+          <div class="dropdown-content"><a href="https://www.ntu.edu.sg/medicine/research/research-equipment/detail/upright-fluorescence-microscope---dm5500"
+              target="_blank">Page @ NTU website</a><a href="https://www.nobic.sg/Facilities.html"
+              target="_blank">NOBIC</a><a href="https://ppms.asia/singascope/planning/?item=199"
+              target="_blank">Booking System</a></div>
+          | <span class="header-text">Upright Fluorescence Microscope - Leica
+            DM5500 </span></div>
+        <br>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <img src="Media/LeicaUpWF.PNG" alt="" title="Upright WF Leica DM5500">
+      <p></p>
+      <p><a class="anchor" name="TOP" id="TOP"></a>This motorised upright
+        widefield fluorescence microscope features a <b>fast and sensitive
+          sCMOS camera</b> for fluorescence detection and a colour camera for
+        transmitted light. The available objectives cover a broad range of
+        magnifications from 1.25x to 60x. </p>
+      <h1 class="h1"><a id="mozTocId836461" class="mozTocH1"></a>Available
+        techniques:</h1>
+      <ul>
+        <li>Transmitted light imaging (brightfield, phase contrast, DIC)</li>
+        <li>Widefield multi-channel fluorescence imaging with a fast and
+          sensitive camera </li>
+      </ul>
+      <h1 class="h1"> Objectives:</h1>
+      <ul>
+        <li>HCX PL Fluotar 1.25x/0.04 dry, FWD 3.7 mm, CG -</li>
+        <li>HCX PL Fluotar 5x/0.15 dry, FWD 13.7 mm, CG -</li>
+        <li>HC PL Apo 10x/0.4 dry, FWD 2.2 mm, CG 0.17 mm (Phase contrast)</li>
+        <li>HC PL Apo 20x/0.7 dry, FWD 0.59 mm, CG 0.17 mm (Phase contrast, DIC)</li>
+        <li>HCX PL Apo 40x/0.75 dry, FWD 0.28 mm, CG 0.17 mm (Phase contrast,
+          DIC)</li>
+        <li>HC PL Apo 63x/1.4-0.6 oil, FWD 0.14 mm, CG 0.17 mm (DIC)<br>
+          [FWD = free workg distance, CG = cover glass]</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Fluorescence
+        excitation sources:</h1>
+      <ul>
+        <li> Metal-halide epifluorescence lamp<br>
+        </li>
+      </ul>
+      <h1 class="h1">Filter sets:</h1>
+      <ul>
+        <li>DAPI (350/50; 400; 460/50)</li>
+        <li>FITC (470/40; 495; 525/50)</li>
+        <li>Cy3 (545/25; 565; 605/70)</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Detectors and
+        cameras:</h1>
+      <ul>
+        <li>DFC 9000 GTC sCMOS grey-scale (2048x2048 pixels, 6.5 µm/pixel)</li>
+        <li>DFC 450 C colour camera (2560x1920 pixels, 3.4 µm/pixel)</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Software:</h1>
+      <ul>
+        <li>LAS-X</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Other features:</h1>
+      <ul>
+        <li>Motorised stage</li>
+        <li>Motorised filter turret</li>
+        <li>Tile imaging module</li>
+      </ul>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="overview1" rowspan="2" colspan="1">Usage fees [SGD/hour]</td>
+            <td class="overview2">NTU</td>
+            <td class="overview2">Others</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td class="overview1">Location</td>
+            <td rowspan="1" colspan="2">EMB 03-02Y</td>
+          </tr>
+          <tr>
+            <td class="overview1">Contact</td>
+            <td rowspan="1" colspan="2">nobic.facilities@e.ntu.edu.sg</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="https://www.nobic.sg/Facilities.html" target="_blank">NOBIC</a>
+        | <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx" target="_blank">LKCMedicine</a>
+        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>

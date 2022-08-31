@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>NOBIC Facilities | Guidelines</title>
+    <link rel="stylesheet" href="AOBIP_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header"> <span class="header-text">Essential Guidelines for
+          NOBIC Facilities Users</span><br>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <ol>
+        <li>Users who have <strong>booked the microscope</strong> have a right
+          to use the system within the booked time. Any other users using the
+          microscope at the time have to stop their work without delay if a user
+          who has booked the time asks them to do so. Users who find an <strong>unattended
+            running experiment</strong> when they reach the microscope during
+          their booked slot have the right to stop the experiment and sign the
+          previous user out from the PC. Any <strong>loss of data</strong>
+          resulting from such an action is the responsibility of the users who
+          have left the experiment running unattended outside of their booked
+          slot.</li>
+        <li>If you encounter <strong>any issues</strong> with the microscope
+          and/or PC, <strong>report them to NOBIC staff</strong> without delay
+          e.g. by writing to <a href="javascript:decryptEmail%28%27bm9iaWMuZmFjaWxpdGllc0BlLm50dS5lZHUuc2c=%27%29;"><em>nobic.facilities[..]e.ntu.edu.sg</em></a>
+          or by reporting an incident in <a href="https://ppms.asia/singascope/creatinc/?item=0"
+            target="_blank">PPMS booking system</a>.<img src="Media/Oil01.png" alt=""
+            title="Oil on objective"></li>
+        <li>If you are using oil immersion lenses, apply <strong>immersion oil
+            in moderation</strong> to avoid it overflowing from the lens. Clean
+          the lens with <strong>alcohol and lens tissue</strong> directly after
+          use, <strong>before switching to another objective</strong>. <strong>Never
+            let immersion oil stain a dry lens</strong>. If you suspect a dry
+          lens got stained with oil, report it to NOBIC staff without delay.</li>
+        <li>At the end of your session lower the nosepiece (on inverted
+          microscope) or stage (on an upright microscope) to <strong>load
+            position</strong> and engage a <strong>low-magnification lens</strong>.
+          If you have been using <strong>CO<sub>2</sub></strong>, make sure the
+          supply is <strong>closed</strong> properly. Close environmental
+          enclosure (where applicable) and, if you are <strong>switching</strong>
+          the microscope <strong>off</strong>, <strong>cover</strong> it with
+          dust-cover (where applicable).</li>
+        <li>Keep the microscope room <strong>clean and tidy</strong>. Take all
+          your samples and other belongings with you when you leave. Samples
+          left behind will be disposed of when found. Dispose of your waste
+          properly (coverslips belong to sharp bins, ...) and observe general
+          practices appropriate for a BSL-2 laboratory.</li>
+        <img src="Media/PPMSSchedulePicture.PNG" alt="" title="PPMS Schedule">
+        <li>Check the <strong>booking calendar</strong> at the end of your
+          session (you can use the link at the desktop of all microscope PCs).
+          If the next scheduled session starts in <strong>less than 1.5 hours</strong>,
+          keep the system <strong>ON</strong>, otherwise switch it off.</li>
+        <li>If you <strong>cancel</strong> your booked session <strong>less
+            than 2 hours</strong> before the scheduled session start, make sure
+          that the microscope <strong>does not stay switched on</strong>
+          unnecessarily (especially not for an extended period of time, such as
+          overnight or over the weekend) as a result of your cancelled session.</li>
+        <li>If a <strong>microscope stays unnecessarily ON</strong> for an
+          extended period of time as a result of your negligence (because you
+          left it on despite no booked session following yours in &lt; 1.5 hours
+          or because you have not shown up during your booked slot or because
+          you cancelled your session and have not taken appropriate steps - <strong>see
+            point 7</strong>), your group <strong>may be charged</strong> for
+          the time the microscope was on as if it was your microscope usage.</li>
+        <li>Save your data only to <strong>designated data folders</strong>.
+          Data or other files stored elsewhere (e.g. Desktop, Downloads, ...)
+          can be deleted without warning.</li>
+        <li><strong>Copy your data</strong> to a network drive or repository, as
+          soon as possible, ideally directly at the end of your session. Data <strong>older
+            than 30 days</strong> may be deleted from the microscope and image
+          analysis workstations to maintain enough free disk space for new data
+          acquisition/processing. NOBIC takes no responsibility for data stored
+          at the microscope and image analysis workstations. </li>
+      </ol>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="http://www.nobic.sg/" target="_blank">NOBIC</a>
+        | <a href="http://www.scelse.sg/Home" target="_blank">LKCMedicine</a> |
+        <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+      
+       function decryptEmail(encoded) {
+    var address = atob(encoded);
+    window.location.href = "mailto:" + address;
+    }
+	</script>
+  </body>
+</html>

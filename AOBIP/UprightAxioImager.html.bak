@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Upright Fluorescence Microscope</title>
+    <link rel="stylesheet" href="AOBIP_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown"> <a> ⁝☰</a>
+          <div class="dropdown-content"> <a href="https://www.nobic.sg/Facilities.html"
+              target="_blank">NOBIC</a></div>
+          | <span class="header-text">Upright Fluorescence Microscope - Axio
+            Imager M2 </span></div>
+        <br>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <img src="Media/AxioImM2.png" title="Upright AxioImager M2">
+      <p></p>
+      <p><a class="anchor" name="TOP" id="TOP"></a>This motorised upright
+        widefield fluorescence microscope is equipped with a broad range of
+        objective lenses, including water dipping lenses, a colour camera and
+        LED lamps for transmitted light and epifluorescence imaging.</p>
+      <h1 class="h1"><a id="mozTocId836461" class="mozTocH1"></a>Available
+        techniques:</h1>
+      <ul>
+        <li>Transmitted light imaging (brightfield)</li>
+        <li>Widefield multi-channel fluorescence imaging </li>
+      </ul>
+      <h1 class="h1"> Objectives:</h1>
+      <ul>
+        <li>EC Plan-Neofluar 5x/0.16 dry, FWD 18.5 mm, CG 0.17</li>
+        <li>EC Plan-Neofluar 10x/0.3 dry, FWD 5.2 mm, CG 0.17</li>
+        <li>LD Plan-Neofluar 20x/0.4 dry, FWD 8.4-7.4 mm, CG 0-1.5 mm </li>
+        <li>N-Achroplan 40x/0.75 water dipping, FWD 2.1 mm, CG - </li>
+        <li>N-Achroplan 63x/0.9 water dipping, FWD 2.4 mm, CG - </li>
+        <li>EC Plan-Neofluar 63x/1.25 oil, FWD 0.1 mm, CG 0.17 mm <br>
+          [FWD = free workg distance, CG = cover glass]</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Fluorescence
+        excitation sources:</h1>
+      <ul>
+        <li> Colibri 7 LED lamp (excitation filters: 385/30; 423/44; 469/38;
+          511/44; 555/30; 590/27; 631/33) </li>
+      </ul>
+      <h1 class="h1">Filter sets:</h1>
+      <ul>
+        <li>Quad-band cube (QBS 405 + 493 + 575 + 653; QBP
+          425/30+514/30+592/25+709/100)</li>
+        <li>Triple-band cube (TBS 450+538+610; TBP 467/24+555/25+687/145)</li>
+        <li>CFP (455 LP; 480/40)</li>
+        <li>YFP (515 LP; 535/30) </li>
+      </ul>
+      <h1 class="h1">Detectors and cameras:</h1>
+      <ul>
+        <li>Axiocam 503 colour camera (1936x1460 pixels, 4.54 µm/pixel)</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Software:</h1>
+      <ul>
+        <li>ZEN Blue</li>
+      </ul>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Other features:</h1>
+      <ul>
+        <li>Manual stage</li>
+        <li>Motorised filter turret</li>
+      </ul>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="overview1" rowspan="2" colspan="1">Usage fees [SGD/hour]</td>
+            <td class="overview2">NTU</td>
+            <td class="overview2">Others</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td class="overview1">Location</td>
+            <td rowspan="1" colspan="2">EMB 04-02Y, Zebrafish facility</td>
+          </tr>
+          <tr>
+            <td class="overview1">Contact</td>
+            <td rowspan="1" colspan="2">nobic.facilities@e.ntu.edu.sg</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="https://www.nobic.sg/Facilities.html" target="_blank">NOBIC</a>
+        | <a href="http://www.lkcmedicine.ntu.edu.sg/Pages/Home.aspx" target="_blank">LKCMedicine</a>
+        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>
