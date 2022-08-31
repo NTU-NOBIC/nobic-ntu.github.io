@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Nikon Eclipse Ts2</title>
+    <link rel="stylesheet" href="ABIF_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown" size="5"> <a>⁝☰</a>
+          <div class="dropdown-content">
+            <ul id="mozToc">
+              <!--mozToc h1.h1 1-->
+              <li><a href="Nikon_Eclipse_Ts2.html">◀ System Overview</a></li>
+              <li><a href="#SwOn">Switching On</a></li>
+              <li><a href="#SwOff">Switching Off</a></li>
+              <li><a href="#MicOp">Microscope Operation</a></li>
+              <li><a href="#Camera">Camera Control</a></li>
+              <li><a href="#Contrast">Contrast Modes in Transmitted Light</a></li>
+            </ul>
+          </div>
+          | <span class="header-text">Nikon Eclipse Ts2 FL – inverted
+            microscope </span><br>
+        </div>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <a class="anchor" name="TOP" id="TOP"></a> <br>
+      <h1 class="h1"><a id="SwOn" class="mozTocH1"></a> Switching On:</h1>
+      <p> 1. Turn on the PC, the microscope stand and the camera.</p>
+      <p>2. Log in as User and start <b>NIS Elements D</b> software.</p>
+      <h1 class="h1"> <a id="SwOff" class="mozTocH1"></a>Switching Off:</h1>
+      <p>1. Switch off the camera and the microscope stand.</p>
+      <p>2. Transfer your data to OMERO or the shared drive.</p>
+      <p>3. Log off from the User account in Windows or shut down the PC. </p>
+      <p>4. Make sure you leave the <b>microscope table clean</b>. Spray with
+        70% ethanol and wipe any surfaces that could have been in contact with
+        biological material. Do not leave any samples or any other belongings
+        behind. Cover the microscope with the dust cover when not in use.</p>
+      <h1 class="h1"><a id="MicOp" class="mozTocH1"></a>Microscope Operation:</h1>
+      <p>The stage opening fits a multi-well plate; to accommodate smaller
+        sample formats (slides, Petri dishes, ...), use one of the inserts
+        provided.</p>
+      <img src="Media/Manuals/NikonEclipse/StageInserts.jpg" alt="" title="Stage Inserts">
+      <p>Manually select the objective and the filter set you want to use. There
+        are three filter sets labelled by the excitation wavelength (DAPI filter
+        set with 385 nm excitation shown in the example) and empty positions for
+        transmitted light marked by the light bulb symbol.</p>
+      <img src="Media/Manuals/NikonEclipse/FilterCube.jpg" alt="" title="Filter set">
+      <p> Update the selected objective and filter set in the software (to be
+        correctly reflected in the image metadata). 20x objective and an empty
+        filter set position (transmitted light) are selected in the example.</p>
+      <img src="Media/Manuals/NikonEclipse/ManualPad.png" alt="" title="Manual Pad">
+      <p>Use the buttons on the front panel of the microscope stand to select
+        between transmitted light illumination (DIA - <b style="color: #c0498f;">1</b>)
+        or fluorescence excitation (EPI - <strong style="color: #c0498f;">2</strong>)
+        and to turn the illumination <strong>On/Off</strong>. The illumination
+        intensity is set by the knobs on the left-hand side for transmitted
+        light (<b style="color: #c0498f;">3</b>) and on the right-hand side for
+        fluorescence excitation (<b style="color: #c0498f;">4</b>). When
+        switching between filter sets, the microscope remembers the excitation
+        intensity you have selected for each filter set (e.g. if you set 20%
+        intensity for DAPI cube and then move to FITC cube and set 50%
+        intensity, when you switch back to DAPI cube, the excitation intensity
+        will return to 20%).</p>
+      <img src="Media/Manuals/NikonEclipse/EPI-FLswitch.jpg" alt="" title="Illumination switch">
+      <p>Use the lever next to the eyepiece to toggle between eyepiece and
+        camera view.</p>
+      <img src="Media/Manuals/NikonEclipse/Eye-cameraSwitch.jpg" alt="" title="Eyepeice-camera switch">
+      <p>When imaging fluorescence under normal ambient light in the room, close
+        the cover above the stage to avoid increased background.</p>
+      <img src="Media/Manuals/NikonEclipse/ContrastShield.jpg" alt="" title="Contrast shield"><br>
+      <br>
+      <h1 class="h1"><a id="Camera" class="mozTocH1"></a>Camera control:</h1>
+      <p>Start live acquisition by pressing <b style="color: #c0498f;">1</b> or
+        capture a single image by pressing <b style="color: #c0498f;">2</b>. </p>
+      <img src="Media/Manuals/NikonEclipse/Capturing.png.png" alt="" title="Camera capture">
+      <p>Set the <strong>camera exposure and gain</strong> in DS-Qi2 Settings
+        tab (on the right-hand side from the main image panel). Short exposures
+        and no gain (1x) are sufficient for transmitted light imaging. Longer
+        exposures and gain can be used to capture weakly fluorescent samples.</p>
+      <img src="Media/Manuals/NikonEclipse/Camera_settings.png.png" alt="" title="Camera settings">
+      <p><a class="anchor" name="attenuator" id="attenuator"></a>The <strong>LUTs
+          tab shows the image histogram</strong> and allows you to set the
+        displayed image scaling, either manually or automatically by pressing <b
+
+          style="color: #c0498f;">1</b> (one-time scaling optimalisation) or <b
+
+          style="color: #c0498f;">2</b> (continuous scaling optimalisation
+        during live capture). Note that the scaling does not affect the saved
+        image, only its display on the screen.</p>
+      <img src="Media/Manuals/NikonEclipse/LUTs.png" alt="" title="Image Histogram">
+      <p>The toolbar on the right-hand side of the main image panel allows you
+        to add for example a <strong>scalebar</strong> to the image.</p>
+      <img src="Media/Manuals/NikonEclipse/Right-side.png" alt="" title="Right-hand toolbar">
+      <p>Captured images (not live image) are automatically saved to a selected
+        folder. The default path is <strong>C:\USERS\USER\IMAGES</strong>. <strong>Create
+          a sub-folder for your images in the IMAGES folder</strong> and set the
+        path for saving images in the settings window opened by the cogged wheel
+        icon (<b style="color: #c0498f;">3</b>) in the tool bar on the left-hand
+        side of the main image panel.</p>
+      <img src="Media/Manuals/NikonEclipse/left-side.png" alt="" title="Left-hand main panel"></div>
+    <div class="container"><img src="Media/Manuals/NikonEclipse/Saving.png.png"
+
+        alt="" title="Saving settings">
+      <p>To acquire a<strong> time-lapse</strong> image sequence, select the
+        clock icon (<strong style="color: #c0498f;">4</strong>) in the left-hand
+        side toolbar of the main image panel. The time-lapse acquisition is
+        straightforward: Select a path to save the result (ideally your
+        sub-folder in <strong>C:\USERS\USER\IMAGES</strong>) and set the
+        interval between images and either the total acquisition duration or the
+        number of time points.</p>
+      <h1 class="h1"><a id="Contrast" class="mozTocH1"></a>Contrast Modes in
+        Transmitted Light:</h1>
+      <p>There are three contrast modes available for transmitted light imaging
+        - <strong>brightfield</strong>, <strong>phase contrast</strong> and an
+        <strong></strong> <strong>oblique illumination</strong> mode marketed
+        by Nikon as Emboss contrast. The last mode provides 3D like images
+        (similar to DIC) while being compatible with plastic dishes. Examples of
+        images acquired in the three modes are shown below:</p>
+      <img src="Media/Manuals/NikonEclipse/Brightfield.nd2.png" alt="" title="brightfield"><img
+
+        src="Media/Manuals/NikonEclipse/Phase.nd2.png" alt="" title="phase contrast"><img
+
+        src="Media/Manuals/NikonEclipse/Emboss.nd2.png" alt="" title="Emboss contrast">
+      <p>To use <strong>phase contrast</strong>, insert the phase mask slider
+        to the condenser.</p>
+      <a name="Condenser" id="Condenser" class="anchor"></a><img src="Media/Manuals/NikonEclipse/Phase-condensor.jpg"
+
+        alt="" title="Phase slider - condenser">
+      <p>The slider has 3 positions for different objective magnifications. Use
+        the central one for 10x and 20x and the largest phase mask for 40x
+        objective. Make sure the condenser aperture is fully open for phase
+        contrast.</p>
+      <img src="Media/Manuals/NikonEclipse/PhaseSlider.jpg" alt="" title="Phase slider"></div>
+    <div class="container">
+      <p>There are two sliders for<strong> Emboss contrast</strong>; one of them
+        is inserted to the condenser and an additional slider with apertures is
+        inserted to the intermediate phototube. When the aperture slider is not
+        in use, a plastic stopper is inserted to close the slot. </p>
+      <img src="Media/Manuals/NikonEclipse/Emboss-condenser.jpg" alt="" title="Emboss - condenser">
+      <img src="Media/Manuals/NikonEclipse/Emboss-tube.jpg" alt="" title="Emboss - tube">&nbsp;<img
+
+        src="Media/Manuals/NikonEclipse/Stopper_tube.jpg" alt="" title="Tube - stopper">
+      <br>
+      <p>The slider for the condenser has two position - an empty one for
+        brightfield and one with a rotating mask for Emboss contrast. Rotate the
+        mask for optimum image appearance. The aperture slider has 4 positions -
+        one labelled <strong>O</strong> for brightfield and then 3 positions
+        for objectives of different magnifications (10x - 40x). </p>
+      <img src="Media/Manuals/NikonEclipse/EmbossSlider.jpg" alt="" title="Emboss - condenser slider">
+      <img src="Media/Manuals/NikonEclipse/EmbossAperture.jpg" alt="" title="Emboss - aperture slider"><br>
+      <p><strong>Note:</strong> No slider in the condenser is needed for <strong>brightfield</strong>.
+        Adjust the <a href="#Condenser">condenser aperture</a> for the optimal
+        brightfield contrast. Use fully opened condenser aperture for phase
+        contrast and oblique illumination.</p>
+      <br>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="ABIF.html">ABIF</a>
+        | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a>
+        | <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>

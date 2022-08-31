@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>OMERO Guide</title>
+    <link rel="stylesheet" href="ABIF_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script></head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="dropdown"> <a>⁝☰</a>
+          <div class="dropdown-content">
+            <ul id="mozToc">
+              <!--mozToc h1.h1 1-->
+              <li><a href="http://www.scelse.sg/Page/imaging-facility">⏴ABIF</a></li>
+              <li><a href="#mozTocId516776">Login and password</a></li>
+              <li><a href="#mozTocId605137">Accessing OMERO</a></li>
+              <li><a href="#mozTocId56077">Uploading Images to OMERO</a></li>
+              <li><a href="#mozTocId891674">Data transfer via a shared drive</a></li>
+            </ul>
+          </div>
+          | <span class="header-text">OMERO @ SCELSE Brief Guide </span><br>
+        </div>
+      </div>
+      <br>
+    </header>
+    <div class="container"><br>
+      <h1 class="h1"><a id="mozTocId516776" class="mozTocH1"></a><a class="anchor"
+
+          name="TOP" id="TOP"></a> <a id="mozTocId836461" class="mozTocH1"></a>Login
+        and password:</h1>
+      <p> All ABIF users belonging to SCELSE research groups have an OMERO
+        account. Your <b>username</b> is the name in the email address you have
+        registered to the microscope booking system; e.g. if you register with
+        the email address: MyName@ntu.edu.sg, your OMERO username will be MyName
+        (note that unlike emails, OMERO usernames are <b>case sensitive</b>).
+        Alternatively, if you are not an ABIF user, you can register for an
+        account <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SJPOFSq-K0aPwOF2WpsgSjAANoLDHbJEuJLUaqOaJYZUN05HQU5HWjdTMFJZUFdCUVNDRjU0TUlHOC4u"
+
+          target="_blank"> here</a>. Once your account has been created you can
+        proceed to login to OMERO via the <a href="https://omero-scelse.ntu.edu.sg/"
+
+          target="_blank"> web interface</a> and use the “Forgot your password?”
+        link to reset your <b>password</b>. </p>
+      <h1 class="h1"><a id="mozTocId605137" class="mozTocH1"></a> Accessing
+        OMERO:</h1>
+      <p><b>Note:</b> If you are outside of the campus, you need to use <a href="https://ntuvpn.ntu.edu.sg."
+
+          target="_blank"> VPN </a> to connect to NTU network before accessing
+        the OMERO server. </p>
+      <h2 class="h2"><a id="mozTocId202939" class="mozTocH2"></a>Option 1 - Web
+        interface:</h2>
+      <p>Open this <a href="https://omero-scelse.ntu.edu.sg/" target="_blank">
+          link</a> in your web browser</p>
+      <h2 class="h2"><a id="mozTocId591146" class="mozTocH2"></a>Option 2 -
+        OMERO.insight client:</h2>
+      <p> 1. <a href="https://www.openmicroscopy.org/omero/downloads/" target="_blank">
+          Download</a> OMERO.insight client. Standalone versions for Windows or
+        Mac as well as ImageJ plugin are available. Note, that older versions of
+        OMERO.insight than 5.5.X are not able to connect to the server.</p>
+      <p> 2. The first time you open the client, click on the spanner icon (<strong
+
+          style="color: #c0498f;">1</strong>) to specify the server IP address.</p>
+      <img src="Media/OMERO/Omero1.png" alt="" title="OMERO.insight1">
+      <p>3. Click the plus icon (<strong style="color: #c0498f;">2</strong>) to
+        add an IP address and type the SCELSE server address <b>https://omero-scelse.ntu.edu.sg/</b>
+        or 10.97.120.173</p>
+      <img src="Media/OMERO/Omero2.png" alt="" title="OMERO.insight2">
+      <p>4. Log in with your username and password.</p>
+      <h1 class="h1"><a id="mozTocId56077" class="mozTocH1"></a>Uploading Images
+        to OMERO:</h1>
+      <p>1. Press the following icon <img src="Media/OMERO/UploadIc.png" alt=""
+
+          title="Upload icon"> in OMERO.insight (the web browser interface does
+        not support image upload) and a file-explorer-style window will appear.</p>
+      <p>2. Select the image files (or a whole folder) to upload and add them to
+        the queue by pressing <img src="Media/OMERO/AddIc.png" alt="" title="Add icon">.
+        You will be prompted to select a project and a dataset to which the
+        uploaded data will be added. Either select an existing project/dataset
+        or create new ones.</p>
+      <img src="Media/OMERO/ProjectDataset.png" alt="" title="Project/Dataset">
+      <p>The selected files/folders will then appear on the right-hand side of
+        the upload dialogue window.</p>
+      <p>3. Start the actual upload.</p>
+      <p><b>Note:</b> only image files can be uploaded in the way described; <b>non-image
+          files</b> (e.g. text files with notes on the experiment) can be
+        attached to a project, a dataset or an individual image. Attachments are
+        managed in the object (project/dataset/image) details panel on the
+        right-hand side of the main OMERO window (3):</p>
+      <img src="Media/OMERO/Omero4.png" alt="" title="Object details">
+      <p>To learn more about OMERO and its features, kindly refer to the <a href="http://help.openmicroscopy.org/index.html"
+
+          target="_blank">online Help</a>.</p>
+      <h1 class="h1"><a id="mozTocId891674" class="mozTocH1"></a>Data transfer
+        via a shared drive:</h1>
+      <p> The drive is mapped as drive <b>Z:</b> at all microscope workstations
+        in the facility.</p>
+      <p> The drive can be mapped (right-click at “This PC” in the File Explorer
+        and select “Map network drive…” from the menu) at any computer connected
+        to SCELSE network (e.g. the offline analysis workstations located at
+        SCELSE, levels B2 and B3) using the following details: </p>
+      <p>Path: <span style="font-family: Courier New,Courier,monospace;">\\ABIFdiskStation\share</span>&nbsp;&nbsp;&nbsp;
+        [<span style="font-family: Courier New,Courier,monospace;">\\10.97.120.163\share</span>]</p>
+      <p>Username: <span style="font-family: Courier New,Courier,monospace;">ABIFuser</span></p>
+      <p> Password: <span style="font-family: Courier New,Courier,monospace;">scelse</span></p>
+      <p> The offline analysis workstations are connected to NTU network and to
+        Internet and can be used for transferring your data from the shared
+        drive to a cloud storage, for example. If you do not have access to the
+        offline analysis workstations, approach ABIF staff for assistance. </p>
+      <p>Note that the shared drive is intended only for <b>data transfer</b>,
+        not for data storage. All files older than <b>15 days</b>
+        will be automatically deleted. </p>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <footer>
+      <div class="footer"> <a href="ABIF.html">ABIF</a> | <a href="http://www.scelse.sg/Home"
+
+          target="_blank">SCELSE</a> | <a href="https://www.ntu.edu.sg/Pages/home.aspx"
+
+          target="_blank">NTU</a>
+        <p> last modified: <span id="datemod"></span></p>
+      </div>
+    </footer>
+    <script>
+  document.getElementById("datemod").innerHTML = document.lastModified;
+	</script>
+  </body>
+</html>
