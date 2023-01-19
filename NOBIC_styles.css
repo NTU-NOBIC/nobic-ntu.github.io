@@ -92,7 +92,7 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .topnav .dropdown {display: none;}
   .topnav .dropdown:first-child {display: block;}
   .topnav a.icon {
@@ -219,7 +219,8 @@ body {
 }
 
 /* Caption text */
-.text-gallery a:link, .text-gallery a:visited {
+
+.text-gallery {
 
   font-family: "Arial", "Helvetica", "sans-serif";
   color: white;
@@ -231,6 +232,14 @@ body {
   width: 100%;
   text-align: center;
   background-color: rgba(0,0,0,0.3);
+}
+
+.text-gallery a:link, .text-gallery a:visited {
+
+  font-family: "Arial", "Helvetica", "sans-serif";
+  color: white;
+  font-size: calc(0.8rem + 0.9vw);
+  text-decoration: none;
 }
 
 .text-gallery a:hover {
