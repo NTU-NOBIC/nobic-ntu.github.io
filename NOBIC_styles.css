@@ -102,7 +102,7 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {
     position: fixed;
     -webkit-backface-visibility: hidden;
