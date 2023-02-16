@@ -49,7 +49,9 @@ class Header extends HTMLElement {
         <div class = "footer"> <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
         | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
 
-          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
+          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a> | <a
+
+          href="https://www.singascope.sg/" target="_blank">SingaScope</a>
 		  <p> © NOBIC, last modified: <span id="datemod"></span></p>
      
       </div> 
