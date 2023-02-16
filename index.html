@@ -11,54 +11,24 @@
                                    Optomechanical design, Adaptive optics, Image processing, Super-resolution, Deep Learning, Brillouin scattering,                                    Raman scattering, Fluorescence correlation spectroscopy, Fluorescence cross-correlation spectroscopy,                                   FCS, FCCS, Image correlation spectroscopy, Optical coherence tomography">
     <script>
 document.addEventListener("click", x=>0)
-</script></head>
-  <body>
-    <div class="topnav" id="topnav">
-      <div class="dropdown"> <button class="dropbtn"><a href="index.html" class="active">Home</a></button></div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Expertise.html">Our
-            Expertise</a></button>
-        <div class="dropdown-content"> <a href="Expertise.html#Instrument">Optical
-            Imaging Instrumentation</a> <a href="Expertise.html#Software">Software
-            &amp; Image Processing</a> <a href="Expertise.html#Experiment">Microscopy
-            Applications &amp; Sample Preparation</a></div>
-      </div>
-      <div class="dropdown"> <button class="dropbtn"><a>Research</a></button>
-        <div class="dropdown-content"> <a href="Projects.html">Current Projects</a>
-          <a href="ProjectsPast.html">Past Projects</a> <a href="Publications.html">Publications</a>
-        </div>
-      </div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html">Imaging
-            Facilities</a></button>
-        <div class="dropdown-content"> <a href="Facilities.html#Users">For New
-            Users</a> <a href="Facilities.html#Microscopes">Microscopes</a> <a
-
-            href="https://ppms.asia/singascope/login/?pf=8" title="PPMS for SingaScope"
-
-            target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
-            Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
-            to FIJI</a><a href="MicroscopyCourse/MicroCourse22.html" target="_blank">Microscopy
-            Course</a><a href="MicroTalks.html">μ-Talks</a></div>
-      </div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Team.html">Our
-            Team</a></button></div>
-      <div class="dropdown"> <button class="dropbtn"><a href="index.html#About">About
-            Us</a></button>
-        <div class="dropdown-content"> <a href="Lab.html">NOBIC Laboratory</a>
-          <a href="Lab.html#workshop">Prototyping Workshop</a><a href="https://www.youtube.com/channel/UCwka5W-n2mfAqLUz8L5eorA"
-
-            target="blank">YouTube Channel</a></div>
-      </div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Contact.html">Contact</a></button></div>
-      <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
-    </div>
-    <br>
+</script>
+    <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="Elements.js"></script>
+  </head>
+  <body> <main-header></main-header>
+    <script>var x = document.getElementById("Home");
+      
+        x.classList.add("active");</script> <br>
     <br>
     <!-- Slideshow container -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade"> <img src="Media/index/Calipso.jpg">
+      <div class="mySlides fade"> <img src="Media/index/Calipso.jpg">
         <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-              <div class="text-gallery"><a href="https://www.science.org.au/learning/general-audience/history/interviews-australian-scientists/professor-barry-marshall" target="_blank">Prof Barry Marshall </a>giving us a hand building a scanned lightsheet microscope</div>
+        <div class="text-gallery"><a href="https://www.science.org.au/learning/general-audience/history/interviews-australian-scientists/professor-barry-marshall"
+
+            target="_blank">Prof Barry Marshall </a>giving us a hand building a
+          scanned lightsheet microscope</div>
       </div>
       <div class="mySlides fade"> <img src="Media/Banner_uTalks.jpg">
         <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
@@ -75,7 +45,6 @@ document.addEventListener("click", x=>0)
         <div style="position: absolute; bottom: 8px; right: 16px; color: white; font-size:calc(0.5rem + 0.5vw)">“Pushing
           Boundaries” by Harsha Mahabaleshwar (LKCMedicine) 1st Place</div>
       </div>
-
       <div class="mySlides fade"> <img src="Media/index/Reposit.jpg">
         <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
         <div class="text-gallery"><a href="https://github.com/NOBIC-NTU" target="_blank">Our
@@ -92,11 +61,9 @@ document.addEventListener("click", x=>0)
     <br>
     <!-- The dots/circles -->
     <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span> <span class="dot"
-
-        onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
+      <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span> </div>
     <div class="container">
       <h1 class="heading"><a class="anchor" name="About" id="About"></a>About
         NOBIC</h1>
@@ -192,16 +159,9 @@ document.addEventListener("click", x=>0)
       <br>
       <p><a href="#TOP">BACK TO TOP</a></p>
     </div>
-    <footer>
-      <div class="footer"> <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
-        | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
-
-          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
-        <p> © NOBIC, last modified: <span id="datemod"></span></p>
-      </div>
-    </footer>
+    <main-footer></main-footer>
     <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function TopnavFunction() {
       var x = document.getElementById("topnav");
       if (x.className === "topnav") {
@@ -212,7 +172,46 @@ document.addEventListener("click", x=>0)
   
     }
       
-      var slideIndex = 0;
+      var Btn = document.getElementsByClassName("Morebtn");
+      var i;
+      
+      for (i = 0; i < Btn.length; i++) {
+        Btn[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.previousElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+         
+          } else {
+            content.style.display = "block";
+            
+          }
+        });
+      }
+      
+      var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function decryptEmail(encoded) {
+
+    var address = atob(encoded);
+    window.location.href = "mailto:" + address;
+
+  }
+
+var slideIndex = 0;
       showSlides();
       var slides,dots;
 
@@ -261,9 +260,8 @@ document.addEventListener("click", x=>0)
           setTimeout(showSlides, 8000); // Change image every 8 seconds
       }
 
- 		document.getElementById("datemod").innerHTML = document.lastModified;
-	   
-	</script>
-	  <script async src="//static.getclicky.com/101389963.js"></script>
+document.getElementById("datemod").innerHTML = document.lastModified;
+
+    </script>
   </body>
 </html>
