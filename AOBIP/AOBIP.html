@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="AOBIP_styles.css">
     <script>
 document.addEventListener("click", x=>0)
-</script></head>
+</script><script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
+  </head>
   <body>
     <header>
       <div class="header"> <span class="header-text">Advanced Optical
@@ -88,17 +90,45 @@ document.addEventListener("click", x=>0)
       <p>Submit <a href="PDFs/Special%20Request%20Form.pdf" title="LKCMedicine Special Access Form"
           target="_blank">this form</a> to LKCMedicine IT to apply for <strong>remote
           access</strong> to the workstations.</p>
+      <h1 class="h1">Data Transfer:</h1>
+      <p> Kindly take note that <b>USB drives are not allowed</b> on most
+        microscope PCs and do not try to circumvent the ban. The PCs require a
+        specific (obsolete) version of Windows to be able to properly control
+        the microscopes and if anything happens to them, new pre-installed PCs
+        from the microscope vendors would have to be purchased at very premium
+        prices, not mentioning the microscope downtime before the PC is shipped
+        to Singapore. </p>
+      <p>Instead feel free to use a <strong>shared drive</strong> mapped as
+        drive <strong>S:</strong> at the microscope PCs.</p>
+      <p><u><strong><em>How to retrieve data from the shared drive at your desk
+              PC or laptop:</em></strong></u></p>
+      <ul>
+        <li>Map it as a <strong>network drive</strong> (right-click at “This
+          PC” in the File Explorer and select “Map network drive…” from the
+          menu) using the following details:<br>
+          <br>
+          Path: <span style="font-family: Courier New,Courier,monospace;">\\10.96.122.42\share</span><br>
+          Username: <span style="font-family: Courier New,Courier,monospace;">NOBICuser</span><br>
+          Password: <span style="font-family: Courier New,Courier,monospace;">nobicNTU</span><br>
+          <br>
+        </li>
+        <li>If you are <strong>off campus</strong>, you need to use <a href="https://vpngate.ntu.edu.sg/global-protect/getsoftwarepage.esp"
+            target="_blank"><strong>VPN</strong></a> to access the shared drive</li>
+        <li>If you are an <b>external user</b> without access to NTU network,
+          access the shared drive at an image processing workstation or another
+          suitable PC on campus (e.g. the PC at the Nikon brightfield microscope
+          at the corner of Freezer room 2 on level 11, CSB). You are allowed to
+          connect an external drive to those PCs.</li>
+      </ul>
+      <p> <strong><em>Kindly note that this is a data transfer not a data
+            backup solution (your data will stay at the shared drive for 2 weeks
+            only)</em></strong> </p>
+      <p></p>
       <p><a href="#TOP">BACK TO TOP</a></p>
     </div>
-    <footer>
-      <div class="footer"> <a href="http://www.nobic.sg/" target="_blank">NOBIC</a>
-        | <a href="http://www.scelse.sg/Home" target="_blank">LKCMedicine</a> |
-        <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
-        <p> last modified: <span id="datemod"></span></p>
-      </div>
-    </footer>
+    <aobip-footer></aobip-footer>
     <script>
-  document.getElementById("datemod").innerHTML = document.lastModified;
+ 
       
        function decryptEmail(encoded) {
     var address = atob(encoded);
