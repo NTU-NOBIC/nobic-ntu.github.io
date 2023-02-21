@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="ABIF_styles.css">
     <script>
 document.addEventListener("click", x=>0)
-</script></head>
+</script><script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script></head>
   <body>
     <header>
-      <div class="header"> <span class="header-text">Advanced Biofilm Imaging
-          Facility @ SCELSE</span><br>
+      <div class="header"> <span class="header-text">Advanced
+          Biofilm Imaging Facility @ SCELSE</span><br>
       </div>
       <br>
     </header>
@@ -20,7 +21,8 @@ document.addEventListener("click", x=>0)
     <div class="container"><br>
       <h1 class="h1"><a class="anchor" name="TOP" id="TOP"></a> </h1>
       <h1 class="h1">Introduction:</h1>
-      <p>Advanced Biofilm Imaging Facility (ABIF) at <a href="http://www.scelse.sg"
+      <p>Advanced Biofilm Imaging Facility (ABIF) at <a href="http://www.scelse.sg"
+
           target="_blank">SCELSE</a> supports interdisciplinary research on
         environmental, life sciences and engineered biofilms and microbiomes
         conducted by SCELSE researchers. However, since our microscopes can
@@ -30,20 +32,24 @@ document.addEventListener("click", x=>0)
           Optical Bio-Imaging Centre (NOBIC)</a> benefits from the comprehensive
         optical imaging expertise of <a href="https://www.nobic.sg/Team.html" target="_blank">NOBIC
           team</a>.</p>
-      <p>If you are interested in using ABIF, kindly refer to <a href="https://www.nobic.sg/Facilities.html#Users"
-          target="_blank">information for NOBIC facilities users</a> and <a href="PDFs/ABIF_UsageFees.pdf"
+      <p>If you are interested in using ABIF, kindly refer to <a href="https://www.nobic.sg/Facilities.html#Users"
+
+          target="_blank">information for NOBIC facilities users</a> and <a href="PDFs/ABIF_UsageFees.pdf"
+
           target="_blank">ABIF price list</a>. SCELSE researchers, students and
-        collaborators can <a href="https://forms.office.com/r/gKrvJBKz3s" title="ABIF card access application form"
+        collaborators can <a href="https://forms.office.com/r/gKrvJBKz3s" title="ABIF card access application form"
+
           target="_blank">apply for card access</a> to the facility after
         completing appropriate training. Do not hesitate to contact us to
         discuss how we can help you with your imaging experiments. You can reach
         us by email: <a href="javascript:decryptEmail%28%27bm9iaWMuZmFjaWxpdGllc0BlLm50dS5lZHUuc2c=%27%29;"><em>nobic.facilities[..]e.ntu.edu.sg</em></a>
         or <a href="javascript:decryptEmail%28%27YWJpZkBlLm50dS5lZHUuc2c=%27%29;"><i>abif[..]e.ntu.edu.sg</i></a>
-        and find us at <a href="http://www.scelse.sg/Contact" title="SCELSE contacts"
+        and find us at <a href="http://www.scelse.sg/Contact" title="SCELSE contacts"
+
           target="_blank">SCELSE</a> at NTU main campus.</p>
       <h1 class="h1">Important Notes:</h1>
-      <p>When <strong>using the facility</strong>, kindly adhere to these
-        <strong> <a href="../EssentialGuidelines.html" target="_blank">essential
+      <p>When <strong>using the facility</strong>, kindly adhere to these <strong>
+          <a href="../EssentialGuidelines.html" target="_blank">essential
             guidelines</a></strong>.</p>
       <p>When <strong>publishing</strong> (in the form of journal articles,
         talks, posters, social media posts etc.) any images obtained at ABIF
@@ -92,35 +98,32 @@ document.addEventListener("click", x=>0)
       <p> And related IT infrastructure: </p>
       <ul>
         <li><strong>Four workstations</strong> for image processing with
-          software such as Imaris 9.0.2 (at three stations), <a href="https://fiji.sc/"
+          software such as Imaris 9.0.2 (at three stations), <a href="https://fiji.sc/"
+
             target="_blank">FIJI</a>, Matlab or ZEN available.</li>
         <li><b><a href="https://omero-scelse.ntu.edu.sg/" target="_blank" title="OMERO @ SCELSE">OMERO</a>
             image repository</b> for safe storage and organising of images and
           to facilitate data transfer from microscope workstations. Refer to our
           <a href="OMERO_guide.html" target="_blank"> brief guide</a> to learn
           about accessing OMERO at SCELSE server (including information on
-          getting your username and password). Fill in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SJPOFSq-K0aPwOF2WpsgSjAANoLDHbJEuJLUaqOaJYZUN05HQU5HWjdTMFJZUFdCUVNDRjU0TUlHOC4u"
+          getting your username and password). Fill in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SJPOFSq-K0aPwOF2WpsgSjAANoLDHbJEuJLUaqOaJYZUN05HQU5HWjdTMFJZUFdCUVNDRjU0TUlHOC4u"
+
             title="OMERO user registration" target="_blank">this form</a> if you
           wish to create an OMERO account and are not a registered imaging
           facility user (e.g. if you plan to analyse images acquired by your
           colleagues). Note that OMERO is available only for members and direct
           collaborators of SCELSE research groups. If you are not eligible for
-          an OMERO account, refer to our <a href="OMERO_guide.html#mozTocId891674"
+          an OMERO account, refer to our <a href="OMERO_guide.html#mozTocId891674"
+
             target="_blank">brief guide</a> for information on an alternative
           data transfer solution (<strong>shared network drive</strong>). </li>
       </ul>
       <br>
       <p><a href="#TOP">BACK TO TOP</a></p>
     </div>
-    <footer>
-      <div class="footer"> <a href="http://www.nobic.sg/" target="_blank">NOBIC</a>
-        | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
-          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>
-        <p> last modified: <span id="datemod"></span></p>
-      </div>
-    </footer>
+    <abif-footer></abif-footer>
+      
     <script>
-  document.getElementById("datemod").innerHTML = document.lastModified;
       
        function decryptEmail(encoded) {
     var address = atob(encoded);
