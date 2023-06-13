@@ -25,7 +25,7 @@ class Header extends HTMLElement {
             target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
             Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
             to FIJI</a><a href="MicroscopyCourse/MicroCourse22.html" target="_blank">Microscopy
-            Course</a><a href="MicroTalks.html" id = "uTalk">μ-Talks</a><a href="ImContest21.html" id = "ImCont">Image Contest</a></div>
+            Course</a><a href="MicroTalks.html" id = "uTalk">μ-Talks</a><a href="ImContest23.html" id = "ImCont">Image Contest</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Team.html" id = "Team">Our
             Team</a></button></div>
