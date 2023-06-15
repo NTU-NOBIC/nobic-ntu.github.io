@@ -34,7 +34,7 @@ class Header extends HTMLElement {
         <div class="dropdown-content"> <a href="Lab.html" id = "Lab">NOBIC Laboratory</a>
           <a href="Lab.html#workshop">Prototyping Workshop</a><a href="https://www.youtube.com/channel/UCwka5W-n2mfAqLUz8L5eorA"
 
-            target="blank">YouTube Channel</a></div><a href="https://github.com/NOBIC-NTU"
+            target="blank">YouTube Channel</a><a href="https://github.com/NOBIC-NTU"
 
             target="blank">Github Repositories</a></div>
       </div>
