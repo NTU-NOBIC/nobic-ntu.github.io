@@ -92,7 +92,7 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .topnav .dropdown {display: none;}
   .topnav .dropdown:first-child {display: block;}
   .topnav a.icon {
@@ -102,7 +102,7 @@ body {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {
     position: fixed;
     -webkit-backface-visibility: hidden;
@@ -171,20 +171,21 @@ body {
 }
 
 .slideshow-container img {
-	height: 80vh;
+	max-height: 80vh;
+	max-width: 90vw;
 	margin-left:50px;
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-right: 30px;
 	float: left;
 }
 
 @media screen and (max-width: 1200px) {
   .slideshow-container img {
-	width: 100%;
-  	max-width: 600px;
-	height: auto;
+	max-height: 90vh;
+	max-width: 95vw;
 	margin: auto;
 	padding-right: 0px;
+	padding-top: 50px;
 	float: none;
 	display: block;
 	}
