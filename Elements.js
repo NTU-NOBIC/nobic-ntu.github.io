@@ -48,7 +48,8 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `    
      <footer>             
-        <div class = "footer"> <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
+        <div class = "footer"> <a href="https://www.idmxs.org/" target="_blank">IDMxS</a>
+        | <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
         | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
 
           href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a> | <a
@@ -65,7 +66,8 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `    
      <footer>             
-        <div class = "footer"> <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
+        <div class = "footer"> <a href="https://www.idmxs.org/" target="_blank">IDMxS</a>
+        | <a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>
         | <a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a> | <a
 
           href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a> | <a
@@ -113,6 +115,23 @@ class Header extends HTMLElement {
            
     `;
   }
+} class Footer5 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `    
+     <footer>             
+        <div class = "footer"> <a href="https://www.idmxs.org/" target="_blank">IDMxS</a>
+        | <a
+
+          href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a> | <a
+
+          href="https://www.singascope.sg/" target="_blank">SingaScope</a>
+		  <p> © <a href="https://www.nobic.sg">NOBIC</a></p>
+     
+      </div> 
+</footer>	  
+           
+    `;
+  } 
 }
 
 customElements.define('main-header', Header);
@@ -120,5 +139,6 @@ customElements.define('main-footer', Footer);
 customElements.define('sub-footer', Footer2);
 customElements.define('abif-footer', Footer3);
 customElements.define('aobip-footer', Footer4);
+customElements.define('idmxs-footer', Footer5);
 
 
