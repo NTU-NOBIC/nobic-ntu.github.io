@@ -330,6 +330,12 @@ body {
   magin-bottom: 0px;
 }
 
+.finalist-container p {
+  text-align: justify;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 .finalist-container img {
 	max-height: 80vh;
 	max-width: 90vw;
@@ -348,6 +354,14 @@ body {
 	float: none;
 	display: block;
 	}
+}
+
+.finalist-container a:link {
+  color:#6c95b8;
+  text-decoration: none;
+}
+.finalist-container a:hover {
+  color:#bdbdbd
 }
 
 .container a:link {
