@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Raman/Brillouin</title>
+    <link rel="stylesheet" href="ABIF_styles.css">
+    <script>
+document.addEventListener("click", x=>0)
+</script>
+    <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
+  </head>
+  <body>
+    <header> </header>
+    <div class="header">
+      <div class="dropdown" size="5"> <a>⁝☰</a>
+        <div class="dropdown-content">
+          <ul id="mozToc">
+            <li><a href="BRaman.html">◀
+                System Overview</a></li>
+            <li><a href="#SwitchOn">Switching On</a></li>
+            <li><a href="#Brightfield">Locating sample
+                using brightfield</a></li>
+            <li><a href="#Raman">Raman
+                microscpectroscopy</a></li>
+            <li><a href="#Switching_Off:">Switching Off</a></li>
+            <li><a href="https://micro-manager.org/Version_2.0_Users_Guide" target="blank">Micro-Manager
+                User Guide</a></li>
+          </ul>
+        </div>
+        | <span class="header-text">Custom Raman/Brillouin
+          microscope </span><br>
+      </div>
+    </div>
+    <br>
+    <div class="container"><br>
+      <a class="anchor" name="TOP" id="TOP"></a>
+      <br>
+      <h1 class="h1"><a name="SwitchOn"></a>
+        Switching On:</h1>
+      <p> 1. T<a name="Plugs"></a>urn on the
+        following mains plugs: <span style="font-weight: bold;">Prior,
+          compressor, lasers/cameras</span></p>
+      <p><img style="width: 500px; height: 182px;" alt="" title="Mains Plugs" src="Media/Raman/Plugs.jpg"></p>
+      <p>2. <a name="LaserKey"></a>Turn on the
+        laser key switch</p>
+      <p><img style="width: 300px; height: 413px;" alt="" title="Laser key" src="Media/Raman/laser.jpg"></p>
+      <p>3. Initialise the shutter by turning the wheel on the shutter
+        controller in the direction indicated by the arrow in the picture:</p>
+      <p><img style="width: 400px; height: 315px;" alt="" title="Shutter initialisation"
+          src="Media/Raman/Shutter.jpg"></p>
+      <p>4. <a name="TransLamp"></a>Turn on the
+        transmitted light lamp</p>
+      <p><img style="width: 300px; height: 356px;" alt="" title="Transmitted lamp"
+          src="Media/Raman/HalBulb.jpg"></p>
+      <p>5. Turn on the PC and log in as <span style="font-weight: bold;">user</span>
+        (password: user)</p>
+      <h1 class="h1"><a name="Brightfield"></a>
+        Locating Sample Using Brightfield:</h1>
+      <p>1. Place sample on the microscope stage</p>
+      <p><a class="anchor" name="Load Pos" id="Load Pos"></a>2. <a name="LaserSlider"></a>Pull
+out
+        the <span style="font-weight: bold;">laser mirror
+          slider</span> </p>
+      <img style="width: 400px; height: 450px;" alt="" title="Laser mirror slider"
+        src="Media/Raman/MirrorSlider.jpg"><br>
+      <p>3. Move the objective close to the sample and then move it
+        slowly away from the sample while observing the sample in the eyepiece
+        or on screen using the brightfield camera (see the following points).
+        Use the manual focusing knob for course focus movement and the knobs on
+        the stage<span style="font-weight: bold;"> joystick for
+          fine focus movement</span>. Never use the manual fine focusing
+        knob!<a name="FocusKnob"></a></p>
+      <img style="width: 400px; height: 423px;" alt="" title="Focusing knob" src="Media/Raman/FocusingKnob.jpg">
+      <img style="width: 300px; height: 400px;" alt="" title="Joystick" src="Media/Raman/Joystick.jpg"><br>
+      <p>Use the slider on the trinocular to switch between eyepiece /
+        eyepiece
+        and camera / camera.<br>
+      </p>
+      <img style="width: 400px; height: 407px;" alt="" title="Trinocular" src="Media/Raman/Trinocular.jpg"><br>
+      <p>4. Use SpinView software to see brightfield camera image.
+        Select the camera in the software and start live view. The red cross
+        indicates approximate position of the laser focus in the sample. You
+        can use SpinView to save brightfield images.</p>
+      <p><img style="width: 477px; height: 463px;" alt="" title="SpinView - camera selection"
+          src="Media/Raman/SpinView.png"> <img style="width: 400px; height: 338px;"
+          alt="" title="SpinView - live" src="Media/Raman/SpinView_2.png">
+      </p>
+      <p>5. When you have found a suitable location in the sample, push
+        in the <a href="#LaserSlider">laser mirror</a> and
+        cover the stage before starting microspectoscopy acquisition.</p>
+      <p><img style="width: 400px; height: 300px;" alt="" title="Stage cover" src="Media/Raman/Cover.jpg"></p>
+      <h1 class="h1"><a name="Raman"></a>Raman
+        microspectroscopy:</h1>
+      <p>1. Start <span style="font-weight: bold;">Micro-Manager</span>
+        (MM 2.0 - Raman) and select "<span style="font-weight: bold;">Andor</span>"
+        configuration in the initial dialogue:</p>
+      <p><img style="width: 400px; height: 524px;" alt="" title="Micro-manager initial"
+          src="Media/Raman/M-M_Raman01.png"></p>
+      <p>2. In the main panel select "<span style="font-weight: bold;">Spectrum</span>"
+        Format:</p>
+      <p><img style="width: 602px; height: 281px;" alt="" title="Micro-manager main"
+          src="Media/Raman/M-M_Raman02.png"><br>
+      </p>
+      <p>3. Set the <span style="font-weight: bold;">exposure
+          time</span> (1 s is typically the minimum needed to see a clear
+        spectrum).</p>
+      <p>4. Turn off the room lights and press <span style="font-weight: bold;">Live</span>
+        to see live
+        spectrum for focusing or stage movement (use the Stage control in
+        Micro-Manager for fine movement by defined steps) or <span style="font-weight: bold;">Snap</span>
+        to capture a
+        single spectrum. Refer to <a href="https://micro-manager.org/Version_2.0_Users_Guide"
+          target="_blank">Micro-Manager User Guide</a> for more
+        information on the user interface and functions.</p>
+      <p>5.
+        The spectrum is displayed as an image consisting of a single line of
+        pixels. To see the spectrum as plot, click on the Image J panel that
+        opened with Micro-Manager and use on of the following keyboard
+        shortcuts:</p>
+      <p><span style="font-weight: bold;">q</span> -
+        shows the
+        spectrum plot in unscaled units, press "Live" button under the plot to
+        make it refresh with each new frame acquired; all controls in
+        Micro-Manager are active while this plot display is running</p>
+      <p><span style="font-weight: bold;">Q</span>
+        - shows the spectrum in scaled units and refreshes at a fixed interval.
+        Most Micro-Manager controls are inactive while this plot display is
+        running.</p>
+      <p><img style="width: 692px; height: 476px;" alt="" title="Spectrum Plot"
+          src="Media/Raman/M-M_Raman_plot.png"></p>
+      <p><span style="font-weight: bold; font-style: italic;">Troubleshooting:</span><span
+          style="font-style: italic;"> If the spectrum is not updated
+          while Live
+          acquisition is running, it may be caused by the size of the live image
+          window (the image with a single line of pixels) being reduced. Try
+          enlarging this window.</span></p>
+      <p>6. To perform an automated acquisition of multiple spectra:
+        time series, Z-stack, multi-position (mapping in XY plane), open <span
+          style="font-weight: bold;">Multi-D Acq.</span>,
+        select and configure the appropriate experiment type (you can combine
+        more, e.g. Z-stack in time series) &nbsp;and start experiment by
+        pressing <span style="font-weight: bold;">Acquire!</span></p>
+      <p><img style="width: 712px; height: 713px;" alt="" title="Multi-D Acq" src="Media/Raman/M-M_MDA.png"></p>
+      <p>7. You can set up the path and name for saving results when
+        you select the <span style="font-weight: bold;">Save
+          Images</span> option.</p>
+      <p><span style="font-weight: bold; font-style: italic;">Practical
+          tip:</span><span style="font-style: italic;">
+          The images are saved as Tiff of a very large size (containing much
+          more
+          ballast than the actual data. By opening and saving them in Image
+          J/FIJI (can be done automatically in batch) a lot of space can be
+          saved! Alternatively, the <a href="https://github.com/NTU-NOBIC/FIJI-Macros/tree/main/NOBIC%20Raman%20Macros"
+            target="_blank">macros</a> to remove cosmic ray spikes
+          from
+          spectra and for exporting the spectra as CSV tables do this
+          compression job too. </span></p>
+      <p>8. To generate a list of positions for Raman mapping in a grid
+        of points, use custom <span style="font-weight: bold;">Grid tool</span>.
+        The window with a button to call this tool should be visible by
+        default; in case it has been closed,&nbsp;you can open it by <span style="font-weight: bold;">Tools/Quick
+          Access Panel/Grid</span>.</p>
+      <p><img style="width: 122px; height: 110px;" alt="" title="Grid tool button"
+          src="Media/Raman/M-M_Grid.png"></p>
+      <p>The button opens a following dialogue:</p>
+      <p><img style="width: 339px; height: 137px;" alt="" title="Grid dialogue"
+          src="Media/Raman/M-M_Grid02.png"></p>
+      <p>In
+        the example shown a grid of 10 x 10 positions with 1um spacing centered
+        around the current stage position will be generated. If Multiple
+        Positions (XY) are activated in Multi-D Acq. the Summary will show
+        Number of points: 100 (see above).</p>
+      <h1 class="h1"><a name="Switching_Off:"></a>
+        Switching Off:</h1>
+      <p>1. Make sure you have saved your data and turn off
+        Micro-Manager.</p>
+      <p><a class="anchor" name="Load Pos" id="Load Pos"></a>2. Pull out the
+        laser mirror, <a href="#FocusKnob">lower the objective</a> and remove
+        the sample. </p>
+      <p>3. If you have used an<b> immersion objective</b>,
+        wipe it clean. Use the lens cleaning tissue. For cleaning oil
+        immersion, moisten the tissue at the solvent dispenser. Always wipe the
+        objective <b>only once, in one direction</b>. If this is
+        not sufficient, repeat with a new piece of tissue. <b>Never
+          reuse the tissue</b>.</p>
+      <img src="Media/Manuals/Cleaning.jpg" alt="" title="Lens Cleaning"> <img
+        src="Media/Manuals/ObjClean.png" alt="" title="Objective-cleaning">
+      <p>4. Check in PPMS calendar if there is any user coming shortly
+        (&lt;
+        90 min) after you. If yes log off from PPMS tracker and proceed to
+        point <span style="font-weight: bold;">9</span>. If
+        no, follow all the points.</p>
+      <p>5. Turn off the <a href="#LaserKey">laser key</a>
+        and <a href="#TransLamp">transmitted light lamp</a>.
+      </p>
+      <p>6. Turn off the mains for&nbsp;<a href="#Plugs">Prior,
+          compressor, lasers/cameras</a>.</p>
+      <p>7. Put the PC to sleep.</p>
+      <p>8. Cover the microscope with <span style="font-weight: bold;">dust
+          cover</span>.</p>
+      <p>9. Make sure you leave the <b>microscope room clean</b>.
+        Spray with 70% ethanol and wipe any surfaces that could have been in
+        contact with biological material. Do not leave any samples or any other
+        belongings behind.</p>
+      <br>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <abif-footer></abif-footer>
+  </body>
+</html>
