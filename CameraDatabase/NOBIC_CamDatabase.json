@@ -7,7 +7,7 @@
     "cam_manufacturer": "Hamamatsu",
     "model": "ORCA-Flash4.0 C13440-20CU",
     "pixelCount": "2048 x 2048",
-    "pixelSize": "5.1 µm",
+    "pixelSize": "6.5 µm",
     "darkCurrent_spec": "",
     "pixelFormat_DC_Test": "Mono16",
     "darkCurrent_measured": "(below accurate measurement threshold)",
