@@ -1,291 +1,251 @@
 <!DOCTYPE html>
-<html>
-  <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>NOBIC</title>
-    <link rel="stylesheet" href="NOBIC_styles.css">
-    <link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
-    <meta name="keywords" content="NOBIC, Bio-Imaging, Optical Microscopy, Light microscopy, Spectroscopy, Fluorescence, imaging facility, Optical design,
-                                   Optomechanical design, Adaptive optics, Image processing, Super-resolution, Deep Learning, Brillouin scattering,                                    Raman scattering, Fluorescence correlation spectroscopy, Fluorescence cross-correlation spectroscopy,                                   FCS, FCCS, Image correlation spectroscopy, Optical coherence tomography">
-    <script>
+<html><head>
+<!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"><title>NOBIC</title>
+
+<link rel="stylesheet" href="NOBIC_styles.css">
+<link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
+<meta name="keywords" content="NOBIC, Bio-Imaging, Optical Microscopy, Light microscopy, Spectroscopy, Fluorescence, imaging facility, Optical design,
+Optomechanical design, Adaptive optics, Image processing, Super-resolution, Deep Learning, Brillouin scattering, Raman scattering, Fluorescence correlation spectroscopy, Fluorescence cross-correlation spectroscopy, FCS, FCCS, Image correlation spectroscopy, Optical coherence tomography">
+<script>
 document.addEventListener("click", x=>0)
-</script> <script async="" src="//static.getclicky.com/101389963.js"></script>
-    <script src="Elements.js"></script>
-  </head>
-  <body> <main-header></main-header>
-    <script>var x = document.getElementById("Home");
-      
-        x.classList.add("active");</script> <br>
-    <br>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade"> <a href="ImContest23.html"><img src="Media/index/NOBICcontest23Awards.png">
-          <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        </a>
-        <div class="text-gallery">The 3 winners of NOBIC Image Contest 2023
-          received prizes from the constest <a style="text-decoration: underline"
+</script>
+<script async="" src="//static.getclicky.com/101389963.js"></script>
+<script src="Elements.js"></script>
+</head>
 
-            href="http://www.zeiss.com.sg/microscopy" target="_blank">sponsor</a></div>
-      </div>
-      <div class="mySlides fade"> <a href="ImContest23.html"><img src="ImContest/2023/ContestBanner23.PNG">
-          <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        </a>
-        <div style="position: absolute; bottom: 8px; right: 16px; color: white; font-size:calc(0.5rem + 0.5vw)">“Getting
-          into the Gut of plumbing” by Aparna Mahadevan (LKCMedicine) 1st Place,
-          NOBIC Image Contest 2023</div>
-      </div>
-      <!--<div class="mySlides fade"> <img src="Media/index/LSM800Cake.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery">An edible model of a <a href="AOBIP/LSM800Airy.html"
-
-            target="_blank">confocal microscope</a>, fondant artwork by Tang En
-          San</div>
-      </div>-->
-      <div class="mySlides fade"> <img src="Media/index/TengLeong.png">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery"><a href="https://www.janelia.org/people/teng-leong-chew"
-
-            target="_blank">Dr Chew Teng-Leong </a>working in NOBIC lab</div>
-      </div>
-      <div class="mySlides fade"> <img src="Media/index/Colin.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery"><a href="https://en.wikipedia.org/wiki/Colin_Sheppard"
-
-            target="_blank">Prof Colin Sheppard </a>visiting NOBIC lab</div>
-      </div>
-      <div class="mySlides fade"> <img src="Media/index/Calipso.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery"><a href="https://www.science.org.au/learning/general-audience/history/interviews-australian-scientists/professor-barry-marshall"
-
-            target="_blank">Prof Barry Marshall </a>giving us a hand building a
-          scanned lightsheet microscope</div>
-      </div>
-      <!--<div class="mySlides fade"> <img src="Media/Banner_uTalks.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>        <div class="text-gallery"><a href="MicroTalks.html">NOBIC <span style="color: #ffc800;">μ-Talks</span></a></div>
-      </div>-->
-      <div class="mySlides fade"> <img src="Media/index/Brillouin2.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery"><a href="https://youtu.be/c-HnAYON1gA" target="_blank">YouTube
-            video about our Raman/Brillouin setup</a></div>
-      </div>
-      <!--<div class="mySlides fade"> <img src="Media/index/Reposit.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>        <div class="text-gallery"><a href="https://github.com/NOBIC-NTU" target="_blank">Our            GitHub Respositories</a></div>      </div>            -->
-      <!--<div class="mySlides fade"> <img src="Media/index/Expertise.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>        <div class="text-gallery"><a href="index.html#Expertise">Our Expertise</a></div>      </div>-->
-      <div class="mySlides fade"> <img src="Media/index/Projects.jpg">
-        <div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
-        <div class="text-gallery"><a href="Projects.html">Current Projects</a></div>
-      </div>
-      <!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a></div>
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span></div>
-    <div class="container">
-      <h1 class="heading"><a class="anchor" name="About" id="About"></a>About
-        NOBIC</h1>
-      <p>NTU Optical Bio-Imaging Centre (NOBIC) provides expertise in optical
-        imaging and microscopy to researchers at Lee Kong Chian School of
-        Medicine (<a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>)
-        and Singapore Centre for Environmental Life Sciences Engineering (<a href="http://www.scelse.sg/Home"
-
-          target="_blank">SCELSE</a>) at Nanyang Technological University,
-        Singapore (<a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>).&nbsp;
-        Our team consists of physicists, chemists and engineers who together
-        cover a broad range of expertise relevant to optical imaging in life and
-        biomedical sciences, including the design and development of customised
-        imaging systems, advanced imaging experiments or image processing and
-        analysis. Our activities can be loosely divided into two domains (with a
-        lot of overlap between them):</p>
-      <p><strong>Imaging facilities operation and user support:<a href="https://www.idmxs.org/"></a></strong>
-      </p>
-      <ul>
-        <li>We ensure the microscopes are in a good working order and
-          troubleshoot technical issues.</li>
-        <li>We train users in microscope operation and assist them with issues
-          encountered during their experiments.</li>
-        <li>We collaborate with users on advanced imaging experiments and image
-          analysis.</li>
-      </ul>
-      <p> <strong>Research and development in optical imaging methods and
-          instrumentation:</strong></p>
-      <ul>
-        <li>We investigate innovative technologies in optical imaging with
-          promising bio-imaging applications.</li>
-        <li>We collaborate with researchers and develop custom solutions to meet
-          their specific imaging needs.</li>
-      </ul>
-      <p>The research and development activities are centered around <a href="Lab.html"
-
-          title="NOBIC Research Laboratory">NOBIC Imaging Research Laboratory</a>
-        and the adjacent <a href="Lab.html#workshop" title="NOBIC prototyping workshop">prototyping
-          workshop</a>, where a variety of custom optomechanical parts can be
-        manufactured.&nbsp; </p>
-      <p>We welcome collaboration with researchers and industrial partners. Do
-        not hesitate to contact us if you think our expertise in optical imaging
-        can help you to solve your scientific questions. Visit our <a href="https://github.com/NOBIC-NTU"
-
-          target="_blank">GitHub page</a> for details of our designs and
-        solutions and for our collection of <a href="https://github.com/NOBIC-NTU/NOBIC-FIJI-Macros"
-
-          title="NOBIC macros" target="_blank">FIJI/Image J macros</a> written
-        for our microscopy facilities users.</p>
-      <h1 class="heading"><a class="anchor" name="Expertise" id="Expertise"></a>Our
-        Expertise</h1>
-      <div class="Expcontainer"> <a href="Expertise.html#Instrument">
-          <table class="tableExpert" style="background: #181818">
-            <tbody>
-              <tr>
-                <td><img src="Media/index/Instrument.jpg" alt="" title="Imaging Instrumentation"
-
-                    style="object-fit: cover; width: 294px; height: 376px;">
-                  <div class="label2">Instrumentation for Optical Imaging &amp;
-                    (Micro)spectroscopy</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </a> <a href="Expertise.html#Software">
-          <table class="tableExpert">
-            <tbody>
-              <tr>
-                <td><img src="Media/index/Software.png" alt="" title="Software and Analysis"
-
-                    style="object-fit: cover; width: 294px; height: 376px;">
-                  <div class="label">Instrument Control Software Development
-                    &amp; Image Analysis; </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </a> <a href="Expertise.html#Experiment">
-          <table class="tableExpert">
-            <tbody>
-              <tr>
-                <td><img src="Media/index/Applications.jpg" alt="" title="Microscopy Applications"
-
-                    style="object-fit: cover; width: 294px; height: 376px;">
-                  <div class="label">Microscopy Techniques, Applications &amp;
-                    Sample Preparation</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </a>
-        <div style="clear: both;"></div>
-      </div>
-      <br>
-      <p><a href="#TOP">BACK TO TOP</a></p>
-    </div>
-    <main-footer></main-footer>
-    <script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function TopnavFunction() {
-      var x = document.getElementById("topnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
   
-    }
-      
-      var Btn = document.getElementsByClassName("Morebtn");
-      var i;
-      
-      for (i = 0; i < Btn.length; i++) {
-        Btn[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.previousElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-         
-          } else {
-            content.style.display = "block";
-            
-          }
-        });
-      }
-      
-      var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+  <body>
+<main-header></main-header>
+<script>var x = document.getElementById("Home");
+x.classList.add("active");</script>
+<br>
+<br>
+<!-- Slideshow container -->
+<div class="slideshow-container"><!-- Full-width images with number and caption text -->
+<div class="mySlides fade"> <a href="ImContest23.html"><img src="Media/index/NOBICcontest23Awards.png">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+</a>
+<div class="text-gallery">The 3 winners of NOBIC Image
+Contest 2023 received prizes from the constest <a style="text-decoration: underline;" href="http://www.zeiss.com.sg/microscopy" target="_blank">sponsor</a></div>
+</div>
+<div class="mySlides fade"> <a href="ImContest25.html"><img src="ImContest/2025/ContestBanner25.PNG">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+</a>
+<div style="position: absolute; bottom: 8px; right: 16px; color: white;">“Getting
+into the Gut of plumbing” by Aparna Mahadevan (LKCMedicine) 1st Place,
+NOBIC Image Contest 2023</div>
+</div>
+<!--<div class="mySlides fade"> <img src="Media/index/LSM800Cake.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div>
+<div class="text-gallery">An edible model of a <a href="AOBIP/LSM800Airy.html"
+target="_blank">confocal microscope</a>, fondant artwork by Tang En
+San</div>
+</div>-->
+<div class="mySlides fade"> <img src="Media/index/TengLeong.png">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+<div class="text-gallery"><a href="https://www.janelia.org/people/teng-leong-chew" target="_blank">Dr Chew Teng-Leong </a>working in
+NOBIC lab</div>
+</div>
+<div class="mySlides fade"> <img src="Media/index/Colin.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+<div class="text-gallery"><a href="https://en.wikipedia.org/wiki/Colin_Sheppard" target="_blank">Prof Colin Sheppard </a>visiting
+NOBIC lab</div>
+</div>
+<div class="mySlides fade"> <img src="Media/index/Calipso.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+<div class="text-gallery"><a href="https://www.science.org.au/learning/general-audience/history/interviews-australian-scientists/professor-barry-marshall" target="_blank">Prof Barry Marshall </a>giving us a
+hand building a scanned lightsheet microscope</div>
+</div>
+<!--<div class="mySlides fade"> <img src="Media/Banner_uTalks.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div> <div class="text-gallery"><a href="MicroTalks.html">NOBIC <span style="color: #ffc800;">μ-Talks</span></a></div>
+</div>-->
+<div class="mySlides fade"> <img src="Media/index/Brillouin2.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+<div class="text-gallery"><a href="https://youtu.be/c-HnAYON1gA" target="_blank">YouTube
+video about our Raman/Brillouin setup</a></div>
+</div>
+<!--<div class="mySlides fade"> <img src="Media/index/Reposit.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div> <div class="text-gallery"><a href="https://github.com/NOBIC-NTU" target="_blank">Our GitHub Respositories</a></div> </div> -->
+<!--<div class="mySlides fade"> <img src="Media/index/Expertise.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING CENTRE (NOBIC)</div> <div class="text-gallery"><a href="index.html#Expertise">Our Expertise</a></div> </div>-->
+<div class="mySlides fade"> <img src="Media/index/Projects.jpg">
+<div class="heading-gallery">NTU OPTICAL BIO-IMAGING
+CENTRE (NOBIC)</div>
+<div class="text-gallery"><a href="Projects.html">Current
+Projects</a></div>
+</div>
+<!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a></div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align: center;"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span></div>
+<div class="container">
+<h1 class="heading"><a class="anchor" name="About" id="About"></a>About NOBIC</h1>
+<p>NTU Optical Bio-Imaging Centre (NOBIC) provides expertise in
+optical imaging and microscopy to researchers at Lee Kong Chian School
+of Medicine (<a href="https://www.ntu.edu.sg/medicine" target="_blank">LKCMedicine</a>) and Singapore Centre
+for Environmental Life Sciences Engineering (<a href="http://www.scelse.sg/Home" target="_blank">SCELSE</a>)
+at Nanyang Technological University, Singapore (<a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">NTU</a>).&nbsp;
+Our team consists of physicists, chemists and engineers who together
+cover a broad range of expertise relevant to optical imaging in life
+and biomedical sciences, including the design and development of
+customised imaging systems, advanced imaging experiments or image
+processing and analysis. Our activities can be loosely divided into two
+domains (with a lot of overlap between them):</p>
+<p><strong>Imaging facilities operation and user support:</strong> </p>
+<ul>
+<li>We ensure the microscopes are in a good working order and
+troubleshoot technical issues.</li>
+<li>We train users in microscope operation and assist them with
+issues encountered during their experiments.</li>
+<li>We collaborate with users on advanced imaging experiments
+and image analysis.</li>
+</ul>
+<p> <strong>Research and development in optical imaging
+methods and instrumentation:</strong></p>
+<ul>
+<li>We investigate innovative technologies in optical imaging
+with promising bio-imaging applications.</li>
+<li>We collaborate with researchers and develop custom
+solutions to meet their specific imaging needs.</li>
+</ul>
+<p>The research and development activities are centered around <a href="Lab.html" title="NOBIC Research Laboratory">NOBIC
+Imaging Research Laboratory</a> and the adjacent <a href="Lab.html#workshop" title="NOBIC prototyping workshop">prototyping
+workshop</a>, where a variety of custom optomechanical parts can
+be manufactured.&nbsp; </p>
+<p>We welcome collaboration with researchers and industrial
+partners. Do not hesitate to contact us if you think our expertise in
+optical imaging can help you to solve your scientific questions. Visit
+our <a href="https://github.com/NOBIC-NTU" target="_blank">GitHub
+page</a> for details of our designs and solutions and for our
+collection of <a href="https://github.com/NOBIC-NTU/NOBIC-FIJI-Macros" title="NOBIC macros" target="_blank">FIJI/Image J
+macros</a> written for our microscopy facilities users.</p>
+<h1 class="heading"><a class="anchor" name="Expertise" id="Expertise"></a>Our
+Expertise</h1>
+<div class="Expcontainer"> <a href="Expertise.html#Instrument">
+<table class="tableExpert" style="background: rgb(24, 24, 24) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+<tbody>
+<tr>
+<td><img src="Media/index/Instrument.jpg" alt="" title="Imaging Instrumentation" style="width: 294px; height: 376px;">
+<div class="label2">Instrumentation for Optical
+Imaging &amp; (Micro)spectroscopy</div>
+</td>
+</tr>
+</tbody>
+</table>
+</a> <a href="Expertise.html#Software">
+<table class="tableExpert">
+<tbody>
+<tr>
+<td><img src="Media/index/Software.png" alt="" title="Software and Analysis" style="width: 294px; height: 376px;">
+<div class="label">Instrument Control Software
+Development &amp; Image Analysis; </div>
+</td>
+</tr>
+</tbody>
+</table>
+</a> <a href="Expertise.html#Experiment">
+<table class="tableExpert">
+<tbody>
+<tr>
+<td><img src="Media/index/Applications.jpg" alt="" title="Microscopy Applications" style="width: 294px; height: 376px;">
+<div class="label">Microscopy Techniques,
+Applications &amp; Sample Preparation</div>
+</td>
+</tr>
+</tbody>
+</table>
+</a>
+<div style="clear: both;"></div>
+</div>
+<br>
+<p><a href="#TOP">BACK TO TOP</a></p>
+</div>
+<main-footer></main-footer>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function TopnavFunction() {
+var x = document.getElementById("topnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
 }
-
+}
+var Btn = document.getElementsByClassName("Morebtn");
+var i;
+for (i = 0; i < Btn.length; i++) {
+Btn[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.previousElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
 function decryptEmail(encoded) {
-
-    var address = atob(encoded);
-    window.location.href = "mailto:" + address;
-
-  }
-
+var address = atob(encoded);
+window.location.href = "mailto:" + address;
+}
 var slideIndex = 0;
-      showSlides();
-      var slides,dots;
-
-      function plusSlides(position) {
-        slideIndex += position;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        else if(slideIndex < 1){slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-
-      function currentSlide(index) {
-          if (index > slides.length) {index = 1}
-          else if(index < 1){index = slides.length}
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-              slides[index-1].style.display = "block";  
-              dots[index-1].className += " active";
-          }
-
-      function showSlides() {
-          var i;
-          slides = document.getElementsByClassName("mySlides");
-          dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex> slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 8000); // Change image every 8 seconds
-      }
-
+showSlides();
+var slides,dots;
+function plusSlides(position) {
+slideIndex += position;
+if (slideIndex > slides.length) {slideIndex = 1}
+else if(slideIndex < 1){slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; }
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " active";
+}
+function currentSlide(index) {
+if (index > slides.length) {index = 1}
+else if(index < 1){index = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; }
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[index-1].style.display = "block"; dots[index-1].className += " active";
+}
+function showSlides() {
+var i;
+slides = document.getElementsByClassName("mySlides");
+dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; }
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1} for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
 document.getElementById("datemod").innerHTML = document.lastModified;
-
-    </script>
-  </body>
-</html>
+</script>
+</body></html>
