@@ -2,6 +2,7 @@
   {
     "IDMxS_Cam_ID": "2",
     "image_cam": "./Hamamatsu_ORCA-Flash4.0_C13440-20CU/Hamamatsu_ORCA-Flash4.0_C13440-20CU.png",
+    "image_cam_icon": "./Hamamatsu_ORCA-Flash4.0_C13440-20CU/Hamamatsu_ORCA-Flash4.0_C13440-20CU_icon.png",
     "image_folder": "./Hamamatsu_ORCA-Flash4.0_C13440-20CU",
     "image_meanExpo": "Mean-vs-Expo_Hamamatsu_ORCA-Flash4.0_C13440-20CU.png",
     "cam_manufacturer": "Hamamatsu",
@@ -41,6 +42,7 @@
   {
     "IDMxS_Cam_ID": "3",
     "image_cam": "./XIMEA_MQ022MG-CM/XIMEA_MQ022MG-CM.png",
+    "image_cam_icon": "./XIMEA_MQ022MG-CM/XIMEA_MQ022MG-CM_icon.png",
     "image_folder": "./XIMEA_MQ022MG-CM",
     "image_meanExpo": "Mean-vs-Expo_XIMEA_MQ022MG-CM.png",
     "cam_manufacturer": "XIMEA",
@@ -80,6 +82,7 @@
   {
     "IDMxS_Cam_ID": "1",
     "image_cam": "./Basler_daA3840-45um/Basler_daA3840-45um.png",
+    "image_cam_icon": "./Basler_daA3840-45um/Basler_daA3840-45um_icon.png",
     "image_folder": "./Basler_daA3840-45um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA3840-45um.png",
     "cam_manufacturer": "Basler",
@@ -119,6 +122,7 @@
   {
     "IDMxS_Cam_ID": "4",
     "image_cam": "./Basler_daA1920-15um/Basler_daA1920-15um.png",
+    "image_cam_icon": "./Basler_daA1920-15um/Basler_daA1920-15um_icon.png",
     "image_folder": "./Basler_daA1920-15um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA1920-15um.png",
     "cam_manufacturer": "Basler",
@@ -158,6 +162,7 @@
   {
     "IDMxS_Cam_ID": "5",
     "image_cam": "./Basler_daA2500-14um/Basler_daA2500-14um.png",
+    "image_cam_icon": "./Basler_daA2500-14um/Basler_daA2500-14um_icon.png",
     "image_folder": "./Basler_daA2500-14um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA2500-14um.png",
     "cam_manufacturer": "Basler",
@@ -197,6 +202,7 @@
   {
     "IDMxS_Cam_ID": "6",
     "image_cam": "./Basler_daA1600-60um/Basler_daA1600-60um.png",
+    "image_cam_icon": "./Basler_daA1600-60um/Basler_daA1600-60um_icon.png",
     "image_folder": "./Basler_daA1600-60um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA1600-60um.png",
     "cam_manufacturer": "Basler",
@@ -236,6 +242,7 @@
   {
     "IDMxS_Cam_ID": "7",
     "image_cam": "./Basler_daA1920-160um/Basler_daA1920-160um.png",
+    "image_cam_icon": "./Basler_daA1920-160um/Basler_daA1920-160um_icon.png",
     "image_folder": "./Basler_daA1920-160um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA1920-160um.png",
     "cam_manufacturer": "Basler",
@@ -275,6 +282,7 @@
   {
     "IDMxS_Cam_ID": "8",
     "image_cam": "./Basler_daA1280-54um/Basler_daA1280-54um.png",
+    "image_cam_icon": "./Basler_daA1280-54um/Basler_daA1280-54um_icon.png",
     "image_folder": "./Basler_daA1280-54um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA1280-54um.png",
     "cam_manufacturer": "Basler",
@@ -314,6 +322,7 @@
   {
     "IDMxS_Cam_ID": "9",
     "image_cam": "./Basler_daA720-520um/Basler_daA720-520um.png",
+    "image_cam_icon": "./Basler_daA720-520um/Basler_daA720-520um_icon.png",
     "image_folder": "./Basler_daA720-520um",
     "image_meanExpo": "Mean-vs-Expo_Basler_daA720-520um.png",
     "cam_manufacturer": "Basler",
@@ -353,6 +362,7 @@
   {
     "IDMxS_Cam_ID": "10",
     "image_cam": "./Raspberry_Pi_Module_3_NoIR/Raspberry_Pi_Module_3_NoIR.png",
+    "image_cam_icon": "./Raspberry_Pi_Module_3_NoIR/Raspberry_Pi_Module_3_NoIR_icon.png",
     "image_folder": "./Raspberry_Pi_Module_3_NoIR",
     "image_meanExpo": "Mean-vs-Expo_Raspberry_Pi_Module_3_NoIR.png",
     "cam_manufacturer": "Raspberry Pi",
@@ -392,6 +402,7 @@
   {
     "IDMxS_Cam_ID": "11",
     "image_cam": "./Raspberry_Pi_HQ/Raspberry_ Pi_HQ.png",
+    "image_cam_icon": "./Raspberry_Pi_HQ/Raspberry_ Pi_HQ_icon.png",
     "image_folder": "./Raspberry_Pi_HQ",
     "image_meanExpo": "Mean-vs-Expo_Raspberry_ Pi_HQ.png",
     "cam_manufacturer": "Raspberry Pi",
@@ -431,6 +442,7 @@
   {
     "IDMxS_Cam_ID": "12",
     "image_cam": "./Vision_Components_MIPI_IMX296/Vision_Components_MIPI_IMX296.png",
+    "image_cam_icon": "./Vision_Components_MIPI_IMX296/Vision_Components_MIPI_IMX296_icon.png",
     "image_folder": "./Vision_Components_MIPI_IMX296",
     "image_meanExpo": "Mean-vs-Expo_Vision_Components_MIPI_IMX296.png",
     "cam_manufacturer": "Vision Components",
@@ -470,6 +482,7 @@
   {
     "IDMxS_Cam_ID": "13",
     "image_cam": "./Vision_Components_MIPI_IMX290/Vision_Components_MIPI_IMX290.png",
+    "image_cam_icon": "./Vision_Components_MIPI_IMX290/Vision_Components_MIPI_IMX290_icon.png",
     "image_folder": "./Vision_Components_MIPI_IMX290",
     "image_meanExpo": "Mean-vs-Expo_Vision_Components_MIPI_IMX290.png",
     "cam_manufacturer": "Vision Components",
@@ -509,6 +522,7 @@
   {
     "IDMxS_Cam_ID": "14",
     "image_cam": "./IDS_Imaging_U3-38J0XLE-M-GL/IDS_Imaging_U3-38J0XLE-M-GL.png",
+    "image_cam_icon": "./IDS_Imaging_U3-38J0XLE-M-GL/IDS_Imaging_U3-38J0XLE-M-GL_icon.png",
     "image_folder": "./IDS_Imaging_U3-38J0XLE-M-GL",
     "image_meanExpo": "Mean-vs-Expo_IDS_Imaging_U3-38J0XLE-M-GL.png",
     "cam_manufacturer": "IDS Imaging",
@@ -548,6 +562,7 @@
   {
     "IDMxS_Cam_ID": "15",
     "image_cam": "./IDS_Imaging_U3-3684XLE-M-G/IDS_Imaging_U3-3684XLE-M-G.png",
+    "image_cam_icon": "./IDS_Imaging_U3-3684XLE-M-G/IDS_Imaging_U3-3684XLE-M-G_icon.png",
     "image_folder": "./IDS_Imaging_U3-3684XLE-M-G",
     "image_meanExpo": "Mean-vs-Expo_IDS_Imaging_U3-3684XLE-M-G.png",
     "cam_manufacturer": "IDS Imaging",
@@ -587,6 +602,7 @@
   {
     "IDMxS_Cam_ID": "16",
     "image_cam": "./IDS_Imaging_U3-3560XLE-M-GL/IDS_Imaging_U3-3560XLE-M-GL.png",
+    "image_cam_icon": "./IDS_Imaging_U3-3560XLE-M-GL/IDS_Imaging_U3-3560XLE-M-GL_icon.png",
     "image_folder": "./IDS_Imaging_U3-3560XLE-M-GL",
     "image_meanExpo": "Mean-vs-Expo_IDS_Imaging_U3-3560XLE-M-GL.png",
     "cam_manufacturer": "IDS Imaging",
@@ -626,6 +642,7 @@
   {
     "IDMxS_Cam_ID": "17",
     "image_cam": "./ArduCam_200MP_SKU-B0527/ArduCam_200MP_SKU-B0527.png",
+    "image_cam_icon": "./ArduCam_200MP_SKU-B0527/ArduCam_200MP_SKU-B0527_icon.png",
     "image_folder": "./ArduCam_200MP_SKU-B0527",
     "image_meanExpo": "Mean-vs-Expo_TBA.png",
     "cam_manufacturer": "ArduCam",
@@ -665,6 +682,7 @@
   {
     "IDMxS_Cam_ID": "18",
     "image_cam": "./Basler_acA5472-17um/Basler_acA5472-17um.png",
+    "image_cam_icon": "./Basler_acA5472-17um/Basler_acA5472-17um_icon.png",
     "image_folder": "./Basler_acA5472-17um",
     "image_meanExpo": "Mean-vs-Expo_TBA.png",
     "cam_manufacturer": "Basler",
@@ -704,11 +722,12 @@
   {
     "IDMxS_Cam_ID": "19",
     "image_cam": "./IDS_U3-36P0XCP-M-GL/IDS_U3-36P0XCP-M-GL.png",
+    "image_cam_icon": "./IDS_U3-36P0XCP-M-GL/IDS_U3-36P0XCP-M-GL_icon.png",
     "image_folder": "./IDS_U3-36P0XCP-M-GL",
     "image_meanExpo": "Mean-vs-Expo_TBA.png",
     "cam_manufacturer": "IDS Imaging",
     "model": "U3-36P0XCP-M-GL",
-    "pixelCount": "5120 x 3840 (19.7MB)",
+    "pixelCount": "5120 x 3840 (20MB)",
     "pixelSize": "1.4 µm",
     "darkCurrent_spec": "",
     "pixelFormat_DC_Test": "-",
