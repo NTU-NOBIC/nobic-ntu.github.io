@@ -48,7 +48,7 @@ fetch('NOBIC_CamDatabase.json')
 
             const imgCell = row.insertCell();
             const imgElement = document.createElement('img');
-            imgElement.src = camera.image_cam;
+            imgElement.src = camera.image_cam_icon;
             imgElement.alt = `Image of ${camera.model}`;
             imgElement.style.width = '100px';
             imgElement.style.height = 'auto';
