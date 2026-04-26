@@ -3,16 +3,10 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <div class="topnav" id="topnav">
       <div class="dropdown"> <button class="dropbtn"><a href="index.html" id = "Home">Home</a></button></div>
-      <div class="dropdown"> <button class="dropbtn"><a href="Expertise.html" id = "Expert">Our
-            Expertise</a></button>
-        <div class="dropdown-content"> <a href="Expertise.html#Instrument">Optical
-            Imaging Instrumentation</a> <a href="Expertise.html#Software">Software
-            &amp; Image Processing</a> <a href="Expertise.html#Experiment">Microscopy
-            Applications &amp; Sample Preparation</a></div>
-      </div>
+      
       <div class="dropdown"> <button class="dropbtn"><a id = "Res">Research</a></button>
-        <div class="dropdown-content"> <a href="Projects.html" id = "Proj">Current
-            Projects</a> <a href="ProjectsPast.html" id = "PastP">Past Projects</a> <a href="Publications.html" id = "Pub">Publications</a>
+        <div class="dropdown-content"> <a href="Projects.html" id = "Proj">
+            Projects</a>  <a href="Publications.html" id = "Pub">Publications</a> <a href="CameraDatabase/NOBIC_CameraDatabase.html" target="_blank" id = "CamDat">Camera Database</a>
         </div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html" id = "Fac">Imaging
