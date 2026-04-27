@@ -361,6 +361,78 @@ body {
     visibility: hidden;
 }
 
+/* styles for Projects page */
+
+.tableProj {
+  outline: none;
+  width: 100%;
+  text-align: left;
+}
+
+.tableProj td {
+  position:relative;
+  line-height: 1.6;
+}
+
+.tableProj p {
+   line-height: 1.2;
+}
+
+.catproj1 {
+  font-weight: bold;
+  color: white;
+  background-color: #0b68b0;
+  padding: 0.2rem;
+}
+
+.catproj2 {
+  font-weight: bold;
+  color: white;
+  background-color: #b00b68;
+  padding: 0.2rem;
+}
+
+.catproj3 {
+  font-weight: bold;
+  color: white;
+  background-color: #69b00b;
+  padding: 0.2rem;
+}
+
+.statproj1 {
+  font-weight: bold;
+  color: white;
+  background-color: #640f5a;
+  padding: 0.2rem;
+}
+
+.statproj2 {
+  font-weight: bold;
+  color: white;
+  background-color: #0f645a;
+  padding: 0.2rem;
+}
+
+.tableProj img {
+  max-width: 600px;
+  height: auto;
+  padding: 1rem 1rem 2rem;
+  float: left;
+}
+
+@media screen and (max-width: 900px) {
+  .tableProj img {
+    max-width: 60vw;
+    height: auto;
+    padding: 1rem 1rem;
+    float: none;
+  }
+ .clear {display: block;}
+}
+
+.clear {display: none;}
+
+
 /* container for Contacts page */
 .Concontainer {
   font-family: "Arial", "Helvetica", "sans-serif";
@@ -635,18 +707,37 @@ Concontainer :: after {
 .more img{
   max-width: 600px;
   height: auto;
-  padding: 0.6rem 1rem;
+  padding: 0.2rem 1rem;
   float: right;
 }
 
+.LargeIm {
+  max-width: 900px;
+  height: auto;
+  padding: 0.2rem 1rem;
+  float: right;
+}
+
+.clear {display: block;}
+
 @media screen and (max-width: 800px) {
   .more img {
-    max-width: 80vw;
+    max-width: 60vw;
     height: auto;
     padding: 0.6rem 1rem;
     float: none;
   }
+
  .clear {display: block;}
+}
+
+@media screen and (max-width: 1100px) {
+ .LargeIm {
+    max-width: 60vw;
+    height: auto;
+    padding: 0.6rem 1rem;
+    float: none;
+  }
 }
 
 .Morebtn {
@@ -716,6 +807,7 @@ Morebtn.content {
   content: "-";
 }
 
+/* legacy styles for Projects */
 .project {overflow: hidden;}
 
 .project img{
