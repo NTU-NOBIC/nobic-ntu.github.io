@@ -6,7 +6,7 @@ class Header extends HTMLElement {
       
       <div class="dropdown"> <button class="dropbtn"><a id = "Res">Research</a></button>
         <div class="dropdown-content"> <a href="Projects.html" id = "Proj">
-            Projects</a>  <a href="Publications.html" id = "Pub">Publications</a> <a href="CameraDatabase/NOBIC_CameraDatabase.html" target="_blank" id = "CamDat">Camera Database</a>
+            Projects</a>  <a href="Publications.html" id = "Pub"> Journal Publications</a> <a href="CameraDatabase/NOBIC_CameraDatabase.html" target="_blank" id = "CamDat">Camera Database</a>
         </div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Facilities.html" id = "Fac">Imaging
