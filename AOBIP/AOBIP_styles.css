@@ -41,7 +41,7 @@ body {
 .container a {color:#c0498e}
 .container a:hover {color:#888b8d}
 .container img {
-	max-width:100%;
+	max-width:50vw;
         float: right;
 	padding: 2rem 2rem;
 }
@@ -51,7 +51,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .container img {
-	max-width:99%;
+	max-wdth: 90vw;
 	display: block;
         float: none;
 	margin-left: auto;
