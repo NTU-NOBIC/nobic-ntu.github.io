@@ -4,34 +4,95 @@
     <meta charset="UTF-8">
     <title>Camera Database</title>
     <style>
+        :root {
+            color-scheme: light dark;
+            --page-bg: #ffffff;
+            --text-color: #111111;
+            --table-border: #dddddd;
+            --table-header-bg: #f2f2f2;
+            --table-row-even-bg: #f9f9f9;
+            --table-row-odd-bg: #ffffff;
+            --link-color: #0000ee;
+            --disabled-link-color: #888888;
+            --group-border: #bbbbbb;
+            --modal-bg: rgba(100, 100, 100, 0.75);
+            --modal-control-color: #ffffff;
+            --bar-track-bg: #f0f0f0;
+            --bar-fill-bg: #6ecf83;
+            --muted-text-color: #666666;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --page-bg: #121212;
+                --text-color: #e8e8e8;
+                --table-border: #3a3a3a;
+                --table-header-bg: #2a2a2a;
+                --table-row-even-bg: #1d1d1d;
+                --table-row-odd-bg: #161616;
+                --link-color: #8ab4f8;
+                --disabled-link-color: #777777;
+                --group-border: #555555;
+                --modal-bg: rgba(0, 0, 0, 0.82);
+                --modal-control-color: #ffffff;
+                --bar-track-bg: #2d2d2d;
+                --bar-fill-bg: #65c97a;
+                --muted-text-color: #aaaaaa;
+            }
+        }
+        body {
+            background-color: var(--page-bg);
+            color: var(--text-color);
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid #ddd;
+            border: 1px solid var(--table-border);
             padding: 8px;
             text-align: center;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: var(--table-header-bg);
         }
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: var(--table-row-even-bg);
         }
         tr:nth-child(odd) {
-            background-color: #ffffff;
+            background-color: var(--table-row-odd-bg);
         }
         .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 14px;
             margin-top: 5px;
             margin-bottom: 5px;
         }
+        .link-group {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 10px;
+        }
+        .link-group + .link-group {
+            border-left: 2px solid var(--group-border);
+            padding-left: 14px;
+        }
+        a {
+            color: var(--link-color);
+        }
         .link {
-            display: inline-block; /* Display links on the same line */
-            margin-right: 10px; /* Add spacing between links */
+            display: inline-block;
             cursor: pointer;
-            color: blue;
+            color: var(--link-color);
             text-decoration: underline;
+        }
+        .link.disabled {
+            color: var(--disabled-link-color);
+            cursor: not-allowed;
+            pointer-events: none;
+            text-decoration: none;
         }
         .database-heading {
             margin-bottom: 2px; /* Adjust bottom margin of the heading */
@@ -40,7 +101,7 @@
             margin-bottom: 10px; /* Adjust bottom margin of the heading */
             font-weight: normal; /* Removes bold */
             font-size: inherit; /* Inherits font size from the parent element */
-            margin: 10; /* Removes default margins */
+            margin: 10px 0; /* Removes default margins */
         }
         #imageModal {
             display: none;
@@ -51,13 +112,13 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(100, 100, 100, 0.75);
+            background-color: var(--modal-bg);
         }
         #imageModal img {
             margin: auto;
             display: block;
             width: 100%;
-            max-width: 1500px;
+            max-width: 700px;
             cursor: default;
         }
         #imageModal span {
@@ -65,7 +126,7 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            color: white;
+            color: var(--modal-control-color);
             font-size: 35px;
         }
         img {
@@ -74,17 +135,24 @@
     </style>
 </head>
 <body>
-    <meta charset="UTF-8">
     <h1 class="database-heading">NTU NOBIC Camera Database</h1>
-    <h2 class="database-subheading">NOBIC transforms the field of sensing by bringing image sensing into the digital age for researchers. This database compiles commercially available CMOS cameras from various manufacturers. Key characteristics of camera sensors are measured to facilitate comparison and selection for low cost microscopy applications.</h2>
+    <h2 class="database-subheading">NOBIC transforms the field of sensing by bringing image sensing into the digital age for researchers. This database compiles commercially available CMOS cameras from various manufacturers.<br>Key characteristics of camera sensors in List #1 are measured to facilitate comparison and selection for low cost microscopy applications.</h2>
     <div class="link-container">
-        <a id="cameraInfoLink" class="link">Camera List</a>
-        <a id="setupLink" class="link">Setup/Abstract</a>
-        <a id="darkCurrentLink" class="link">Dark Current</a>
-        <a id="readNoiseLink" class="link">Read Noise</a>
-        <a id="QELink" class="link">Quantum Efficiency</a>
-        <a id="ThermalNoiseLink" class="link">Thermal Noise</a>
-        <a id="GainLink" class="link">Gain</a>
+        <div class="link-group">
+            <a id="cameraInfoLink" class="link">Camera List #1</a>
+            <a id="setupLink" class="link">Setup/Abstract</a>
+            <a id="darkCurrentLink" class="link">Dark Current</a>
+            <a id="readNoiseLink" class="link">Read Noise</a>
+            <a id="QELink" class="link">Quantum Efficiency</a>
+            <a id="ThermalNoiseLink" class="link">Thermal Noise</a>
+            <a id="GainLink" class="link">Gain</a>
+        </div>
+        <div class="link-group">
+            <a id="cameraInfo2Link" class="link">Camera List #2: Smallest Pixel Cameras by Company</a>
+        </div>
+        <div class="link-group">
+            <a id="cameraInfo3Link" class="link">Camera List #3: &gt;200MP Camera</a>
+        </div>
     </div>
     <div id="tableContainer">
         <!-- Table will be dynamically created here -->
@@ -97,38 +165,59 @@
     <script src="cam_details.js"></script>
     <script src="common.js"></script>
     <script>
+        const measurementLinkIds = [
+            'setupLink',
+            'darkCurrentLink',
+            'readNoiseLink',
+            'QELink',
+            'ThermalNoiseLink',
+            'GainLink'
+        ];
+
+        function setMeasurementLinksDisabled(disabled) {
+            measurementLinkIds.forEach(linkId => {
+                const link = document.getElementById(linkId);
+                link.classList.toggle('disabled', disabled);
+                link.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+            });
+        }
+
         document.getElementById('cameraInfoLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
-            loadScript('cam_list.js');
+            setMeasurementLinksDisabled(false);
+            loadScript('cam_list_1.js');
+        });
+
+        document.getElementById('cameraInfo2Link').addEventListener('click', function() {
+            setMeasurementLinksDisabled(true);
+            loadScript('cam_list_2.js');
+        });
+
+        document.getElementById('cameraInfo3Link').addEventListener('click', function() {
+            setMeasurementLinksDisabled(true);
+            loadScript('cam_list_3.js');
         });
 
         document.getElementById('setupLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_setup.js');
         });
 
         document.getElementById('darkCurrentLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_DC.js');
         });
 
         document.getElementById('readNoiseLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_RN.js');
         });
 
         document.getElementById('QELink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_QE.js');
         });
 
         document.getElementById('ThermalNoiseLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_TN.js');
         });
 
         document.getElementById('GainLink').addEventListener('click', function() {
-            document.getElementById('tableContainer').innerHTML = ''; // Clear existing content
             loadScript('cam_Gain.js');
         });
 
@@ -139,9 +228,10 @@
             }
         });
 
-        // Automatically load cam_List.js on page load
+        // Automatically load cam_List_1.js on page load
         window.addEventListener('load', function() {
-            loadScript('cam_list.js');
+            setMeasurementLinksDisabled(false);
+            loadScript('cam_list_1.js');
         });
     </script>
 </body>
