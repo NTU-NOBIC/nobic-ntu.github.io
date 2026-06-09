@@ -77,6 +77,10 @@ function createParameterTable(selectedCamera) {
     img1Element.src = selectedCamera['image_cam'];
     img1Element.alt = selectedCamera['model'];
     img1Element.style.cursor = 'zoom-in'; 
+    img1Element.style.maxHeight = '120px';
+    img1Element.style.maxWidth = '100%';
+    img1Element.style.width = 'auto';
+    img1Element.style.objectFit = 'contain';
     img1Element.onclick = () => zoomImage(selectedCamera['image_cam']); // Zoom function on click
 
     const specSheetLink = document.createElement('a');
