@@ -146,6 +146,7 @@
             <a id="QELink" class="link">Quantum Efficiency</a>
             <a id="ThermalNoiseLink" class="link">Thermal Noise</a>
             <a id="GainLink" class="link">Gain</a>
+            <a id="SummaryLink" class="link">Summary</a>
         </div>
         <div class="link-group">
             <a id="cameraInfo2Link" class="link">Camera List #2: Smallest Pixel Cameras by Company</a>
@@ -171,7 +172,8 @@
             'readNoiseLink',
             'QELink',
             'ThermalNoiseLink',
-            'GainLink'
+            'GainLink',
+            'SummaryLink'
         ];
 
         function setMeasurementLinksDisabled(disabled) {
@@ -219,6 +221,10 @@
 
         document.getElementById('GainLink').addEventListener('click', function() {
             loadScript('cam_Gain.js');
+        });
+
+        document.getElementById('SummaryLink').addEventListener('click', function() {
+            loadScript('cam_Summary.js');
         });
 
         // ESC key close the image zoom-in view
