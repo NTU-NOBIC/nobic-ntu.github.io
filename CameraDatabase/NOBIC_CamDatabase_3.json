@@ -1,6 +1,23 @@
 ﻿[
   {
     "NOBIC_Cam_ID_3": "1",
+    "image_cam": ".\/Cam_List_3\/ArduCam_200MP_SKU-B0527.png",
+    "image_cam_icon": ".\/Cam_List_3\/ArduCam_200MP_SKU-B0527_icon.png",
+    "cam_manufacturer": "ArduCam",
+    "model": "200MP_SKU-B0527",
+    "resolutionMP": "200 MP",
+    "pixelSize_um": "0.56 µm",
+    "pixelCount": "16320 x 12288",
+    "sensorDiagonal": "11.44 mm ø",
+    "sensorActiveArea": "9.139 x 6.881 mm",
+    "color_mono": "Color",
+    "sensorModel": "Sony",
+    "frameRate_fps": "1fps@16320×6144 raw",
+    "interfaceType": "USB 3.0",
+    "cam_URL": "https:\/\/www.arducam.com\/arducam-200mp-motorized-focus-usb-3-0-camera-module.html"
+  },
+  {
+    "NOBIC_Cam_ID_3": "2",
     "image_cam": ".\/Cam_List_3\/MX2457MR-SY-X4G3-FF.png",
     "image_cam_icon": ".\/Cam_List_3\/MX2457MR-SY-X4G3-FF_icon.png",
     "cam_manufacturer": "XIMEA",
@@ -17,7 +34,7 @@
     "cam_URL": "https:\/\/www.ximea.com\/products\/embedded-system\/xix-xl-large-medium-format-sony-sensor-cameras\/sony-imx811-pcie-mono-large-format-bsi-embedded-camera"
   },
   {
-    "NOBIC_Cam_ID_3": "2",
+    "NOBIC_Cam_ID_3": "3",
     "image_cam": ".\/Cam_List_3\/shr811MCX12.png",
     "image_cam_icon": ".\/Cam_List_3\/shr811MCX12_icon.png",
     "cam_manufacturer": "Allied Vision",
@@ -34,7 +51,7 @@
     "cam_URL": "https:\/\/www.alliedvision.com\/en\/products\/area-scan-cameras\/shr\/shr-cxp\/view\/2232"
   },
   {
-    "NOBIC_Cam_ID_3": "3",
+    "NOBIC_Cam_ID_3": "4",
     "image_cam": ".\/Cam_List_3\/TTS246MNCXP10-5M.png",
     "image_cam_icon": ".\/Cam_List_3\/TTS246MNCXP10-5M_icon.png",
     "cam_manufacturer": "Vital Vision",
@@ -51,7 +68,7 @@
     "cam_URL": "https:\/\/vitalvisiontechnology.com\/tts246mncxp10-5m\/"
   },
   {
-    "NOBIC_Cam_ID_3": "4",
+    "NOBIC_Cam_ID_3": "5",
     "image_cam": ".\/Cam_List_3\/VP-288MX2-M15.png",
     "image_cam_icon": ".\/Cam_List_3\/VP-288MX2-M15_icon.png",
     "cam_manufacturer": "Vieworks",
@@ -59,7 +76,7 @@
     "resolutionMP": "288 MP",
     "pixelSize_um": "3.5 µm",
     "pixelCount": "24000 x 12000",
-    "sensorDiagonal": "4.96\"",
+    "sensorDiagonal": "3.70\" \/ 93.9 mm ø",
     "sensorActiveArea": "84 x 42 mm",
     "color_mono": "Mono",
     "sensorModel": "SCG288M",
