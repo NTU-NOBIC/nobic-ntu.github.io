@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head>
+<!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"><title>NOBIC | Image of the Month</title>
+
+<link rel="stylesheet" href="ImContest/Contest_styles.css">
+<link rel="shortcut icon" type="image/ico" href="Media/Icon.png">
+<script>
+document.addEventListener("click", x=>0)
+</script>
+<script async="" src="//static.getclicky.com/101389963.js"></script>
+<script src="Elements.js"></script>
+</head>
+<body>
+<main-header></main-header>
+<script>var x = document.getElementById("Fac");
+x.classList.add("active");
+var x = document.getElementById("ImCont");
+x.classList.add("active");
+</script><br>
+<br>
+<div class="finalist-container">
+<img alt="" src="ImContest/Images25/Colorectal%20Cosmos_anonymous.png" title="Colorectal Cosmos">
+<p class="heading1-gallery" id="title"></p>
+<p class="heading2-gallery" id="authors"></p>
+<p class="text-gallery" id="description"></p>
+<span class="clear"> <br>
+</span></div>
+<sub-footer></sub-footer>
+<script>
+async function loadImageMonth() {
+try {
+const response = await fetch("ImageMonth.json");
+if (!response.ok) {
+throw new Error("HTTP error " + response.status);
+}
+const imMonth = await response.json();
+document.getElementById("title").textContent =
+imMonth.title;
+}
+catch(err) {
+document.getElementById("title").textContent = err.message;
+}
+}
+loadImageMonth();
+const text = '{"name":"John","age":30,"city":"New York"}';
+const imMonth = JSON.parse(text);
+document.getElementById("title").textContent = imMonth.name;
+</script>
+</body></html>
