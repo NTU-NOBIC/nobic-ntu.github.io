@@ -35,8 +35,9 @@ if (!response.ok) {
 throw new Error("HTTP error " + response.status);
 }
 const imMonth = await response.json();
-document.getElementsByTagName("img").setAttribute("src", "ImMonth/" + imMonth.image);
-document.getElementsByTagName("img").setAttribute("title", imMonth.title);
+var imgSrcUrl = document.getElementsByTagName("img");
+imgSrcUrl.setAttribute("src", "ImMonth/" + imMonth.image);
+imgSrcUrl.setAttribute("title", imMonth.title);
 document.getElementById("title").textContent =
 imMonth.title;
 document.getElementById("authors").textContent =
