@@ -16,7 +16,7 @@ document.addEventListener("click", x=>0)
 <main-header></main-header>
 <script>var x = document.getElementById("Fac");
 x.classList.add("active");
-var x = document.getElementById("ImCont");
+var x = document.getElementById("ImMonth");
 x.classList.add("active");
 </script><br>
 <div class="finalist-container"><img alt="" src="ImMonth/Encircled%20Fate%20Drug%20Delivery%20and%20Cell%20Death%20W_anonymous.png" title="title">
@@ -24,7 +24,6 @@ x.classList.add("active");
 <p class="heading2-gallery" id="authors"></p>
 <p class="heading2-gallery" id="study"></p>
 <p class="text-gallery" id="description"></p>
-<p class="text-gallery" id="image"></p>
 <span class="clear"> <br>
 </span></div>
 <sub-footer></sub-footer>
@@ -36,8 +35,8 @@ if (!response.ok) {
 throw new Error("HTTP error " + response.status);
 }
 const imMonth = await response.json();
-document.getElementById("image").textContent =
-"ImMonth/" + imMonth.image;
+document.getElementsByTagName("img").setAttribute("src", "ImMonth/" + imMonth.image);
+document.getElementsByTagName("img").setAttribute("title", imMonth.title);
 document.getElementById("title").textContent =
 imMonth.title;
 document.getElementById("authors").textContent =
