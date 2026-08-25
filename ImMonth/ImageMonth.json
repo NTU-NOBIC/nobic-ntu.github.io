@@ -1,0 +1,7 @@
+{
+  "image": "Encircled Fate Drug Delivery and Cell Death W_anonymous.png",
+  "title": "Encircled Fate: Drug Delivery and Cell Death Within a Vascularized Colorectal Tumor Model",
+  "study": "Example Study",
+  "authors": "Byun Suyeon and Andrea Pavesi (LKCMedicine), Austin Seah and Michelle Eio (IMCB, A*STAR)",
+  "description": "Taken on Cell Discoverer 7 using 2 times of 10X magnification, this image displays a colorectal cancer organoid embedded within the advanced AIM Biotech OrganiX microfluidic culture platform. The orange central mass represents the CMRA-stained colorectal cancer spheroid, while the network of green filaments surrounding it corresponds to GFP-labeled Endothelial Cells, effectively mimicking blood vessels forming a tumor microenvironment. Scattered flicks of pink (DRAQ7 stain) highlight dead cells within the spheroid—a visualization of cell death induced by the chemotherapeutic drug. This model captures the intricate tumor–vessel interplay, including cellular heterogeneity and drug response dynamics, in a setting that mirrors native tissue architecture and microenvironmental cues. The result is a powerful, preclinical organ-on-chip system for studying therapeutic delivery, efficacy, and mechanisms of cell death within contextually accurate tumor microenvironments."
+}
