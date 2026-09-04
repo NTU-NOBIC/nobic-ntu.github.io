@@ -19,7 +19,7 @@ class Header extends HTMLElement {
             target="_blank">Booking System</a> <a href="Facilities.html#MicroFluor">Microscope
             Selector</a><a href="FIJI/FIJIntro.html" target="_blank">Introduction
             to FIJI</a><a href="MicroscopyCourse/MicroCourse22.html" target="_blank">Microscopy
-            Course</a><a href="MicroTalks.html" id = "uTalk">μ-Talks</a><a href="ImContest25.html" id = "ImCont">Image Contest</a><a href="FacilityPublications.html" id = "FacPub">Publications using NOBIC Facilities</a></div>
+            Course</a><a href="MicroTalks.html" id = "uTalk">μ-Talks</a><a href="ImContest25.html" id = "ImCont">Image Contest</a><a href="ImMonth/ImMonth.html" id = "ImMonth">Image of the Month</a><a href="FacilityPublications.html" id = "FacPub">Publications using NOBIC Facilities</a></div>
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Team.html" id = "Team">Our
             Team</a></button></div>
