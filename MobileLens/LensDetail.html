@@ -15,17 +15,32 @@ document.addEventListener("click", x=>0)
   <body style=" background-color: white;">
     <div class="finalist-container"><img alt="" id="DispImage">
       <p class="heading1-gallery" id="patent"></p>
-      <p class="heading2-gallery" id="authors"></p>
-      <p class="heading2-gallery" id="study"></p>
-      <p class="text-gallery" id="description"></p>
+      <p class="heading2-gallery" id="year"></p>
+      <p class="heading2-gallery" id="foclength"></p>
+      <p class="heading2-gallery" id="fnum"></p>
+      <p class="heading2-gallery" id="hafield"></p>
+      <p class="heading2-gallery" id="refwave"></p>
       <span class="clear"> <br>
       </span></div>
     <sub-footer></sub-footer>
     <script>
       const queryString = window.location.search;
 			const urlParams = new URLSearchParams(queryString);
+      
+      document.getElementById("DispImage").src = "Data/"+urlParams.PATENT+"/"+urlParams.PATENT+".jpg";
+document.getElementById("DispImage").title = urlParams.PATENT;
       document.getElementById("patent").textContent =
-urlParams.get('PATENT');;
+urlParams.get('PATENT');
+       document.getElementById("year").textContent =
+"Year of patent: "+urlParams.get('YEAR OF PATENT');
+       document.getElementById("foclength").textContent =
+"Focal length (mm): "+urlParams.get('FOCAL LENGTH (mm)');
+       document.getElementById("fnum").textContent =
+"F/number: "+urlParams.get('F/NUMBER');
+       document.getElementById("hafield").textContent =
+"Half field (degree): "+urlParams.get('HALF FIELD (Degree)');
+       document.getElementById("refwave").textContent =
+"Reference wavelength (um): "+urlParams.get('REFERENCE WAVELENTH (um)');
 
 </script>
   </body>
