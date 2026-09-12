@@ -11,7 +11,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh16 </p>
+    <p> Blahahhhh17 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -34,6 +34,8 @@
                 // Dynamically generate headers from the object keys
                 const headers = Object.keys(data[0]);
                 const thead = table.createTHead();
+              	const tbody = document.createElement("tbody");
+              
               	const headerRow = thead.insertRow();
                 headers.forEach(headerText => {
                     const th = document.createElement("th");
