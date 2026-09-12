@@ -61,15 +61,7 @@ document.addEventListener("click", x=>0)
       
       generateTableFromJSON(jsonString);
 
-async function loadMobileJSON() {
-try {
-const response = await fetch("Mobile.json");
-if (!response.ok) {
-throw new Error("HTTP error " + response.status);
-}
-const MobileDat = await response.json();
-  generateTableFromJSON(MobileDat);
-}
+
     </script>
   </body>
 </html>
