@@ -262,8 +262,6 @@ container a:visited {
 .LinkBut {
   background: #46647d ;
   font-size: 1rem; 
-  color: #bdbdbd;
-  text-decoration: none; 
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
@@ -319,6 +317,34 @@ container a:visited {
     position: relative;
     top: -3.5rem;
     visibility: hidden;
+}
+
+.table {
+   border-color:black;
+   border-width: 1px;
+   border-style: solid;
+   border-collapse: collapse;
+}
+
+.table td {
+
+  text-align: center;
+  border-color:black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.table tr {
+  cursor: pointer;
+}
+
+.table tr:hover {
+  background-color: #bdbdbd;
+}
+
+.table th{
+  background-color: #46647d ;
+  color: white;
 }
      
 .footer {
