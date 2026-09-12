@@ -337,7 +337,7 @@ th, td {
   border-color:black;
   border-width: 1px;
   border-style: solid;
-  padding: 14px 20px;
+  padding: 0.5rem 0.75rem;
 }
 
 tbody tr {
