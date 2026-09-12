@@ -34,7 +34,7 @@ document.addEventListener("click", x=>0)
 
                 // 3. Dynamically generate headers from the object keys
                 const headers = Object.keys(data[0]);
-                const thead = table.createTHead();
+                const thead = LensTable.createTHead();
               	const headerRow = thead.insertRow();
                 headers.forEach(headerText => {
                     const th = document.createElement("th");
@@ -55,7 +55,7 @@ document.addEventListener("click", x=>0)
                 // 5. Inject the completed table into the container element
                 const container = document.getElementById("table-container");
                 container.innerHTML = ""; // Clear any prior content
-                container.appendChild(table);
+                container.appendChild(LensTable);
 
             } catch (error) {
                 console.error('Error fetching or processing JSON:', error);
