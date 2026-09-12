@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Mobile Lens Database</title>
+    <link rel="stylesheet" href="../ImContest/Contest_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="../Media/Icon.png">
+    <script>
+document.addEventListener("click", x=>0)
+</script> <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
+  </head>
+  <body>
+    <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
+    <p> Blahahhhh </p>
+    
+    <!-- The table will be injected here -->
+    <div id="table-container"></div>
+    <script>
+     function generateTableFromJSON(jsonRaw) {
+    // 1. Parse the JSON data into a JavaScript array
+    const data = JSON.parse(jsonRaw);
+    if (data.length === 0) return;
+
+    // 2. Create the table element
+    const table = document.createElement("table");
+
+    // 3. Extract headers dynamically from the first object's keys
+    const headers = Object.keys(data[0]);
+    
+    // 4. Create the header row (thead)
+    const thead = table.createTHead();
+    const headerRow = thead.insertRow();
+    headers.forEach(headerText => {
+        const th = document.createElement("th");
+        th.textContent = headerText; // Safe from XSS injection
+        headerRow.appendChild(th);
+    });
+
+    // 5. Create the table body (tbody) and populate rows
+    const tbody = table.createTBody();
+    data.forEach(item => {
+        const row = tbody.insertRow();
+        headers.forEach(header => {
+            const cell = row.insertCell();
+            // Fallback to empty string if the property doesn't exist in the current object
+            cell.textContent = item[header] !== undefined ? item[header] : "";
+        });
+    });
+
+    // 6. Inject the completed table into the container element
+    const container = document.getElementById("table-container");
+    container.innerHTML = ""; // Clear any prior content
+    container.appendChild(table);
+}
+
+async function loadMobileJSON() {
+try {
+const response = await fetch("Mobile.json");
+if (!response.ok) {
+throw new Error("HTTP error " + response.status);
+}
+const MobileDat = await response.json();
+  generateTableFromJSON(MobileDat);
+}
+    </script>
+  </body>
+</html>
