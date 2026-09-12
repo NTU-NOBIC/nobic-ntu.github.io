@@ -21,7 +21,7 @@ document.addEventListener("click", x=>0)
     <script>
       
       
-     function generateTableFromJSON(jsonRaw) {
+     function generateTableFromJSON() {
      // 1. Fetch the data and populate the table
 		let data; // Variable to store fetched data globally
 		fetch('Mobile.json')
@@ -67,7 +67,7 @@ document.addEventListener("click", x=>0)
     container.appendChild(table);
 }
       
-
+generateTableFromJSON();
 
     </script>
   </body>
