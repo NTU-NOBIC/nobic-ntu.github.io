@@ -14,7 +14,7 @@ document.addEventListener("click", x=>0)
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh3 </p>
+    <p> Blahahhhh4 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -30,7 +30,7 @@ document.addEventListener("click", x=>0)
                 if (data.length === 0) return;
               
               	// 2. Create the table element
-    						const table = document.createElement("table");
+    						const table = document.createElement("LensTable");
 
                 // 3. Dynamically generate headers from the object keys
                 const headers = Object.keys(data[0]);
@@ -64,6 +64,39 @@ document.addEventListener("click", x=>0)
 
         // Initialize table generation on page load
         window.addEventListener('DOMContentLoaded', loadTableFromJSON);
+      
+      function ClickRow() {
+        const table = document.getElementById('LensTable');
+  
+          table.addEventListener('click', (event) => {
+            // Find the closest row to the clicked element (in case they clicked a <td>)
+            const row = event.target.closest('tr');
+
+            // Ensure the click was inside a <tbody> row, not the <thead>
+            if (row && row.closest('tbody')) {
+              const rowId = row.dataset.id;
+            
+              
+              // 1. Find the table headers to use as JSON keys
+              
+              const headers = Array.from(table.querySelectorAll('thead th'))
+                                   .map(th => th.innerText.trim());
+
+              // 2. Extract text from each cell in the target row
+              const cells = Array.from(row.querySelectorAll('td'));
+
+              // 3. Combine headers and cell values into a single object
+              const rowObject = {};
+              cells.forEach((cell, index) => {
+                  const key = headers[index] || `column_${index}`;
+                  rowObject[key] = cell.innerText.trim();
+              });
+              
+              // Store the data as a JSON string
+						sessionStorage.setItem("sharedData", JSON.stringify(rowObject));
+            }
+            }
+      
     </script>
   </body>
 </html>
