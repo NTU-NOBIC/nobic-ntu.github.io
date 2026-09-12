@@ -14,7 +14,7 @@ document.addEventListener("click", x=>0)
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh6 </p>
+    <p> Blahahhhh7 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -90,7 +90,7 @@ document.addEventListener("click", x=>0)
               cells.forEach((cell, index) => {
                   const key = headers[index] || `column_${index}`;
                   rowObject[key] = cell.innerText.trim();
-              };
+              });
               
               // Store the data as a JSON string
 						sessionStorage.setItem("sharedData", JSON.stringify(rowObject));
