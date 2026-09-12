@@ -5,7 +5,7 @@
     <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Mobile Lens Database</title>
-    <link rel="stylesheet" href="../ImContest/Contest_styles.css">
+    <link rel="stylesheet" href="Mobile_styles.css">
     <link rel="shortcut icon" type="image/ico" href="../Media/Icon.png">
     <script>
 document.addEventListener("click", x=>0)
@@ -20,6 +20,7 @@ document.addEventListener("click", x=>0)
       <p class="heading2-gallery" id="fnum"></p>
       <p class="heading2-gallery" id="hafield"></p>
       <p class="heading2-gallery" id="refwave"></p>
+      <button class="LinkBut"><a id="PatLink" target="blank">Patent Document (PDF)</a></button> " " <button class="LinkBut"><a id="DesLink" target="blank">Optical Design (ZMX)</a></button>
       <span class="clear"> <br>
       </span></div>
     <sub-footer></sub-footer>
@@ -43,6 +44,11 @@ urlParams.get('PATENT');
 "Half field (degree): "+urlParams.get('HALF FIELD (Degree)');
        document.getElementById("refwave").textContent =
 "Reference wavelength (um): "+urlParams.get('REFERENCE WAVELENGTH (um)');
+      
+      document.getElementById("PatLink").href =
+"Data/"+urlParams.get('PATENT')+"/"+urlParams.get('PATENT')+".pdf";
+      document.getElementById("DesLink").href =
+"Data/"+urlParams.get('PATENT')+"/"+urlParams.get('PATENT')+".zmx";
 
 </script>
   </body>
