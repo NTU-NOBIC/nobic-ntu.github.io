@@ -11,10 +11,12 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh13 </p>
+    <p> Blahahhhh14 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
+    
+    
     <script>
         async function loadTableFromJSON() {
             try {
@@ -58,11 +60,11 @@
                 console.error('Error fetching or processing JSON:', error);
             }
         }
-
-        // Initialize table generation on page load
+    </script>
+    <script>
+       // Initialize table generation on page load
         window.addEventListener('DOMContentLoaded', loadTableFromJSON);
       
-      function ClickRow() {
         const table = document.getElementById('table');
   
           table.addEventListener('click', (event) => {
@@ -93,8 +95,7 @@
               console.log(`Patent: ${sharedData.PATENT}`);
           
          }
-        });
-       }
+        }); 
      
       
     </script>
