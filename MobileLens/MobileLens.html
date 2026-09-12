@@ -20,11 +20,19 @@ document.addEventListener("click", x=>0)
     <div id="table-container"></div>
     <script>
       
-      const jsonString = `[{"Sno":"1","PATENT":"US10007086B2","YEAR OF PATENT":"2018","FOCAL LENGTH (mm)":"3.79","F/NUMBER":"1.65","HALF FIELD (Degree)":"48.00","REFERENCE WAVELENGTH (um)":"0.5876"}
-]`;
+      
      function generateTableFromJSON(jsonRaw) {
-    // 1. Parse the JSON data into a JavaScript array
-    const data = JSON.parse(jsonRaw);
+     // 1. Fetch the data and populate the table
+		let data; // Variable to store fetched data globally
+		fetch('Mobile.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to read NOBIC_CamDatabase_1.json');
+        }
+        return response.json();
+    })
+    
+        data = dataResponse;  
     if (data.length === 0) return;
 
     // 2. Create the table element
@@ -59,7 +67,6 @@ document.addEventListener("click", x=>0)
     container.appendChild(table);
 }
       
-      generateTableFromJSON(jsonString);
 
 
     </script>
