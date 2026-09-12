@@ -16,59 +16,44 @@ document.addEventListener("click", x=>0)
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
     <p> Blahahhhh </p>
     
-    <!-- The table will be injected here -->
-    <div id="table-container"></div>
+    <table id="json-table">
+        <thead>
+            <tr id="table-header"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
     <script>
-      
-      
-     function generateTableFromJSON() {
-     // 1. Fetch the data and populate the table
-		let data; // Variable to store fetched data globally
-		fetch('Mobile.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Failed to read NOBIC_CamDatabase_1.json');
+        async function loadTableFromJSON() {
+            try {
+                // 1. Fetch the JSON file
+                const response = await fetch('Mobile.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                
+                const data = await response.json();
+
+                if (data.length === 0) return;
+
+                // 2. Dynamically generate headers from the object keys
+                const headers = Object.keys(data[0]);
+                const headerRow = document.getElementById('table-header');
+                headerRow.innerHTML = headers.map(header => `<th>${header.toUpperCase()}</th>`).join('');
+
+                // 3. Generate table body rows
+                const tableBody = document.getElementById('table-body');
+                const rowsHTML = data.map(item => {
+                    const cells = headers.map(header => `<td>${item[header] ?? ''}</td>`).join('');
+                    return `<tr>${cells}</tr>`;
+                }).join('');
+
+                tableBody.innerHTML = rowsHTML;
+
+            } catch (error) {
+                console.error('Error fetching or processing JSON:', error);
+            }
         }
-        return response.json();
-    })
-    
-        data = dataResponse;  
-    if (data.length === 0) return;
 
-    // 2. Create the table element
-    const table = document.createElement("table");
-
-    // 3. Extract headers dynamically from the first object's keys
-    const headers = Object.keys(data[0]);
-    
-    // 4. Create the header row (thead)
-    const thead = table.createTHead();
-    const headerRow = thead.insertRow();
-    headers.forEach(headerText => {
-        const th = document.createElement("th");
-        th.textContent = headerText; // Safe from XSS injection
-        headerRow.appendChild(th);
-    });
-
-    // 5. Create the table body (tbody) and populate rows
-    const tbody = table.createTBody();
-    data.forEach(item => {
-        const row = tbody.insertRow();
-        headers.forEach(header => {
-            const cell = row.insertCell();
-            // Fallback to empty string if the property doesn't exist in the current object
-            cell.textContent = item[header] !== undefined ? item[header] : "";
-        });
-    });
-
-    // 6. Inject the completed table into the container element
-    const container = document.getElementById("table-container");
-    container.innerHTML = ""; // Clear any prior content
-    container.appendChild(table);
-}
-      
-generateTableFromJSON();
-
+        // Initialize table generation on page load
+        window.addEventListener('DOMContentLoaded', loadTableFromJSON);
     </script>
   </body>
 </html>
