@@ -22,22 +22,11 @@ document.addEventListener("click", x=>0)
       </span></div>
     <sub-footer></sub-footer>
     <script>
-async function loadLensDetail() {
-const LensData = sessionStorage.getItem("sharedData");
-if (LensData) {
-    const dispData = JSON.parse(LensData);
-    
-}
-
-
-
-document.getElementById("patent").textContent =
-LensData.PATENT;
-
-}
-
-
-loadLensDetail();
+      const rawData = sessionStorage.getItem("sharedData");
+      if (rawData) {
+          const LensData = JSON.parse(rawData);
+          console.log(LensData.PATENT, LensData.Sno);
+      }
 </script>
   </body>
 </html>

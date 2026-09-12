@@ -7,11 +7,14 @@
     <title>Mobile Lens Database</title>
     <link rel="stylesheet" href="../ImContest/Contest_styles.css">
     <link rel="shortcut icon" type="image/ico" href="../Media/Icon.png">
-    
+    <script>
+    document.addEventListener("click", x=>0)
+    </script> <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh17 </p>
+    <p> Blahahhhh18 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -55,6 +58,7 @@
                     const jsonString = JSON.stringify(this._rawJSON);
                     sessionStorage.setItem("sharedData", jsonString);
                     console.log("Exported Row JSON:", this._rawJSON);
+                    window.open("LensDetail.html", "_blank");
                   });
 
                   // Populate cells
