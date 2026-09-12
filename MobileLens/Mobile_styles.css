@@ -255,26 +255,33 @@ body {
 }
 
 .LinkBut {
-  background: #bdbdbd;
-  font-size: 1rem;  
+  background: #46647d ;
+  font-size: 1rem; 
+  color: #bdbdbd;
+  text-decoration: none; 
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
 }
 
+.LinkBut a:link {
+  color: #bdbdbd;
+  text-decoration: none; 
+}
+
 .LinkBut:hover {
-  background: #46647d ;
+  background: #bdbdbd ;
 }
 
 .LinkBut:hover a{
-  color: #bdbdbd;
+  color: #46647d;
 }
 
 .heading {
   font-size: 1.8rem;
   color: black;
-  text-align: left;
-  padding-top: 1rem;
+  text-align: center;
+  padding-top: 0.5rem;
   text-weight: bold;
 }
 
