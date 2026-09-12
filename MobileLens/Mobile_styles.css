@@ -230,13 +230,14 @@ body {
   color:#46647d;
   text-decoration: none;
 }
-.container a:hover {
-  color:#bdbdbd
-}
 
 container a:visited {
   color:#46647d;
   text-decoration: none;
+}
+
+.container a:hover {
+  color:#bdbdbd
 }
 
 .logo img {
@@ -319,30 +320,29 @@ container a:visited {
     visibility: hidden;
 }
 
-.table {
+table {
+   border-collapse: collapse;
+   text-align: center;
    border-color:black;
    border-width: 1px;
    border-style: solid;
-   border-collapse: collapse;
 }
 
-.table td {
-
-  text-align: center;
+th, td {
   border-color:black;
   border-width: 1px;
   border-style: solid;
 }
 
-.table tr {
+tbody tr {
   cursor: pointer;
 }
 
-.table tr:hover {
+tbody tr:hover {
   background-color: #bdbdbd;
 }
 
-.table th{
+thead {
   background-color: #46647d ;
   color: white;
 }
