@@ -14,7 +14,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh18 </p>
+    <p> Blahahhhh19 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -56,7 +56,7 @@
                   // Add click event listener to each row
                   tr.addEventListener("click", function() {
                     const jsonString = JSON.stringify(this._rawJSON);
-                    sessionStorage.setItem("sharedData", jsonString);
+                    localStorage.setItem("sharedData", jsonString);
                     console.log("Exported Row JSON:", this._rawJSON);
                     window.open("LensDetail.html", "_blank");
                   });

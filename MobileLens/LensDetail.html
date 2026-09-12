@@ -22,7 +22,7 @@ document.addEventListener("click", x=>0)
       </span></div>
     <sub-footer></sub-footer>
     <script>
-      const rawData = sessionStorage.getItem("sharedData");
+      const rawData = localStorage.getItem("sharedData");
       if (rawData) {
           const LensData = JSON.parse(rawData);
           console.log(LensData.PATENT, LensData.Sno);
