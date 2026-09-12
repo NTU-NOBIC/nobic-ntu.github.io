@@ -11,7 +11,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh15 </p>
+    <p> Blahahhhh16 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -20,7 +20,7 @@
     <script>
         async function loadTableFromJSON() {
             try {
-                // 1. Fetch the JSON file
+                // Fetch the JSON file
                 const response = await fetch('Mobile.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 
@@ -28,10 +28,10 @@
 
                 if (data.length === 0) return;
               
-              	// 2. Create the table element
+              	// Create the table element
     						const table = document.createElement("table");
 
-                // 3. Dynamically generate headers from the object keys
+                // Dynamically generate headers from the object keys
                 const headers = Object.keys(data[0]);
                 const thead = table.createTHead();
               	const headerRow = thead.insertRow();
@@ -40,26 +40,34 @@
                     th.textContent = headerText; // Safe from XSS injection
                     headerRow.appendChild(th);
                 });
-                // 4. Generate table body rows
-                const tbody = table.createTBody();
+              
+                // Create data rows
                 data.forEach(item => {
-                    const row = tbody.insertRow();
-                    headers.forEach(header => {
-                        const cell = row.insertCell();
-                        // Fallback to empty string if the property doesn't exist in the current object
-                        cell.textContent = item[header] !== undefined ? item[header] : "";
-                    });
-                });
-              
-              	// 5. Add event listener to tabe row
-              	table.addEventListener('click', (event) => {
-                // Find the closest row to the clicked element (in case they clicked a <td>)
-                const row = event.target.closest('tr');
-                // Ensure the click was inside a <tbody> row, not the <thead>
-                if (row && row.closest('tbody')) { JSONrow()});           
-              
+                  const tr = document.createElement("tr");
 
-                // 6. Inject the completed table into the container element
+                  // Store original JSON object on the row element
+                  tr._rawJSON = item;
+
+                  // Add click event listener to each row
+                  tr.addEventListener("click", function() {
+                    const jsonString = JSON.stringify(this._rawJSON);
+                    sessionStorage.setItem("sharedData", jsonString);
+                    console.log("Exported Row JSON:", this._rawJSON);
+                  });
+
+                  // Populate cells
+                  headers.forEach(key => {
+                    const td = document.createElement("td");
+                    td.textContent = item[key];
+                    tr.appendChild(td);
+                  });
+
+                  tbody.appendChild(tr);
+                });
+
+                table.appendChild(tbody);
+
+                // Inject the completed table into the container element
                 const container = document.getElementById("table-container");
                 container.innerHTML = ""; // Clear any prior content
                 container.appendChild(table);
@@ -72,29 +80,7 @@
        // Initialize table generation on page load
         window.addEventListener('DOMContentLoaded', loadTableFromJSON);
           
-        function JSONrow() {
-          // 1. Find the table headers to use as JSON keys
-              
-              const headers = Array.from(table.querySelectorAll('thead th'))
-                                   .map(th => th.innerText.trim());
-          // 2. Extract text from each cell in the target row
-              const cells = Array.from(row.querySelectorAll('td'));
-
-             // 3. Combine headers and cell values into a single object
-              const rowObject = {};
-              cells.forEach((cell, index) => {
-                  const key = headers[index] || `column_${index}`;
-                  rowObject[key] = cell.innerText.trim();
-              });
-              
-              // Store the data as a JSON string
-		
-					sessionStorage.setItem("sharedData", JSON.stringify(rowObject));
-              console.log(`Patent: ${sharedData.PATENT}`);
-          
-        }
-          
-          
+       
     </script>
   </body>
 </html>
