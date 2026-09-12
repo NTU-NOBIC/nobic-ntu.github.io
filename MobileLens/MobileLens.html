@@ -14,7 +14,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh20 </p>
+    <p> Blahahhhh21 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -55,14 +55,9 @@
 
                   // Add click event listener to each row
                   tr.addEventListener("click", function() {
-                    const jsonString = JSON.stringify(this._rawJSON);
-                    localStorage.setItem("sharedData", jsonString);
-                    rawData = localStorage.getItem("sharedData");
-      if (rawData) {
-          const LensData = JSON.parse(rawData);
-          console.log(LensData.PATENT, LensData.Sno);
-      }
-                    window.open("LensDetail.html", "_blank");
+                    const searchParams = new URLSearchParams(this._rawJSON);
+                    console.log(searchParams.toString());
+                    window.open(`LensDetail.html?${searchParams.toString()}`, "_blank");
                   });
 
                   // Populate cells

@@ -13,7 +13,7 @@ document.addEventListener("click", x=>0)
     <script src="../Elements.js"></script>
   </head>
   <body style=" background-color: white;">
-    <div class="detail-container"><img alt="" id="DispImage">
+    <div class="finalist-container"><img alt="" id="DispImage">
       <p class="heading1-gallery" id="patent"></p>
       <p class="heading2-gallery" id="authors"></p>
       <p class="heading2-gallery" id="study"></p>
@@ -22,11 +22,11 @@ document.addEventListener("click", x=>0)
       </span></div>
     <sub-footer></sub-footer>
     <script>
-      const rawData = localStorage.getItem("sharedData");
-      if (rawData) {
-          const LensData = JSON.parse(rawData);
-          console.log(LensData.PATENT, LensData.Sno);
-      }
+      const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+      document.getElementById("patent").textContent =
+urlParams.get('PATENT');;
+
 </script>
   </body>
 </html>
