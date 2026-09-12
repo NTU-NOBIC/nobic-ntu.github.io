@@ -234,6 +234,11 @@ body {
   color:#bdbdbd
 }
 
+container a:visited {
+  color:#46647d;
+  text-decoration: none;
+}
+
 .logo img {
   width: 10vw;
   max-width: 120px;
@@ -265,7 +270,12 @@ body {
 }
 
 .LinkBut a:link {
-  color: #bdbdbd;
+  color: white;
+  text-decoration: none; 
+}
+
+.LinkBut a:visited {
+  color: white;
   text-decoration: none; 
 }
 
