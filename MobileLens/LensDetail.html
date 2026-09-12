@@ -13,7 +13,7 @@ document.addEventListener("click", x=>0)
     <script src="../Elements.js"></script>
   </head>
   <body style=" background-color: white;">
-    <div class="finalist-container"><img alt="" id="DispImage">
+    <div class="detail-container"><img alt="" id="DispImage">
       <p class="heading1-gallery" id="patent"></p>
       <p class="heading2-gallery" id="authors"></p>
       <p class="heading2-gallery" id="study"></p>
@@ -35,11 +35,9 @@ document.getElementById("patent").textContent =
 LensData.PATENT;
 
 }
-catch(err) {
-document.getElementById("title").textContent = err.message;
-}
-}
-loadImageMonth();
+
+
+loadLensDetails();
 </script>
   </body>
 </html>
