@@ -14,7 +14,7 @@ document.addEventListener("click", x=>0)
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh9 </p>
+    <p> Blahahhhh10 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -83,16 +83,7 @@ document.addEventListener("click", x=>0)
               // 2. Extract text from each cell in the target row
               const cells = Array.from(row.querySelectorAll('td'));
 
-              // 3. Combine headers and cell values into a single object
-              const rowObject = {};
-              cells.forEach((cell, index) => {
-                  const key = headers[index] || `column_${index}`;
-                  rowObject[key] = cell.innerText.trim();
-              });
-              
-              // Store the data as a JSON string
-		
-					sessionStorage.setItem("sharedData", JSON.stringify(rowObject));
+             
           
          }
         }
