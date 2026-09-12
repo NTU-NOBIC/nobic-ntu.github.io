@@ -14,7 +14,7 @@ document.addEventListener("click", x=>0)
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh4 </p>
+    <p> Blahahhhh5 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -30,11 +30,11 @@ document.addEventListener("click", x=>0)
                 if (data.length === 0) return;
               
               	// 2. Create the table element
-    						const table = document.createElement("LensTable");
+    						const table = document.createElement("table");
 
                 // 3. Dynamically generate headers from the object keys
                 const headers = Object.keys(data[0]);
-                const thead = LensTable.createTHead();
+                const thead = table.createTHead();
               	const headerRow = thead.insertRow();
                 headers.forEach(headerText => {
                     const th = document.createElement("th");
@@ -55,7 +55,7 @@ document.addEventListener("click", x=>0)
                 // 5. Inject the completed table into the container element
                 const container = document.getElementById("table-container");
                 container.innerHTML = ""; // Clear any prior content
-                container.appendChild(LensTable);
+                container.appendChild(table);
 
             } catch (error) {
                 console.error('Error fetching or processing JSON:', error);
@@ -66,7 +66,7 @@ document.addEventListener("click", x=>0)
         window.addEventListener('DOMContentLoaded', loadTableFromJSON);
       
       function ClickRow() {
-        const table = document.getElementById('LensTable');
+        const table = document.getElementById('table');
   
           table.addEventListener('click', (event) => {
             // Find the closest row to the clicked element (in case they clicked a <td>)
