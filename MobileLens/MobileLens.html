@@ -14,7 +14,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh19 </p>
+    <p> Blahahhhh20 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -57,7 +57,11 @@
                   tr.addEventListener("click", function() {
                     const jsonString = JSON.stringify(this._rawJSON);
                     localStorage.setItem("sharedData", jsonString);
-                    console.log("Exported Row JSON:", this._rawJSON);
+                    rawData = localStorage.getItem("sharedData");
+      if (rawData) {
+          const LensData = JSON.parse(rawData);
+          console.log(LensData.PATENT, LensData.Sno);
+      }
                     window.open("LensDetail.html", "_blank");
                   });
 
