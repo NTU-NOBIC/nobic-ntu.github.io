@@ -11,7 +11,7 @@
   </head>
   <body>
     <p class="heading1">NOBIC Mobile Phone Lens Databse</p>
-    <p> Blahahhhh14 </p>
+    <p> Blahahhhh15 </p>
     
     <!-- The table will be injected here -->
     <div id="table-container"></div>
@@ -50,8 +50,16 @@
                         cell.textContent = item[header] !== undefined ? item[header] : "";
                     });
                 });
+              
+              	// 5. Add event listener to tabe row
+              	table.addEventListener('click', (event) => {
+                // Find the closest row to the clicked element (in case they clicked a <td>)
+                const row = event.target.closest('tr');
+                // Ensure the click was inside a <tbody> row, not the <thead>
+                if (row && row.closest('tbody')) { JSONrow()});           
+              
 
-                // 5. Inject the completed table into the container element
+                // 6. Inject the completed table into the container element
                 const container = document.getElementById("table-container");
                 container.innerHTML = ""; // Clear any prior content
                 container.appendChild(table);
@@ -60,26 +68,16 @@
                 console.error('Error fetching or processing JSON:', error);
             }
         }
-    </script>
-    <script>
+    
        // Initialize table generation on page load
         window.addEventListener('DOMContentLoaded', loadTableFromJSON);
-      
-        const table = document.getElementById('table');
-  
-          table.addEventListener('click', (event) => {
-            // Find the closest row to the clicked element (in case they clicked a <td>)
-            const row = event.target.closest('tr');
-
-            // Ensure the click was inside a <tbody> row, not the <thead>
-            if (row && row.closest('tbody')) {
-            
-              // 1. Find the table headers to use as JSON keys
+          
+        function JSONrow() {
+          // 1. Find the table headers to use as JSON keys
               
               const headers = Array.from(table.querySelectorAll('thead th'))
                                    .map(th => th.innerText.trim());
-
-              // 2. Extract text from each cell in the target row
+          // 2. Extract text from each cell in the target row
               const cells = Array.from(row.querySelectorAll('td'));
 
              // 3. Combine headers and cell values into a single object
@@ -94,10 +92,9 @@
 					sessionStorage.setItem("sharedData", JSON.stringify(rowObject));
               console.log(`Patent: ${sharedData.PATENT}`);
           
-         }
-        }); 
-     
-      
+        }
+          
+          
     </script>
   </body>
 </html>
