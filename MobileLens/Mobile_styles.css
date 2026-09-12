@@ -231,7 +231,7 @@ body {
   text-decoration: none;
 }
 
-container a:visited {
+.container a:visited {
   color:#46647d;
   text-decoration: none;
 }
@@ -320,6 +320,11 @@ container a:visited {
     visibility: hidden;
 }
 
+.table-container {
+   align: center;
+   margin: 0 auto;
+ }
+           	
 table {
    border-collapse: collapse;
    text-align: center;
@@ -332,6 +337,7 @@ th, td {
   border-color:black;
   border-width: 1px;
   border-style: solid;
+  padding: 14px 20px;
 }
 
 tbody tr {
