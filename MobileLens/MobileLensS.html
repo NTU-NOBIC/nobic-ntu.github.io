@@ -57,7 +57,7 @@
     						const table = document.createElement("table");
 
                 // Dynamically generate headers from the object keys
-                const headers = Object.keys(data[0]);
+                const headers = Object.keys(jsonData[0]);
                 const thead = table.createTHead();
               	const tbody = document.createElement("tbody");
               
@@ -65,7 +65,7 @@
                 headers.forEach(headerText => {
                     const th = document.createElement("th");
                     th.textContent = headerText; // Safe from XSS injection
-                  	th.addEventListener("click", () => handleSort(headerText));
+                  	th.addEventListener("click", () => handleSort(headerText,jsonData));
                     headerRow.appendChild(th);
                 });
               
@@ -73,11 +73,11 @@
               	prevTh.textContent = "Preview";
   							headerRow.appendChild(prevTh);
               
-              renderTableRows();
+              renderTableRows(jsonData);
             }
         
                 // Create data rows
-      				function renderTableRows() {
+      				function renderTableRows(data) {
                 
                 const tbody = document.getElementById("tbody");
     						                
@@ -124,7 +124,7 @@
         }
       
       	// Logic handling the JSON sort mechanism
-            function handleSort(columnKey) {
+            function handleSort(columnKey, data) {
             // If clicking the same column, toggle direction. Otherwise, default to ascending.
             if (currentSortColumn === columnKey) {
                 isAscending = !isAscending;
@@ -152,7 +152,7 @@
             // Re-render only the body rows with the newly ordered data
               const tbody = document.getElementById("tbody");
               tbody.innerHTML = ""; // Clear existing rows to prevent duplicates
-            renderTableRows();
+            renderTableRows(data);
         }
     
        // Initialize table generation on page load
