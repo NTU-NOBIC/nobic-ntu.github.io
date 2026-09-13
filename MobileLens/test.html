@@ -18,12 +18,14 @@
 
     <script>
   // 1. Your JSON Data Array
-const employees = [
-    { id: 101, name: "Alice Smith", department: "Engineering", age: 28 },
-    { id: 102, name: "Bob Johnson", department: "Marketing", age: 34 },
-    { id: 103, name: "Charlie Brown", department: "Engineering", age: 22 },
-    { id: 104, name: "Diana Prince", department: "Design", age: 30 }
-];
+
+      
+      const response = await fetch('test.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                
+                const data = await response.json();
+
+                if (data.length === 0) return;
 
 // 2. Track the sorting state
 let currentSortColumn = null;
