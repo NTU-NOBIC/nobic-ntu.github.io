@@ -76,12 +76,13 @@
                   });
                   
                   const newTD = row.insertcell(-1);
-                  newTD.style.padding = 0.1rem;
+                  newTD.style.padding = 2px;
                   const img = document.createElement("img");
                   ImPath = "Data/"+searchParams.get('PATENT')+"/"+searchParams.get('PATENT')+".jpg";
                   img.src = ImPath;
 									img.alt = "Preview";
 									img.height = 25; 
+                  neTD.appendChild(img);
 
                   tbody.appendChild(tr);
                 });
