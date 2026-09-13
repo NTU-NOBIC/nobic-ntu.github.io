@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Mobile Lens Database</title>
+    <link rel="stylesheet" href="Mobile_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="../Media/Icon.png">
+    <script>
+    document.addEventListener("click", x=>0)
+    </script>
+    <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="heading"><a href="../index.html">NOBIC</a> Mobile
+        Phone Lens Databse</p>
+      <p> This is a collection of patented mobile phone camera lens designs
+        suitable for microscopy and other specialised imaging applications using
+        mobile phone cameras. Cick on table rows for more details, original
+        patent documents and opical design files (ZMX). Click on headers to sort the columns</p>
+      <!-- The table will be injected here -->
+      <div id="table-container"></div>
+      <br>
+      <br>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <sub-footer></sub-footer>
+    <script>
+      
+      // Track current sorting direction for each column
+        let sortDirection = true; // true = ascending, false = descending
+        let currentSortColumn = null;
+
+        // Function to dynamically generate the HTML table
+        function renderTable(data) {
+            const container = document.getElementById('table-container');
+            container.innerHTML = ''; // Clear previous table if any
+
+            if (data.length === 0) return;
+
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Extract headers from the object keys
+            const keys = Object.keys(data[0]);
+
+            // Create Header Row
+            const headerRow = document.createElement('tr');
+            keys.forEach(key => {
+                const th = document.createElement('th');
+                th.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+                
+                // Attach click event to sort by this column
+                th.addEventListener('click', () => sortTableByColumn(key));
+                headerRow.appendChild(th);
+            });
+          
+          	const prevTh = document.createElement("th");
+            prevTh.textContent = "Preview";
+           	prevTh.className = "PreHead";
+  					headerRow.appendChild(prevTh);
+          
+            thead.appendChild(headerRow);
+
+            // Create Data Rows
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                keys.forEach(key => {
+                    const td = document.createElement('td');
+                    td.textContent = item[key];
+                    row.appendChild(td);
+                });
+              
+              	const prevTD = document.createElement("td");
+                prevTD.className = "PreCell";
+                const img = document.createElement("img");
+                const Pat = tr.cells[1].innerText;
+                const ImPath = "Data/"+Pat+"/"+Pat+".jpg";
+                img.src = ImPath;
+								img.alt = "Preview";
+								img.height = 25; 
+                prevTD.appendChild(img);
+                tr.appendChild(prevTD)
+              
+                tbody.appendChild(row);
+            });
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            container.appendChild(table);
+        }
+
+        // Function to sort data array and trigger re-render
+        function sortTableByColumn(columnKey) {
+            // Reverse direction if clicking the same column, otherwise default to ascending
+            if (currentSortColumn === columnKey) {
+                sortDirection = !sortDirection;
+            } else {
+                sortDirection = true;
+                currentSortColumn = columnKey;
+            }
+
+            // Sort the array natively
+            jsonData.sort((a, b) => {
+                let valueA = a[columnKey];
+                let valueB = b[columnKey];
+
+                // Handle numbers vs strings naturally
+                if (typeof valueA === 'number' && typeof valueB === 'number') {
+                    return sortDirection ? valueA - valueB : valueB - valueA;
+                } else {
+                    valueA = String(valueA).toLowerCase();
+                    valueB = String(valueB).toLowerCase();
+                    
+                    if (valueA < valueB) return sortDirection ? -1 : 1;
+                    if (valueA > valueB) return sortDirection ? 1 : -1;
+                    return 0;
+                }
+            });
+
+            // Re-render the table with newly sorted data
+            renderTable(jsonData);
+        }
+
+        // Initial call to display the table on page load
+        
+
+				// Fetch file and render table initially
+				let jsonData = []; 
+
+        function loadTableData() {
+            // Using a root-relative path
+            fetch('Mobile.json') 
+                .then(response => {
+                    // Check if the server actually returned the file successfully (Status 200)
+                    if (!response.ok) {
+                        throw new Error(`HTTP Error! Status: ${response.status} - File not found or inaccessible.`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Data successfully fetched from server:", data);
+                    jsonData = data;       // Save it globally for sorting
+                    renderTable(jsonData); // Build the HTML table
+                })
+                .catch(error => {
+                    // This will log the EXACT problem to your F12 Console
+                    console.error("Fetch implementation failed:", error.message);
+                });
+        }
+
+      	// Initialize table generation on page load
+        window.addEventListener('DOMContentLoaded', loadTableData());
+      
+    </script>
+  </body>
+</html>
