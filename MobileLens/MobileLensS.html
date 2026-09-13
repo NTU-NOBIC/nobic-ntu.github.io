@@ -20,7 +20,7 @@
       <p> This is a collection of patented mobile phone camera lens designs
         suitable for microscopy and other specialised imaging applications using
         mobile phone cameras. Cick on table rows for more details, original
-        patent documents and opical design files (ZMX). Click on headers to sort the columns</p>
+        patent documents and opical design files (ZMX). Click on headers to sort the columns.</p>
       <!-- The table will be injected here -->
       <div id="table-container"></div>
       <br>
@@ -78,7 +78,7 @@
               	const prevTD = document.createElement("td");
                 prevTD.className = "PreCell";
                 const img = document.createElement("img");
-                const Pat = tr.cells[1].innerText;
+                const Pat = row.cells[1].innerText;
                 const ImPath = "Data/"+Pat+"/"+Pat+".jpg";
                 img.src = ImPath;
 								img.alt = "Preview";
