@@ -82,7 +82,8 @@
                   const prevTD = document.createElement("td");
                   prevTD.style.padding = "2px";
                   const img = document.createElement("img");
-                  ImPath = "Data/"+searchParams.get('PATENT')+"/"+searchParams.get('PATENT')+".jpg";
+                  const Pat = tr.cells[1].innerText;
+                  const ImPath = "Data/"+Pat+"/"+Pat+".jpg";
                   img.src = ImPath;
 									img.alt = "Preview";
 									img.height = 25; 
