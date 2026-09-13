@@ -69,6 +69,17 @@
             // Create Data Rows
             data.forEach(item => {
                 const row = document.createElement('tr');
+              
+              	// Store original JSON object on the row element
+                  row._rawJSON = item;
+
+                  // Add click event listener to each row
+                  row.addEventListener("click", function() {
+                    const searchParams = new URLSearchParams(this._rawJSON);
+                    console.log(searchParams.toString());
+                    window.open(`LensDetail.html?${searchParams.toString()}`, "_blank");
+                  });
+              
                 keys.forEach(key => {
                     const td = document.createElement('td');
                     td.textContent = item[key];
