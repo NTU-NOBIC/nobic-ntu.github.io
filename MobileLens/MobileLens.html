@@ -54,6 +54,10 @@
                     headerRow.appendChild(th);
                 });
               
+              	const prevTh = document.createElement("th");
+              	prevTh.textContent = "Preview";
+  							headerRow.appendChild(prevTh);
+              
                 // Create data rows
                 data.forEach(item => {
                   const tr = document.createElement("tr");
@@ -75,15 +79,15 @@
                     tr.appendChild(td);
                   });
                   
-                  const row = document.getElementById("tr");
-                  const newTD = row.insertcell(-1);
-                  newTD.style.padding = "2px";
+                  const prevTD = document.createElement("td");
+                  prevTD.style.padding = "2px";
                   const img = document.createElement("img");
                   ImPath = "Data/"+searchParams.get('PATENT')+"/"+searchParams.get('PATENT')+".jpg";
                   img.src = ImPath;
 									img.alt = "Preview";
 									img.height = 25; 
-                  newTD.appendChild(img);
+                  prevTD.appendChild(img);
+                  tr.appendChild(prevTD)
 
                   tbody.appendChild(tr);
                 });
