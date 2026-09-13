@@ -15,8 +15,8 @@
   </head>
   <body>
     <div class="container">
-      <p class="heading"><a href="../index.html">NOBIC</a> Mobile Phone Lens
-        Databse</p>
+      <p class="heading"><a href="../index.html">NOBIC</a> Mobile
+        Phone Lens Databse</p>
       <p> This is a collection of patented mobile phone camera lens designs
         suitable for microscopy and other specialised imaging applications using
         mobile phone cameras. Cick on table rows for more details, original
@@ -74,6 +74,14 @@
                     td.textContent = item[key];
                     tr.appendChild(td);
                   });
+                  
+                  const newTD = row.insertcell(-1);
+                  newTD.style.padding = 0.1rem;
+                  const img = document.createElement("img");
+                  ImPath = "Data/"+searchParams.get('PATENT')+"/"+searchParams.get('PATENT')+".jpg";
+                  img.src = ImPath;
+									img.alt = "Preview";
+									img.height = 25; 
 
                   tbody.appendChild(tr);
                 });
@@ -95,6 +103,5 @@
           
        
     </script>
-    
   </body>
 </html>
