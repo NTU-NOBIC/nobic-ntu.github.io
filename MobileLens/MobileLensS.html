@@ -33,15 +33,26 @@
       let currentSortColumn = null;
 			let isAscending = true;
       
-        async function fetchDataFromJSON() {
-            try {
-                // Fetch the JSON file
-                const response = await fetch('Mobile.json');
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                
-                const data = await response.json();
-
-                if (data.length === 0) return;
+        function fetchDataFromJSON() {
+            
+        // Fetch the JSON file
+         fetch('Mobile.json') 
+        .then(response => {
+            // Check if the server actually returned the file successfully (Status 200)
+            if (!response.ok) {
+                throw new Error(`HTTP Error! Status: ${response.status} - File not found or inaccessible.`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data successfully fetched from server:", data);
+            jsonData = data;       // Save it globally for sorting
+            renderTable(jsonData); // Build the HTML table
+        })
+        .catch(error => {
+            // This will log the EXACT problem to your F12 Console
+            console.error("Fetch implementation failed:", error.message);
+        });
               
               	// Create the table element
     						const table = document.createElement("table");
@@ -68,7 +79,7 @@
               } catch (error) {
                 console.error('Error fetching or processing JSON:', error);
             }
-        }
+        
                 // Create data rows
       				function renderTableRows() {
                 
