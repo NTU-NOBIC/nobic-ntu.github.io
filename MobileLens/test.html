@@ -106,13 +106,32 @@
         let jsonData = [];
 
 // Fetch file and render table initially
-fetch('test.json')
-    .then(response => response.json())
-    .then(data => {
-        jsonData = data; // Save to global variable so sort function can access it
-        renderTable(jsonData);
-    })
-    .catch(error => console.error('Error loading JSON:', error));
+let jsonData = []; 
+
+function loadTableData() {
+    // Using a root-relative path
+    fetch('/data.json') 
+        .then(response => {
+            // Check if the server actually returned the file successfully (Status 200)
+            if (!response.ok) {
+                throw new Error(`HTTP Error! Status: ${response.status} - File not found or inaccessible.`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data successfully fetched from server:", data);
+            jsonData = data;       // Save it globally for sorting
+            renderTable(jsonData); // Build the HTML table
+        })
+        .catch(error => {
+            // This will log the EXACT problem to your F12 Console
+            console.error("Fetch implementation failed:", error.message);
+        });
+}
+
+// Execute the fetch
+loadTableData();
+
     </script>
 </body>
 </html>
