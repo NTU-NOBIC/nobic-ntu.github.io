@@ -191,7 +191,7 @@ thead {
   cursor: pointer;
 }
 
-thead tr:hover {
+thead td:hover {
   background-color: black;
 }
 
