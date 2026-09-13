@@ -75,6 +75,7 @@
                     tr.appendChild(td);
                   });
                   
+                  const row = document.getElementById("tr");
                   const newTD = row.insertcell(-1);
                   newTD.style.padding = 2px;
                   const img = document.createElement("img");
@@ -82,7 +83,7 @@
                   img.src = ImPath;
 									img.alt = "Preview";
 									img.height = 25; 
-                  neTD.appendChild(img);
+                  newTD.appendChild(img);
 
                   tbody.appendChild(tr);
                 });
