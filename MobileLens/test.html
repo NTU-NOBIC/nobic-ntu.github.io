@@ -18,14 +18,16 @@
 
     <script>
   // 1. Your JSON Data Array
+let jsonData = [];
 
-      
-      const response = await fetch('test.json');
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                
-                const emplyeees = await response.json();
-
-                if (employees.length === 0) return;
+// Fetch file and render table initially
+fetch('test.json')
+    .then(response => response.json())
+    .then(employees => {
+        jsonData = employees; // Save to global variable so sort function can access it
+        
+    })
+    .catch(error => console.error('Error loading JSON:', error));
 
 // 2. Track the sorting state
 let currentSortColumn = null;
