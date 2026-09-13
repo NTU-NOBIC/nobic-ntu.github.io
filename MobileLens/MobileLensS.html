@@ -33,7 +33,7 @@
       let currentSortColumn = null;
 			let isAscending = true;
       
-        function fetchDataFromJSON() {
+        function FetchJSONtoTable() {
             
         // Fetch the JSON file
          fetch('Mobile.json') 
@@ -47,7 +47,6 @@
         .then(data => {
             console.log("Data successfully fetched from server:", data);
             jsonData = data;       // Save it globally for sorting
-            renderTable(jsonData); // Build the HTML table
         })
         .catch(error => {
             // This will log the EXACT problem to your F12 Console
@@ -157,7 +156,7 @@
         }
     
        // Initialize table generation on page load
-        window.addEventListener('DOMContentLoaded', fetchDataFromJSON());
+        window.addEventListener('DOMContentLoaded', FetchJSONtoTable());
           
        
     </script>
