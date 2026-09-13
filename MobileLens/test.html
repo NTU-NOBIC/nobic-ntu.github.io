@@ -25,7 +25,7 @@ fetch('test.json')
     .then(response => response.json())
     .then(employees => {
         jsonData = employees; // Save to global variable so sort function can access it
-        
+        initTable(jsonData);
     })
     .catch(error => console.error('Error loading JSON:', error));
 
@@ -117,7 +117,7 @@ function handleSort(columnKey) {
 }
 
 // Execute when page loads
-window.onload = initTable;
+window.onload = initTable();
   </script>
 </body>
 </html>
