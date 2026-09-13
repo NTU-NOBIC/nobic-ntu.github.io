@@ -73,8 +73,7 @@
       				function renderTableRows() {
                 
                 const tbody = document.getElementById("tbody");
-    						tbody.innerHTML = ""; // Clear existing rows to prevent duplicates
-                
+    						                
                 data.forEach(item => {
                   const tr = document.createElement("tr");
 
@@ -144,6 +143,8 @@
             });
 
             // Re-render only the body rows with the newly ordered data
+              const tbody = document.getElementById("tbody");
+              tbody.innerHTML = ""; // Clear existing rows to prevent duplicates
             renderTableRows();
         }
     
