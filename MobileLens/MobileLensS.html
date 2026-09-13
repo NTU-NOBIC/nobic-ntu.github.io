@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--Coded by NOBIC with a lot of help from code snippets from www.w3schools.com-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Mobile Lens Database</title>
+    <link rel="stylesheet" href="Mobile_styles.css">
+    <link rel="shortcut icon" type="image/ico" href="../Media/Icon.png">
+    <script>
+    document.addEventListener("click", x=>0)
+    </script>
+    <script async="" src="//static.getclicky.com/101389963.js"></script>
+    <script src="../Elements.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="heading"><a href="../index.html">NOBIC</a> Mobile
+        Phone Lens Databse</p>
+      <p> This is a collection of patented mobile phone camera lens designs
+        suitable for microscopy and other specialised imaging applications using
+        mobile phone cameras. Cick on table rows for more details, original
+        patent documents and opical design files (ZMX). </p>
+      <!-- The table will be injected here -->
+      <div id="table-container"></div>
+      <br>
+      <br>
+      <p><a href="#TOP">BACK TO TOP</a></p>
+    </div>
+    <sub-footer></sub-footer>
+    <script>
+      
+      let currentSortColumn = null;
+			let isAscending = true;
+      
+        async function fetchDataFromJSON() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('Mobile.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                
+                const data = await response.json();
+
+                if (data.length === 0) return;
+              
+              	// Create the table element
+    						const table = document.createElement("table");
+
+                // Dynamically generate headers from the object keys
+                const headers = Object.keys(data[0]);
+                const thead = table.createTHead();
+              	const tbody = document.createElement("tbody");
+              
+              	const headerRow = thead.insertRow();
+                headers.forEach(headerText => {
+                    const th = document.createElement("th");
+                    th.textContent = headerText; // Safe from XSS injection
+                  	th.addEventListener("click", () => handleSort(headerText));
+                    headerRow.appendChild(th);
+                });
+              
+              	const prevTh = document.createElement("th");
+              	prevTh.textContent = "Preview";
+  							headerRow.appendChild(prevTh);
+              
+              renderTableRows();
+              
+              } catch (error) {
+                console.error('Error fetching or processing JSON:', error);
+            }
+        }
+                // Create data rows
+      				function renderTableRows() {
+                
+                const tbody = document.getElementById("tbody");
+    						tbody.innerHTML = ""; // Clear existing rows to prevent duplicates
+                
+                data.forEach(item => {
+                  const tr = document.createElement("tr");
+
+                  // Store original JSON object on the row element
+                  tr._rawJSON = item;
+
+                  // Add click event listener to each row
+                  tr.addEventListener("click", function() {
+                    const searchParams = new URLSearchParams(this._rawJSON);
+                    console.log(searchParams.toString());
+                    window.open(`LensDetail.html?${searchParams.toString()}`, "_blank");
+                  });
+
+                  // Populate cells
+                  headers.forEach(key => {
+                    const td = document.createElement("td");
+                    td.textContent = item[key];
+                    tr.appendChild(td);
+                  });
+                  
+                  const prevTD = document.createElement("td");
+                  prevTD.style.padding = "2px";
+                  const img = document.createElement("img");
+                  const Pat = tr.cells[1].innerText;
+                  const ImPath = "Data/"+Pat+"/"+Pat+".jpg";
+                  img.src = ImPath;
+									img.alt = "Preview";
+									img.height = 25; 
+                  prevTD.appendChild(img);
+                  tr.appendChild(prevTD)
+
+                  tbody.appendChild(tr);
+                });
+
+                table.appendChild(tbody);
+
+                // Inject the completed table into the container element
+                const container = document.getElementById("table-container");
+                container.innerHTML = ""; // Clear any prior content
+                container.appendChild(table);
+        }
+      
+      	// Logic handling the JSON sort mechanism
+            function handleSort(columnKey) {
+            // If clicking the same column, toggle direction. Otherwise, default to ascending.
+            if (currentSortColumn === columnKey) {
+                isAscending = !isAscending;
+            } else {
+                currentSortColumn = columnKey;
+                isAscending = true;
+            }
+
+            // Sort the primary array directly
+            data.sort((a, b) => {
+                let valA = a[columnKey];
+                let valB = b[columnKey];
+
+                // Handle string comparison vs number comparison
+                if (typeof valA === 'string') {
+                    return isAscending 
+                        ? valA.localeCompare(valB) 
+                        : valB.localeCompare(valA);
+                } else {
+                    // Numeric fallback
+                    return isAscending ? valA - valB : valB - valA;
+                }
+            });
+
+            // Re-render only the body rows with the newly ordered data
+            renderTableRows();
+        }
+    
+       // Initialize table generation on page load
+        window.addEventListener('DOMContentLoaded', loadTableFromJSON);
+          
+       
+    </script>
+  </body>
+</html>
