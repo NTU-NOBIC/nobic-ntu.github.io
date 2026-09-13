@@ -351,6 +351,15 @@ tbody tr:hover {
 thead {
   background-color: #46647d ;
   color: white;
+  cursor: pointer;
+}
+
+.PreCell {
+  padding: 2px;
+}
+
+.PreHead {
+  cursor: default;
 }
      
 .footer {
