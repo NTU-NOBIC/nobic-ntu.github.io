@@ -17,16 +17,11 @@
 
     <script>
         // 1. Mock JSON Data (Simulating a fetch from a json file)
-       let jsonData = [];
-
-// Fetch file and render table initially
-fetch('test.json')
-    .then(response => response.json())
-    .then(data => {
-        jsonData = data; // Save to global variable so sort function can access it
-        renderTable(jsonData);
-    })
-    .catch(error => console.error('Error loading JSON:', error));
+       const jsonData = [
+            { "id": 3, "name": "Alice", "age": 25, "city": "New York" },
+            { "id": 1, "name": "Charlie", "age": 35, "city": "London" },
+            { "id": 2, "name": "Bob", "age": 30, "city": "Paris" }
+        ];
 
         // Track current sorting direction for each column
         let sortDirection = true; // true = ascending, false = descending
