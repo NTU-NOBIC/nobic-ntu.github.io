@@ -1,40 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>test.html</title>
-  </head>
-  <body>
-   <table id="myTable">
-  <thead>
-    <tr><th>Name</th><th>Role</th></tr>
-  </thead>
-  <tbody>
-    <tr data-id="101" style="cursor: pointer;">
-      <td>Alice</td>
-      <td>Developer</td>
-    </tr>
-    <tr data-id="102" style="cursor: pointer;">
-      <td>Bob</td>
-      <td>Designer</td>
-    </tr>
-  </tbody>
-</table>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sortable JSON Table</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; cursor: pointer; user-select: none; }
+        th:hover { background-color: #e2e2e2; }
+    </style>
+</head>
+<body>
 
-<script>
-  const table = document.getElementById('myTable');
-  
-  table.addEventListener('click', (event) => {
-    // Find the closest row to the clicked element (in case they clicked a <td>)
-    const row = event.target.closest('tr');
+    <h2>Click column headers to sort</h2>
+    <!-- The container where JavaScript will inject the table -->
+    <div id="table-container"></div>
+
+    <script>
+  // 1. Your JSON Data Array
+const employees = [
+    { id: 101, name: "Alice Smith", department: "Engineering", age: 28 },
+    { id: 102, name: "Bob Johnson", department: "Marketing", age: 34 },
+    { id: 103, name: "Charlie Brown", department: "Engineering", age: 22 },
+    { id: 104, name: "Diana Prince", department: "Design", age: 30 }
+];
+
+// 2. Track the sorting state
+let currentSortColumn = null;
+let isAscending = true;
+
+// 3. Main function to initialize and render the structure
+function initTable() {
+    const container = document.getElementById("table-container");
     
-    // Ensure the click was inside a <tbody> row, not the <thead>
-    if (row && row.closest('tbody')) {
-      const rowId = row.dataset.id;
-      console.log(`Clicked row with ID: ${rowId}`);
-      // Perform your action here (e.g., redirect or open modal)
+    // Create table wrapper elements
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    tbody.id = "table-body"; // ID reference to easily target rows later
+    
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    container.appendChild(table);
+
+    // Extract headers dynamically from the keys of the first JSON object
+    const headers = Object.keys(employees[0]);
+    const headerRow = document.createElement("tr");
+
+    headers.forEach(headerText => {
+        const th = document.createElement("th");
+        th.textContent = headerText.toUpperCase();
+        
+        // Bind click event to each header column
+        th.addEventListener("click", () => handleSort(headerText));
+        
+        headerRow.appendChild(th);
+    });
+
+    thead.appendChild(headerRow);
+
+    // Initial render of data rows
+    renderTableRows();
+}
+
+// 4. Function dedicated strictly to drawing/updating rows
+function renderTableRows() {
+    const tbody = document.getElementById("table-body");
+    tbody.innerHTML = ""; // Clear existing rows to prevent duplicates
+
+    employees.forEach(item => {
+        const row = document.createElement("tr");
+        
+        // Loop through keys to guarantee data lines up with columns
+        Object.keys(item).forEach(key => {
+            const td = document.createElement("td");
+            td.textContent = item[key];
+            row.appendChild(td);
+        });
+        
+        tbody.appendChild(row);
+    });
+}
+
+// 5. Logic handling the JSON sort mechanism
+function handleSort(columnKey) {
+    // If clicking the same column, toggle direction. Otherwise, default to ascending.
+    if (currentSortColumn === columnKey) {
+        isAscending = !isAscending;
+    } else {
+        currentSortColumn = columnKey;
+        isAscending = true;
     }
-  });
-</script>
-  </body>
+
+    // Sort the primary array directly
+    employees.sort((a, b) => {
+        let valA = a[columnKey];
+        let valB = b[columnKey];
+
+        // Handle string comparison vs number comparison
+        if (typeof valA === 'string') {
+            return isAscending 
+                ? valA.localeCompare(valB) 
+                : valB.localeCompare(valA);
+        } else {
+            // Numeric fallback
+            return isAscending ? valA - valB : valB - valA;
+        }
+    });
+
+    // Re-render only the body rows with the newly ordered data
+    renderTableRows();
+}
+
+// Execute when page loads
+window.onload = initTable;
+  </script>
+</body>
 </html>
