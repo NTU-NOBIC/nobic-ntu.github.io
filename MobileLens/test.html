@@ -23,9 +23,9 @@
       const response = await fetch('test.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 
-                const data = await response.json();
+                const emplyeees = await response.json();
 
-                if (data.length === 0) return;
+                if (employees.length === 0) return;
 
 // 2. Track the sorting state
 let currentSortColumn = null;
