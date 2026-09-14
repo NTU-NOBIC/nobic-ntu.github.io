@@ -5,6 +5,7 @@ body {
   margin: auto;
   min-height: 100vh;
   position: relative;
+  background-color: white;
 }
 
 .clear {clear: left; display: block; font-size: 0.1rem;}
@@ -33,7 +34,7 @@ body {
   position: relative;
   background: white;
   margin-top: 0px;
-  magin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .lens-container p {
@@ -128,7 +129,7 @@ body {
   color: black;
   text-align: center;
   padding-top: 0.5rem;
-  text-weight: bold;
+  font-weight: bold;
 }
 
 .heading1-gallery {
