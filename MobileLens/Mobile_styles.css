@@ -154,6 +154,8 @@ body {
 
 .table-container {
    text-align: center;
+   display: flex;
+   justify-content: center;
    margin: 0;
    max-width: 1300px;
    padding: auto;
@@ -207,6 +209,7 @@ thead th:hover {
 .PreIm {
   height: 40px;
   margin: 0 auto;
+  display: block;
 }
      
 .footer {
