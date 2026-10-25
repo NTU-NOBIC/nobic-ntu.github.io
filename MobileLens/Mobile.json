@@ -1023,7 +1023,7 @@
     "FOCAL LENGTH (mm)": 2.4,
     "F/NUMBER": 2,
     "HALF FIELD (Degree)": 47.5,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 115,
@@ -1032,7 +1032,7 @@
     "FOCAL LENGTH (mm)": 12,
     "F/NUMBER": 2.6,
     "HALF FIELD (Degree)": 11.75,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.587
   },
   {
     "SNo": 116,
@@ -1041,7 +1041,7 @@
     "FOCAL LENGTH (mm)": 10,
     "F/NUMBER": 2.1,
     "HALF FIELD (Degree)": 12.55,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 117,
@@ -1050,7 +1050,7 @@
     "FOCAL LENGTH (mm)": 14,
     "F/NUMBER": 3.3,
     "HALF FIELD (Degree)": 10.15,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 118,
@@ -1059,7 +1059,7 @@
     "FOCAL LENGTH (mm)": 12,
     "F/NUMBER": 3.2,
     "HALF FIELD (Degree)": 14.25,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 119,
@@ -1068,7 +1068,7 @@
     "FOCAL LENGTH (mm)": 6.6,
     "F/NUMBER": 1.6,
     "HALF FIELD (Degree)": 18.4,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 120,
@@ -1077,7 +1077,7 @@
     "FOCAL LENGTH (mm)": 8,
     "F/NUMBER": 2,
     "HALF FIELD (Degree)": 17.4,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 121,
@@ -1086,7 +1086,7 @@
     "FOCAL LENGTH (mm)": 5.8,
     "F/NUMBER": 2.1,
     "HALF FIELD (Degree)": 23.8,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   },
   {
     "SNo": 122,
@@ -1095,6 +1095,6 @@
     "FOCAL LENGTH (mm)": 2.69,
     "F/NUMBER": 2.76,
     "HALF FIELD (Degree)": 59,
-    "REFERENCE WAVELENGTH (um)": 0.5876,
+    "REFERENCE WAVELENGTH (um)": 0.5876
   }
 ]
