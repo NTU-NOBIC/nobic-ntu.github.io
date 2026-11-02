@@ -1,7 +1,7 @@
 {
-  "image": "Encircled Fate Drug Delivery and Cell Death W_anonymous.png",
-  "title": "Encircled Fate: Drug Delivery and Cell Death Within a Vascularized Colorectal Tumor Model",
-  "study": "Vascularized colorectal cancer organoid",
-  "authors": "Byun Suyeon and Andrea Pavesi (LKCMedicine), Austin Seah and Michelle Eio (IMCB, A*STAR)",
-  "description": "Colorectal cancer organoid (orange) surrounded by endothelial cells (green).  Pink flecks within the orange mass are dead cells induced by a chemotherapeutic drug."
+  "image": "Microgliangelo_anonymous.png",
+  "title": "Microgliangelo",
+  "study": "Metabolism As A Developmental Regulator of Microglial Fate and Function",
+  "authors": "Chong Wei Jing (LKCMedicine)",
+  "description": "Fixed BV-2 immortalized microglial cells immunostained for mitochondria (red), creatine kinase B (green), F-actin (magenta) and DAPI for nuclei (cyan). Image shows two microglia in close contact with each other with almost touching mitochondria, reminiscent of Michelangelo's "Creation of Adam."
 }
