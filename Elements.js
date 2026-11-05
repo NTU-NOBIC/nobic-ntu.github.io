@@ -34,6 +34,7 @@ class Header extends HTMLElement {
       </div>
       <div class="dropdown"> <button class="dropbtn"><a href="Contact.html" id = "Cont">Contact</a></button></div>
 	  <div class="dropdown"> <button class="dropbtn"><a href="Links.html" id = "Links">Useful Links</a></button></div>
+	<div class="dropdown"> <button class="dropbtn"><a href="Positions.html" id = "Positions">Open Positions</a></button></div>
       <a href="javascript:void(0);" class="icon" onclick="TopnavFunction()">Menu</a>
     </div>
     `;

@@ -807,6 +807,32 @@ Morebtn.content {
   content: "-";
 }
 
+.LinkBut {
+  background: #46647d ;
+  font-size: 1.5rem; 
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+}
+
+.LinkBut a:link {
+  color: white;
+  text-decoration: none; 
+}
+
+.LinkBut a:visited {
+  color: white;
+  text-decoration: none; 
+}
+
+.LinkBut:hover {
+  background: #bdbdbd ;
+}
+
+.LinkBut:hover a{
+  color: #46647d;
+}
+
 /* legacy styles for Projects */
 .project {overflow: hidden;}
 
